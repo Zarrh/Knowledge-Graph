@@ -1,0 +1,300 @@
+{
+  "nodes": [
+    {
+      "id": "33a08102b0e4f8b9e13d41eecbe71280dcddee983f2149a4326ed3b5486c38e6",
+      "subject": "ITA",
+      "title": "\u201cVento di barbarie sulla speculazione edilizia\u201d",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "9969774cc315cf6daa8c88fc5b17736be03800e3455ae3ec0ab1fdd2be59554f",
+      "subject": "ITA",
+      "title": "Naturalismo",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "f8bfd8f6e11b4007786296248b0f3439aeb724f45a1f4306c3b0696cc41e0817",
+      "subject": "FIL",
+      "title": "Karl Marx",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "82100f8af53221c748a32a9fa40d3c4018ddc3a57085e959aa9d2453bb420246",
+      "subject": "FIL",
+      "title": "Pendolo tra dolore e noia",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "900971414a2ffbf9f8344ceac3c3fa5e9c4f56eb95187a2fe62e44becfa2f217",
+      "subject": "ITA",
+      "title": "Giacomo Leopardi",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "daa6719eabd58d225e5cc7cecd9bc9e85b21219601efac3c21645725cc158351",
+      "subject": "SCI",
+      "title": "Charles Darwin",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "03fffb7363539bc4934535f7c1c8f58ecf484b89b20a7aaab4b842dec42fc4e3",
+      "subject": "STO",
+      "title": "Malinterpretazioni delle teorie di Darwin",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "0d1553cccc2c1f539d5c7630f865aa2468aacc5d111d54423afd087f5d0468a3",
+      "subject": "SCI",
+      "title": "IPA",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "390c23a04c7cd42f4b77e637982d982d09466a8845a1042db78a85b57db441c9",
+      "subject": "ITA",
+      "title": "Pirandello",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "29780ec4536e11e03a7a1ba2bb305bca46d8a33a811a120c8a8eb902a2e20ef6",
+      "subject": "FIS",
+      "title": "Paradosso dei gemelli",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "8e035fbccb151cbce3c6ad568fcc1ab82138ac563aef5aa5c596160932d7cc03",
+      "subject": "STO",
+      "title": "Catena di montaggio",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "6a83331af345a1cf291946b3f913af9a12d682aa8f1816f8aeb4be50943963e1",
+      "subject": "FIL",
+      "title": "Dialettica di Hegel",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "6d7380f76ef6d4fbdd7cc72bf27a0e9b75d5f502ca856d4175ea8d444fef57b4",
+      "subject": "FIS",
+      "title": "Moto elicoidale",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "bd2d319b6333e0f4a39f0ef9fecadabb8698063f88ec19306e675427554b8a2a",
+      "subject": "SCI",
+      "title": "Zyklon B",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "c2b2d5fe7136d14e33feb4e594441ddbdabce97d47abfb816a9914521ff259c2",
+      "subject": "STO",
+      "title": "Prima Guerra Mondiale",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "dc878f4a243bdc2a0c495e0b5f4129f407fd3d0765021969fa06b14b4f5fb9a0",
+      "subject": "ING",
+      "title": "War Poets",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "b96523bcb6d81f822acfdca9c25f3aacda0931d7f6bb2fedd37d9e61e1e2681a",
+      "subject": "STO",
+      "title": "Pellagra",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "f22c8c5199143cbd657383625b3e00b3915a73b7815b52e58b3142b2bbc80da5",
+      "subject": "SCI",
+      "title": "Metabolismo",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "a816c57831c5cc018614bcc21d2fbf81ce920d28b5393a24ac213645736b0d59",
+      "subject": "ING",
+      "title": "Roaring '20s",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "95d0fd9687c5574d173ce58e08887b54ded60379ddfa40ae4b7f5e7bc0eaf2c1",
+      "subject": "ITA",
+      "title": "Decadentismo",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "78d26cb8aa99a94e8feab0a14d2e882093d3812ee7e3142490fdda9f59711d0e",
+      "subject": "ING",
+      "title": "Suffragettes",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "4f101cf6b464db013e673ee53375aebd0f2ec40d55c69d67855d77de69814093",
+      "subject": "ING",
+      "title": "James Joyce",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "b39b08d47462d7f6336782488bc4ea5ca8a3f87238d03a09dfffa09ec03a6341",
+      "subject": "FIL",
+      "title": "Bergson",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "f8f97d20b665fd5bd159abf20428c748d38287d8471b5db27f7181758bc13145",
+      "subject": "FIL",
+      "title": "Freud",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "2aa51d0c8fd5a6171bab47e490719f6b4f2f30988ceba3c03a6f1b1a07fc32b6",
+      "subject": "ING",
+      "title": "Dr. Jekyll & Mr. Hyde",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "7ae8c157b78e1c3c29ebe9036a97f3feaf8c804c379b55c1c3e26071cad491ca",
+      "subject": "ITA",
+      "title": "Eugenio Montale",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "873fb4b5664e382495bad406baabe27c99cdc69bb20497b8f17fee4debead790",
+      "subject": "FIS",
+      "title": "Onde",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "65673fe84153679a1af6c3054f08f10e4ce1199d943f8d20dcda6e19a00b49b3",
+      "subject": "SCI",
+      "title": "Onde sismiche",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "8cf75a85402eff3d02979ecddf1c2c988c96e5823968bd0012afd042d2833905",
+      "subject": "SCI",
+      "title": "Fondali oceanici",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "30e01c4431d700cbb06c6e61ba99098d04e2fc809cecc9029fdac9b0a95fec58",
+      "subject": "SCI",
+      "title": "Iprite",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "953d9b9d5c7c5f5bfc1308b6171bbdbe305616c32e748d9aeddc6915f50fd03b",
+      "subject": "SCI",
+      "title": "Biodiesel",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "c23027f661dd7b52b5a6b8bed7f0bdaaa2da5cea3fad341c148c515a23576468",
+      "subject": "ITA",
+      "title": "Pascoli",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "5082d5a69800d2fb8d1620946d9b297e536f71144233c39fb89fd3497163c374",
+      "subject": "STO",
+      "title": "Conquista della Libia",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "b9a57830c21f79843eebb2e926fd2b0ddf94d62987c4678d660260f2aaba30a2",
+      "subject": "STO",
+      "title": "Migrazioni italiane",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "3320498c295bf76fa68c3b999526edc4c61ad282e3048e05a320874abfd7fe3d",
+      "subject": "ITA",
+      "title": "Gabriele d\u2019Annunzio",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "43338cfcd8a5aed516eba9861669ac10d06749e8fa0e09c3715e27bff127c18a",
+      "subject": "STO",
+      "title": "Nuove tecnologie",
+      "content": "",
+      "image": "",
+      "weight": 1
+    },
+    {
+      "id": "53db39d1fa32e35496ef55289e50f7471ebf4d1b3e4758ad444fdc6a2c733a07",
+      "subject": "ITA",
+      "title": "Rapporto del letterato con la politica",
+      "content": "",
+      "image": "",
+      "weight": 1
+    }
+  ]
+}
