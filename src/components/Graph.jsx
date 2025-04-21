@@ -114,48 +114,6 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
       el.removeEventListener('wheel', handleWheel)
     }
   }, [scale, offset])
-
-
-  //////////////////////////////////////////////////////////
-  // Editing links
-  //////////////////////////////////////////////////////////
-
-  const [selectedForEdge, setSelectedForEdge] = useState([])
-  const [localEdges, setLocalEdges] = useState(edges)
-
-  useEffect(() => {
-    const handleKeyUp = (e) => {
-      if (e.key.toLowerCase() === 'w') {
-        setIsEditor(prev => {
-          const newValue = !prev
-          return newValue
-        })
-        setSelectedForEdge([])
-      }
-      // if (e.key === 'c') console.log(localEdges)
-      if (e.key === 's') {
-        fetch('http://localhost:3000/api/save-links', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ links: localEdges }),
-        })
-        .then(res => res.json())
-        .then(data => console.log('Saved:', data))
-        .catch(err => console.error('Error saving:', err))
-      }
-    }
-
-    window.addEventListener('keyup', handleKeyUp)
-    return () => window.removeEventListener('keyup', handleKeyUp)
-  }, [])
-
-  useEffect(() => {
-    console.log('Editor mode toggled:', isEditor)
-  }, [isEditor])
-
-  useEffect(() => {
-    console.log('Updated edges:', localEdges)
-  }, [localEdges])
   
 
   return (
@@ -174,7 +132,7 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
       }}
     >
       {/* Connectors */}
-      {localEdges.map((edge, i) => {
+      {edges.map((edge, i) => {
         const from = nodesPositions.find(n => n.id === edge.from)
         const to = nodesPositions.find(n => n.id === edge.to)
 
@@ -204,21 +162,8 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
           scale={scale}
           offset={offset}
           onMove={(x, y) => updateNodePosition(node.id, x, y)}
-          isEditing={isEditor}
-          onClick={() => {
-            if (!isEditor) return
-        
-            if (!selectedForEdge.includes(node.id)) {
-              console.log("Selected")
-              const newSelection = [...selectedForEdge, node.id]
-              setSelectedForEdge(newSelection)
-        
-              if (newSelection.length === 2) {
-                setLocalEdges((prev) => [...prev, { from: newSelection[0], to: newSelection[1], weight: 1 }])
-                setSelectedForEdge([])
-              }
-            }
-          }}
+          isEditing={false}
+          onClick={() => {}}
         >
           {node.id}
         </Node>
