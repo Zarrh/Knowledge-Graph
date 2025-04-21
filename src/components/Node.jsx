@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { useSpring, animated } from 'react-spring'
 
 const Node = ({ 
-  x, y, radius, color, borderColor, borderWidth, title, content, image, onMove, scale, offset 
+  x, y, radius, color, borderColor, borderWidth, title, content, image, onMove, onClick, isEditing, scale, offset 
 }) => {
   const [pos, setPos] = useState({ x: x, y: y })
   const [isExpanded, setIsExpanded] = useState(false)
@@ -48,7 +48,6 @@ const Node = ({
     to: {
       width: isExpanded ? 300 : radius,
       height: isExpanded ? 150 : radius,
-      opacity: isExpanded ? 1 : 0.8,
       borderRadius: isExpanded ? '12px': '50%',
       transform: isExpanded ? 'scale(1.2)' : 'scale(1)',
     },
@@ -81,7 +80,7 @@ const Node = ({
       <animated.div
         ref={nodeRef}
         onMouseDown={handleMouseDown}
-        onClick={handleClick}
+        onClick={isEditing ? onClick : handleClick}
         style={{
           position: 'absolute',
           left: pos.x,

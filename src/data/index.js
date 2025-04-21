@@ -17,6 +17,21 @@ export const subjectsColors = {
 }
 
 
+export const subjectNames = {
+  "ITA": "Italiano",
+  "FIL": "Filosofia",
+  "STO": "Storia",
+  "SCI": "Scienze",
+  "MAT": "Matematica",
+  "ING": "Inglese",
+  "FIS": "Fisica",
+  "CIV": "Educazione Civica",
+  "INF": "Informatica",
+  "ART": "Arte",
+  "MOT": "Motoria",
+}
+
+
 export const activeSubjects = [
   "ITA",
   "STO",

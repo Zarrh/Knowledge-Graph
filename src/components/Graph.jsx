@@ -3,12 +3,11 @@ import Node from './Node'
 import Connector from './Connector'
 
 import { subjectsColors } from '../data'
+import { radius, dispersionRadius, connectorWidth } from '../data/config'
 
 
 const WIDTH = window.innerWidth*10
 const HEIGHT = window.innerHeight*10
-
-const radius = 50
 
 const CENTER = [Math.floor(WIDTH / 2), Math.floor(HEIGHT / 2)]
 const N = Object.keys(subjectsColors).length
@@ -29,13 +28,13 @@ function getRandomInt(min, max) {
 }
 
 
-const Graph = ({ nodes, edges }) => {
+const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
     nodes.map((node) => ({
       id: node.id,
-      x: centers.find(center => center.subj === node.subject).x + getRandomInt(-400, 400),
-      y: centers.find(center => center.subj === node.subject).y + getRandomInt(-400, 400),
+      x: centers.find(center => center.subj === node.subject).x + getRandomInt(-dispersionRadius, dispersionRadius),
+      y: centers.find(center => center.subj === node.subject).y + getRandomInt(-dispersionRadius, dispersionRadius),
       subj: node.subject,
       title: node.title,
       content: node.description,
@@ -115,6 +114,48 @@ const Graph = ({ nodes, edges }) => {
       el.removeEventListener('wheel', handleWheel)
     }
   }, [scale, offset])
+
+
+  //////////////////////////////////////////////////////////
+  // Editing links
+  //////////////////////////////////////////////////////////
+
+  const [selectedForEdge, setSelectedForEdge] = useState([])
+  const [localEdges, setLocalEdges] = useState(edges)
+
+  useEffect(() => {
+    const handleKeyUp = (e) => {
+      if (e.key.toLowerCase() === 'w') {
+        setIsEditor(prev => {
+          const newValue = !prev
+          return newValue
+        })
+        setSelectedForEdge([])
+      }
+      // if (e.key === 'c') console.log(localEdges)
+      if (e.key === 's') {
+        fetch('http://localhost:3000/api/save-links', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ links: localEdges }),
+        })
+        .then(res => res.json())
+        .then(data => console.log('Saved:', data))
+        .catch(err => console.error('Error saving:', err))
+      }
+    }
+
+    window.addEventListener('keyup', handleKeyUp)
+    return () => window.removeEventListener('keyup', handleKeyUp)
+  }, [])
+
+  useEffect(() => {
+    console.log('Editor mode toggled:', isEditor)
+  }, [isEditor])
+
+  useEffect(() => {
+    console.log('Updated edges:', localEdges)
+  }, [localEdges])
   
 
   return (
@@ -133,15 +174,16 @@ const Graph = ({ nodes, edges }) => {
       }}
     >
       {/* Connectors */}
-      {edges.map((edge, i) => {
+      {localEdges.map((edge, i) => {
         const from = nodesPositions.find(n => n.id === edge.from)
         const to = nodesPositions.find(n => n.id === edge.to)
 
         return (
           <Connector
             key={i}
-            from={{ x: from.x + radius / 2, y: from.y + radius / 2 }}
-            to={{ x: to.x + radius / 2, y: to.y + radius / 2 }}
+            from={{ x: from.x + radius / 2, y: from.y + radius / 2, subj: from.subj }}
+            to={{ x: to.x + radius / 2, y: to.y + radius / 2, subj: to.subj }}
+            width={connectorWidth}
           />
         )
       })}
@@ -162,6 +204,21 @@ const Graph = ({ nodes, edges }) => {
           scale={scale}
           offset={offset}
           onMove={(x, y) => updateNodePosition(node.id, x, y)}
+          isEditing={isEditor}
+          onClick={() => {
+            if (!isEditor) return
+        
+            if (!selectedForEdge.includes(node.id)) {
+              console.log("Selected")
+              const newSelection = [...selectedForEdge, node.id]
+              setSelectedForEdge(newSelection)
+        
+              if (newSelection.length === 2) {
+                setLocalEdges((prev) => [...prev, { from: newSelection[0], to: newSelection[1], weight: 1 }])
+                setSelectedForEdge([])
+              }
+            }
+          }}
         >
           {node.id}
         </Node>
