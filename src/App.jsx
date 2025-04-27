@@ -15,6 +15,8 @@ function App() {
     return
   }
 
+  const [hoveredSubject, setHoveredSubject] = useState(null)
+
   const [path, setPath] = useState(new Array())
 
   const αGeneratePath = () => {
@@ -107,13 +109,13 @@ function App() {
           return true
         }
 
-        let neighbours = activeEdges
+        let neighbours = shuffle(activeEdges
           .filter(edge => edge.from === current.id || edge.to === current.id)
           .map(edge => {
             const neighbourId = edge.from === current.id ? edge.to : edge.from;
             return activeNodes.find(node => node.id === neighbourId)
           })
-          .filter(Boolean)
+          .filter(Boolean))
 
         if (neighbours.length === 1) {
           _path.pop()
@@ -145,15 +147,20 @@ function App() {
     }
 
     let success = false
+    const maxRetries = 3
+    let counter = 0
     const startingIndex = getRandomInt(0, activeNodes.length-1)
     let newIndex = startingIndex
     
     while (!success) {
       newIndex = (newIndex + 1) % activeNodes.length
       if (newIndex === startingIndex) {
-        _path = []
-        console.log("No path found")
-        break
+        counter++
+        if (counter === maxRetries) {
+          _path = []
+          console.log("No path found")
+          break
+        }
       }
       const startingNode = activeNodes[newIndex]
       success = crawl(startingNode)
@@ -241,7 +248,7 @@ function App() {
           zIndex: 200,
         }}
       >
-        <ActiveSubjects />
+        <ActiveSubjects hoveredSubject={hoveredSubject} setHoveredSubject={setHoveredSubject} />
       </div>
       
       <div
@@ -261,8 +268,8 @@ function App() {
         onClick={() => setPath(new Array())}
         style={{
           position: 'fixed',
-          top: '2.5%',
-          right: '20.5%',
+          top: 'calc(2.5% + 60px)',
+          right: '1.5%',
           zIndex: 200,
         }}
       >
@@ -285,7 +292,7 @@ function App() {
         className='path-list'
         style={{
           position: 'fixed',
-          top: 'calc(2.5% + 70px)',
+          top: 'calc(2.5% + 120px)',
           width: 'calc(25%)',
           right: '1.5%',
           zIndex: 200,
@@ -293,7 +300,7 @@ function App() {
       >
         <GeneratedPath nodes={path}/>
       </div>
-      <Graph nodes={nodes} edges={edges} path={path} isEditor={isEditor} setIsEditor={setIsEditor} />
+      <Graph nodes={nodes} edges={edges} path={path} hoveredSubject={hoveredSubject} isEditor={isEditor} setIsEditor={setIsEditor} />
     </div>
   )
 }

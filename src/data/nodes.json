@@ -415,7 +415,7 @@
       "id": "f9d6b0d8a1b3db5795e4fdd0de2d896fd069ada2c7ad20550f447fd04b0f0664",
       "subject": "ITA",
       "title": "Alla stazione in una mattina d\u2019autunno",
-      "content": "Alla stazione in una mattina d\u2019autunno, l'aria \u00e8 frizzante e le foglie cadute formano un tappeto colorato sul marciapiede. I viaggiatori si affrettano verso i binari, avvolti in cappotti e sciarpe, mentre il vapore del caff\u00e8 si alza dalle tazze. Il treno in arrivo annuncia il suo ingresso con un fischio lontano, e il trambusto della routine quotidiana si mescola con la malinconia della stagione.",
+      "content": "Composta tra il 1875 e il 1877 da Giosu\u00e8 Carducci, tra le pi\u00f9 famose Odi barbare, e dedicata come molte altre a Lina, la donna a lungo amata, la poesia \u00e8 dominata dal contrasto tra il buio del presente e il ricordo caldo e luminoso del passato, in una completa fusione tra gli aspetti esteriori dell'ambiente e i sentimenti profondi. Romantica potrebbe definirsi questa disposizione dell'animo, ispirata allo spleen di Baudelaire e di Verlaine, se non fosse continuamente attraversata da reminiscenze dantesche e petrarchesche. Vi si ritrova la purezza lirica del miglior Carducci, memore del suo ideale giovanile di un classicismo illuminato da una luce romantica.",
       "image": "",
       "weight": "0.5",
       "field": "wor",
@@ -435,11 +435,11 @@
       "id": "aa9cecc0fad31c0e202c8495f6a7223df1b0ad8aba2fc8ffef3718fb9f989f04",
       "subject": "ITA",
       "title": "Forse che s\u00ec forse che no",
-      "content": "\"Forse che s\u00ec forse che no\" \u00e8 un film muto italiano del 1920, diretto da Mario Bonnard. La pellicola \u00e8 nota per essere il debutto cinematografico di Pietro Mascagni, celebre compositore italiano, che interpret\u00f2 il ruolo di protagonista. La trama ruota attorno a un triangolo amoroso e alle vicende drammatiche che ne derivano, con una particolare attenzione alla musica e alla sua capacit\u00e0 di esprimere emozioni profonde.",
+      "content": "\"Forse che s\u00ec forse che no\" \u00e8 un romanzo del poeta Gabriele d'Annunzio pubblicato nel 1910 ambientato nel mondo dell'aviazione che muoveva, al tempo, i primi passi. Esso descrive lo sviluppo di passioni che legano e dividono cinque personaggi borghesi e che sono fatalmente destinate a lasciare una \"scia\" di dolore e morte. La vicenda verte sulla nascita di una violenta passione amorosa tra Paolo Tarsis e Isabella Inghirami. Nel retroscena si intrecciano le vicende di Vanina e Lunella, sorelle di Isabella, e di Aldo, fratello delle tre.",
       "image": "",
       "weight": "0.5",
       "field": "wor",
-      "isAI": 1
+      "isAI": 0
     },
     {
       "id": "c2dc98682bb064afb6766c7a4eb1b02a6d06f164b56b145b672987860180699f",
@@ -485,11 +485,11 @@
       "id": "3588d5dddf249aed8511f2908cfbb12e06d0ab960a9380ff75cfdaf9646b5822",
       "subject": "ITA",
       "title": "Vento di barbarie sulla speculazione edilizia",
-      "content": "\"Vento di barbarie sulla speculazione edilizia\" \u00e8 un'espressione che evoca una critica severa verso le pratiche speculative nel settore immobiliare. Queste pratiche spesso portano a sviluppi urbani irrazionali e non sostenibili, privilegiando il profitto a scapito della qualit\u00e0 della vita, dell'ambiente e delle comunit\u00e0 locali. La speculazione edilizia pu\u00f2 alimentare fenomeni come l'aumento dei prezzi degli immobili, la gentrificazione e la distruzione di spazi pubblici, creando tensioni sociali ed economiche.",
+      "content": "Dalle \"Le vergini delle rocce\", pubblicato nel 1895 da Gabriele d'Annunzio, segna una svolta ideologica radicale. Il passo propone un quadro della degradazione di Roma moderna, con una polemica contro la speculazione edilizia che sta distruggendo le sue bellezze secolari, non solo architettoniche ma anche naturali. L'obiettivo primario dell'invettiva sono la \"follia del lucro\" (spirito affaristico) e la \"furia feroce degli appetiti\" che si scatenano senza alcun rispetto per la sacralit\u00e0 del passato, facendo sorgere nuovi orrendi edifici.",
       "image": "",
       "weight": "0.5",
       "field": "wor",
-      "isAI": 1
+      "isAI": 0
     },
     {
       "id": "c065a3b9694d832510037ed5ae9fd0acf04e40cfafe41b3cb0bcaf9573bbf69e",
@@ -1006,9 +1006,30 @@
       "id": "040cc1e49ed4acf3eccb48b8a028e62da179a7cf4eb56ba07bbb2dd542c8b41a",
       "subject": "CIV",
       "title": "Inflazione",
-      "content": "",
+      "content": "L'inflazione \u00e8 un fenomeno economico che si verifica quando i prezzi dei beni e servizi aumentano in modo generalizzato e sostenuto nel tempo. Questo porta a una riduzione del potere d'acquisto della moneta, poich\u00e9 con la stessa quantit\u00e0 di denaro si possono acquistare meno beni e servizi. L'inflazione pu\u00f2 essere causata da vari fattori, tra cui l'aumento dei costi di produzione, un eccesso di domanda rispetto all'offerta e politiche monetarie espansive. Le banche centrali monitorano attentamente l'inflazione e utilizzano strumenti come i tassi di interesse per cercare di mantenerla entro livelli accettabili.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "a7c93ec6b62f87673055d7398164455a7a962483dc4141c5bcaf7d93bad9f605",
+      "subject": "ITA",
+      "title": "Simbolismo",
+      "content": "Il Simbolismo \u00e8 un movimento artistico e letterario che emerse nella seconda met\u00e0 del XIX secolo, principalmente in Francia. Caratterizzato da un'enfasi sui simboli e le immagini evocative, il Simbolismo cerca di esprimere idee e stati d'animo attraverso indizi e suggerimenti piuttosto che descrizioni dirette. Gli artisti e scrittori simbolisti spesso utilizzano miti, sogni e visioni per esplorare temi profondi e nascosti, creando opere che richiedono un'interpretazione attenta e riflessiva. Tra i suoi principali esponenti vi sono poeti come Charles Baudelaire e Arthur Rimbaud, nonch\u00e9 pittori come Gustave Moreau e Odilon Redon.",
+      "image": "",
+      "weight": 1,
+      "field": "mov",
+      "isAI": 1
+    },
+    {
+      "id": "bd011e24f3eb5c50708cdd6a4f671e3f52cbc5070bb41a6b1933157084d11a42",
+      "subject": "ITA",
+      "title": "Baudelaire",
+      "content": "Charles Baudelaire (1821-1867) \u00e8 stato un poeta, critico d'arte e traduttore francese, noto soprattutto per la sua raccolta di poesie \"I fiori del male\" (Les Fleurs du mal), pubblicata nel 1857. La sua opera esplora temi come il male, la decadenza e la bellezza, spesso con un tono provocatorio e trasgressivo. Baudelaire \u00e8 considerato uno dei pionieri del simbolismo e ha avuto una grande influenza sulla letteratura moderna, sia in Francia che a livello internazionale. La sua vita personale, segnata da problemi di salute e dipendenze, ha spesso influenzato la sua scrittura, rendendola intensa e profondamente introspezione.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     }
   ]
 }
