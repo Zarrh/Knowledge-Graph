@@ -25,7 +25,7 @@ const centers = subjectKeys.map((subj, index) => ({
 }));
 
 
-const Graph = ({ nodes, edges, path=[] }) => {
+const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
     nodes.map((node) => ({
@@ -127,7 +127,7 @@ const Graph = ({ nodes, edges, path=[] }) => {
         overflow: 'hidden',
         position: 'relative',
         backgroundColor: '#18171c',
-        cursor: isPanning.current ? 'grabbing' : 'grab',
+        cursor: isPanning.current ? 'move' : 'grab',
       }}
     >
       {/* Titles */}
@@ -136,6 +136,8 @@ const Graph = ({ nodes, edges, path=[] }) => {
           key={center.subj}
           x={center.x}
           y={center.y}
+          color={hoveredSubject === center.subj ? subjectsColors[center.subj] : 'white'}
+          opacity={hoveredSubject === center.subj ? 0.75 : 0.25}
         >
           {subjectNames[center.subj]}
         </Title>

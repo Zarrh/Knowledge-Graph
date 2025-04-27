@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = ({ x, y, children }) => {
+const Title = ({ x, y, children, color, opacity }) => {
   return (
     <div
       style={{
@@ -11,8 +11,8 @@ const Title = ({ x, y, children }) => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        color: 'white',
-        opacity: 0.25,
+        color: color,
+        opacity: opacity,
         zIndex: 0,
         fontSize: 120,
         fontFamily: "azonix",
