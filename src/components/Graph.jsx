@@ -25,7 +25,7 @@ const centers = subjectKeys.map((subj, index) => ({
 }));
 
 
-const Graph = ({ nodes, edges, path=[], isEditor=null, setIsEditor=()=>{} }) => {
+const Graph = ({ nodes, edges, path=[] }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
     nodes.map((node) => ({
@@ -151,7 +151,7 @@ const Graph = ({ nodes, edges, path=[], isEditor=null, setIsEditor=()=>{} }) => 
           pointerEvents: 'none',
         }}
       >
-        {localEdges.map((edge, i) => {
+        {edges.map((edge, i) => {
           const from = nodesPositions.find(n => n.id === edge.from)
           const to = nodesPositions.find(n => n.id === edge.to)
 
