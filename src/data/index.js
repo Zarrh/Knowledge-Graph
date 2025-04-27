@@ -43,6 +43,26 @@ export const activeSubjects = [
   "CIV",
 ]
 
+
+export const fieldNames = {
+  "aut": "Autore",
+  "ide": "Idea",
+  "wor": "Opera",
+  "eve": "Evento",
+  "mov": "Movimento",
+  "the": "Teoria",
+}
+
+
+export const fieldContents = {
+  "aut": "α",
+  "ide": "ι",
+  "wor": "ο",
+  "eve": "ε",
+  "mov": "μ",
+  "the": "τ",
+}
+
 export const nodes = raw_nodes["nodes"]
 
 export const edges = raw_links["links"]

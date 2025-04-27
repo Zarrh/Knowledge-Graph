@@ -1,11 +1,16 @@
 import React, { useState, useRef } from 'react'
 import { useSpring, animated } from 'react-spring'
+import { invertColor } from '../functions'
+
+import { fieldNames, fieldContents } from '../data'
 
 const Node = ({ 
-  x, y, radius, color, borderColor, borderWidth, title, content, image, onMove, onClick, isEditing, scale, offset 
+  x, y, radius, color, borderColor, borderWidth, title, content, image, onMove, onClick, isEditing, scale, offset, children, field, isAI=false 
 }) => {
   const [pos, setPos] = useState({ x: x, y: y })
   const [isExpanded, setIsExpanded] = useState(false)
+  const [hovered, setHovered] = useState(false)
+
   const nodeRef = useRef(null)
   const dragging = useRef(false)
   const mouseOffset = useRef({ x: 0, y: 0 })
@@ -46,10 +51,11 @@ const Node = ({
 
   const props = useSpring({
     to: {
-      width: isExpanded ? 300 : radius,
-      height: isExpanded ? 150 : radius,
+      width: isExpanded ? 400 : radius,
       borderRadius: isExpanded ? '12px': '50%',
       transform: isExpanded ? 'scale(1.2)' : 'scale(1)',
+      backgroundColor: (hovered & !isExpanded) ? invertColor(color) : color,
+      color: hovered ? "#18171c" : "white",
     },
     config: { tension: 200, friction: 20 },
   })
@@ -81,40 +87,61 @@ const Node = ({
         ref={nodeRef}
         onMouseDown={handleMouseDown}
         onClick={isEditing ? onClick : handleClick}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
         style={{
           position: 'absolute',
           left: pos.x,
           top: pos.y,
           width: props.width,
-          height: props.height,
+          height: !isExpanded ? radius : 'auto',
           borderRadius: props.borderRadius,
-          backgroundColor: color,
+          backgroundColor: props.backgroundColor,
           cursor: 'grab',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
+          color: props.color,
           userSelect: 'none',
           border: 'solid',
           borderColor: borderColor ?? color,
           borderWidth: borderWidth ?? 0,
-          opacity: props.opacity,
           transform: props.transform,
           zIndex: 100,
         }}
       >
         {/* Node Content */}
-        {isExpanded && (
+        {isExpanded ? (
           <div
             style={{
-              padding: '10px',
-              textAlign: 'center',
+              padding: '20px',
+              width: '100%',
+              textAlign: 'justify',
               color: 'white',
             }}
           >
-            <h3>{title}</h3>
-            <p>{content}</p>
+            <div 
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
+            >
+              <h3 style={{width: "60%"}}>{title}</h3>
+              <p>
+                <span style={{fontFamily: 'sans'}}>{field ? `${fieldContents[field]}: ` :  'ς: '}</span> 
+                <span>{field ? `${fieldNames[field]}` : "Generico"}</span>
+              </p>
+            </div>
+            <div style={{
+              width: '100%',
+              height: '2px',
+              backgroundImage: `linear-gradient(to right, ${borderColor}, white)`,
+            }}>
+            </div>
+            <p>{isAI && "✤"} {content}</p>
           </div>
+        ) : (
+          <>{children}</>
         )}
       </animated.div>
     </>

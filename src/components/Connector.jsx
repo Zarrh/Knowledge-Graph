@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSpring, animated } from '@react-spring/web'
 import { subjectsColors } from '../data'
 
-const Connector = ({ from, to, width=12 }) => {
+const Connector = ({ from, to, width=12, highlight=false }) => {
   const [hovered, setHovered] = useState(false)
 
   const springStyle = useSpring({
@@ -13,16 +13,7 @@ const Connector = ({ from, to, width=12 }) => {
   const gradientId = `gradient-${from.x}-${from.y}-${to.x}-${to.y}`
 
   return (
-    <svg
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
-      }}
-    >
+    <>
       <defs>
         <linearGradient id={gradientId} x1={from.x > to.x ? "100%" : "0%"} y1="0%" x2={from.x > to.x ? "0%" : "100%"} y2="0%">
           <stop offset="0%" stopColor={subjectsColors[from.subj]} />
@@ -36,13 +27,13 @@ const Connector = ({ from, to, width=12 }) => {
         x2={to.x}
         y2={to.y}
         stroke={`url(#${gradientId})`}
-        strokeWidth={width}
+        strokeWidth={highlight ? 5*width : width}
         style={springStyle}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         pointerEvents="visibleStroke"
       />
-    </svg>
+    </>
   )
 }
 
