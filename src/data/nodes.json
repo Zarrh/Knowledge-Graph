@@ -4,614 +4,1008 @@
       "id": "9969774cc315cf6daa8c88fc5b17736be03800e3455ae3ec0ab1fdd2be59554f",
       "subject": "ITA",
       "title": "Naturalismo",
-      "content": "",
+      "content": "Il naturalismo \u00e8 stato un movimento letterario e artistico sviluppatosi in Europa alla fine del XIX secolo. Fondato sui principi della filosofia positivista, sulla teoria evoluzionistica di Charles Darwin e sul determinismo, proponeva una rappresentazione cruda e oggettiva della realt\u00e0. I naturalisti rifiutavano l'idealismo e il romanticismo, concentrandosi sulle condizioni sociali e ambientali che influenzano l'essere umano. Gli autori naturalisti esploravano temi come la povert\u00e0, la malattia e la lotta per la sopravvivenza.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "mov",
+      "isAI": 1
     },
     {
       "id": "f8bfd8f6e11b4007786296248b0f3439aeb724f45a1f4306c3b0696cc41e0817",
       "subject": "FIL",
       "title": "Karl Marx",
-      "content": "",
+      "content": "Karl Marx \u00e8 stato un filosofo, economista e politico tedesco. \u00c8 considerato uno dei pi\u00f9 grandi pensatori della storia, noto per aver sviluppato la teoria del comunismo e del socialismo. Marx ha analizzato il capitalismo e le sue contraddizioni, sostenendo che la lotta di classe \u00e8 il motore della storia. Le sue idee hanno influenzato profondamente la politica e l'economia, ispirando movimenti e rivoluzioni in tutto il mondo.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "82100f8af53221c748a32a9fa40d3c4018ddc3a57085e959aa9d2453bb420246",
       "subject": "FIL",
       "title": "Pendolo tra dolore e noia",
-      "content": "",
+      "content": "Il pendolo tra dolore e noia rappresenta una condizione esistenziale in cui un individuo oscilla tra due stati emotivi estremi: il dolore, inteso come sofferenza profonda, e la noia, percepita come mancanza di significato o di stimoli. Questa alternanza pu\u00f2 essere causa di disagio e instabilit\u00e0. L'oscillazione tra questi due estremi pu\u00f2 influenzare negativamente la qualit\u00e0 della vita. La ricerca di un equilibrio pu\u00f2 essere una sfida.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "ide",
+      "isAI": 1
     },
     {
       "id": "900971414a2ffbf9f8344ceac3c3fa5e9c4f56eb95187a2fe62e44becfa2f217",
       "subject": "ITA",
       "title": "Giacomo Leopardi",
-      "content": "",
+      "content": "Giacomo Leopardi \u00e8 stato un poeta, filosofo e scrittore italiano. \u00c8 considerato uno dei pi\u00f9 importanti poeti della letteratura italiana. La sua opera esplora temi come la natura, la solitudine e la condizione umana. Le sue opere pi\u00f9 famose includono \"L'infinito\" e \"Canti\". La sua scrittura \u00e8 caratterizzata da un pessimismo profondo e da una grande sensibilit\u00e0.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "daa6719eabd58d225e5cc7cecd9bc9e85b21219601efac3c21645725cc158351",
       "subject": "SCI",
       "title": "Charles Darwin",
-      "content": "",
+      "content": "Charles Darwin \u00e8 stato un biologo britannico celebre per aver formulato la teoria dell'evoluzione delle specie vegetali e animali attraverso il meccanismo della selezione naturale. La sua opera pi\u00f9 famosa, \"L'origine delle specie\", pubblicata nel 1859, ha rivoluzionato la comprensione della diversit\u00e0 della vita sulla Terra. Darwin viaggi\u00f2 a bordo del Beagle, raccogliendo esemplari e osservazioni che supportarono la sua teoria. Il suo lavoro ha avuto un impatto profondo sulla biologia e sulla scienza in generale.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "03fffb7363539bc4934535f7c1c8f58ecf484b89b20a7aaab4b842dec42fc4e3",
       "subject": "STO",
       "title": "Malinterpretazioni delle teorie di Darwin",
-      "content": "",
+      "content": "Le teorie di Charles Darwin sull'evoluzione sono state spesso mal interpretate o fraintese. Una delle pi\u00f9 comuni malinterpretazioni \u00e8 che l'evoluzione sia una \"teoria della casualit\u00e0\" o che implichi una direzione predeterminata. In realt\u00e0, Darwin propose la selezione naturale come meccanismo chiave dell'evoluzione, per cui le caratteristiche favorevoli alla sopravvivenza e alla riproduzione vengono trasmesse alle generazioni future. Un'altra malinterpretazione comune \u00e8 che l'evoluzione umana sia avvenuta \"per caso\" o che gli esseri umani discendano direttamente dalle scimmie.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "ide",
+      "isAI": 1
     },
     {
       "id": "0d1553cccc2c1f539d5c7630f865aa2468aacc5d111d54423afd087f5d0468a3",
       "subject": "SCI",
       "title": "IPA",
-      "content": "",
+      "content": "L'alfabeto fonetico internazionale (AFI), noto anche come IPA (dall'inglese International Phonetic Alphabet), \u00e8 un sistema di scrittura fonetica, basato sull'alfabeto latino, usato per trascrivere in maniera standardizzata i suoni delle lingue parlate. \u00c8 stato concepito per rappresentare con precisione i suoni effettivi di qualsiasi lingua.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "390c23a04c7cd42f4b77e637982d982d09466a8845a1042db78a85b57db441c9",
       "subject": "ITA",
       "title": "Pirandello",
-      "content": "",
+      "content": "Luigi Pirandello \u00e8 stato uno scrittore, drammaturgo e poeta italiano, Premio Nobel per la letteratura nel 1934. \u00c8 noto per le sue opere che esplorano temi come l'identit\u00e0, la realt\u00e0 e la follia, spesso mescolando elementi di comicit\u00e0 e tragedia. Tra le sue opere pi\u00f9 famose vi sono il romanzo \"Il fu Mattia Pascal\" e le novelle. Il suo teatro, innovativo per l'epoca, comprende opere come \"Sei personaggi in cerca d'autore\" e \"Enrico IV\".",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "29780ec4536e11e03a7a1ba2bb305bca46d8a33a811a120c8a8eb902a2e20ef6",
       "subject": "FIS",
       "title": "Paradosso dei gemelli",
-      "content": "",
+      "content": "Il paradosso dei gemelli \u00e8 un esperimento ideato nella teoria della relativit\u00e0 speciale in cui un gemello viaggia a una velocit\u00e0 prossima a quella della luce verso una stella, mentre l'altro rimane sulla Terra. Al ritorno del gemello viaggiatore, questi risulta essere invecchiato meno rispetto al fratello rimasto sulla Terra. L'apparente paradosso deriva dal fatto che, secondo la teoria della relativit\u00e0, il tempo pu\u00f2 trascorrere in modo diverso per due osservatori in moto relativo tra loro.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "ide",
+      "isAI": 1
     },
     {
       "id": "8e035fbccb151cbce3c6ad568fcc1ab82138ac563aef5aa5c596160932d7cc03",
       "subject": "STO",
       "title": "Catena di montaggio",
-      "content": "",
+      "content": "La catena di montaggio \u00e8 un metodo di produzione in serie in cui i pezzi vengono assemblati in successione su una linea di produzione. Questo sistema, introdotto da Henry Ford, consente di ridurre i tempi e i costi di produzione grazie alla specializzazione dei lavoratori e alla meccanizzazione delle operazioni. I lavoratori eseguono compiti specifici e ripetuti, aumentando l'efficienza e la velocit\u00e0 di produzione. La catena di montaggio ha rivoluzionato l'industria manifatturiera nel XX secolo.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "6a83331af345a1cf291946b3f913af9a12d682aa8f1816f8aeb4be50943963e1",
       "subject": "FIL",
       "title": "Dialettica di Hegel",
-      "content": "",
+      "content": "La dialettica di Hegel \u00e8 un concetto fondamentale della sua filosofia, che descrive il processo di sviluppo e superamento delle contraddizioni. \nLa dialettica si articola in tre momenti: tesi, antitesi e sintesi. La tesi rappresenta l'idea iniziale, l'antitesi \u00e8 la sua negazione, e la sintesi \u00e8 il risultato dell'integrazione delle due, che a sua volta diventa una nuova tesi. \nQuesto processo continua all'infinito, portando a una sempre maggiore comprensione della realt\u00e0. La dialettica hegeliana rappresenta il motore dello sviluppo storico e concettuale.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "ide",
+      "isAI": 1
     },
     {
       "id": "6d7380f76ef6d4fbdd7cc72bf27a0e9b75d5f502ca856d4175ea8d444fef57b4",
       "subject": "FIS",
       "title": "Moto elicoidale",
-      "content": "",
+      "content": "Il moto elicoidale \u00e8 il moto che compie un corpo quando effettua una rotazione attorno ad un asse e una traslazione nella direzione dello stesso asse. Un esempio di moto elicoidale \u00e8 quello di un cacciavite quando, avvitandosi, ruota e avanza nella direzione del suo asse.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "bd2d319b6333e0f4a39f0ef9fecadabb8698063f88ec19306e675427554b8a2a",
       "subject": "SCI",
       "title": "Zyklon B",
-      "content": "",
+      "content": "Zyklon B era un prodotto utilizzato principalmente come insetticida e disinfestante durante la prima met\u00e0 del XX secolo. Era costituito da granuli di diatomite o altro materiale poroso imbevuto di acido cianidrico (cianuro d'idrogeno), sostanza altamente tossica. Durante la seconda guerra mondiale, i nazisti usarono Zyklon B in modo criminale nelle camere a gas dei campi di sterminio, tra cui Auschwitz-Birkenau, per uccidere milioni di persone, principalmente ebrei, rom e altri prigionieri.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "c2b2d5fe7136d14e33feb4e594441ddbdabce97d47abfb816a9914521ff259c2",
       "subject": "STO",
       "title": "Prima Guerra Mondiale",
-      "content": "",
+      "content": "La Prima Guerra Mondiale fu un conflitto globale combattuto tra il 1914 e il 1918. Venne scatenato dall'assassinio dell'arciduca Francesco Ferdinando d'Austria e coinvolse molte delle principali potenze mondiali. La guerra vide l'introduzione di nuove tecnologie militari e tattiche, come la guerra di trincea e l'uso di armi chimiche. Le conseguenze della guerra furono devastanti, con milioni di morti e feriti e profonde ripercussioni politiche e sociali in tutto il mondo.",
       "image": "",
-      "weight": 1
+      "weight": "3",
+      "field": "eve",
+      "isAI": 1
     },
     {
       "id": "dc878f4a243bdc2a0c495e0b5f4129f407fd3d0765021969fa06b14b4f5fb9a0",
       "subject": "ING",
       "title": "War Poets",
-      "content": "",
+      "content": "I War Poets erano un gruppo di scrittori e poeti britannici che scrissero principalmente durante la prima guerra mondiale. Tra i pi\u00f9 noti ci sono Wilfred Owen, Siegfried Sassoon e Isaac Rosenberg, che descrissero le terribili condizioni di vita e di combattimento nelle trincee. Le loro opere sono considerate tra le pi\u00f9 grandi poesie di guerra di tutti i tempi. I loro scritti esprimono l'orrore e la tragedia della guerra.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "b96523bcb6d81f822acfdca9c25f3aacda0931d7f6bb2fedd37d9e61e1e2681a",
       "subject": "STO",
       "title": "Pellagra",
-      "content": "",
+      "content": "La pellagra \u00e8 una malattia causata da una carenza alimentare di niacina (vitamina B3) o del suo precursore, il triptofano. Questa condizione \u00e8 caratterizzata da sintomi noti come \"le 4 D\": diarrea, dermatite, demenza e, se non trattata, morte. La pellagra pu\u00f2 essere prevenuta e trattata con una dieta equilibrata ricca di alimenti contenenti niacina e triptofano, come carne, pesce, cereali integrali e legumi.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "f22c8c5199143cbd657383625b3e00b3915a73b7815b52e58b3142b2bbc80da5",
       "subject": "SCI",
       "title": "Metabolismo",
-      "content": "",
+      "content": "Il metabolismo \u00e8 l'insieme delle reazioni biochimiche e dei processi che avvengono all'interno degli organismi viventi per mantenere la vita. Comprende due aspetti fondamentali: il catabolismo, ovvero la degradazione delle molecole complesse in sostanze pi\u00f9 semplici con rilascio di energia, e l'anabolismo, ovvero la sintesi di molecole complesse a partire da sostanze pi\u00f9 semplici con consumo di energia. Il metabolismo \u00e8 essenziale per il funzionamento delle cellule e per sostenere le varie attivit\u00e0 dell'organismo.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "a816c57831c5cc018614bcc21d2fbf81ce920d28b5393a24ac213645736b0d59",
       "subject": "ING",
       "title": "Roaring '20s",
-      "content": "",
+      "content": "I Roaring '20s, o \"Anni Ruggenti\", si riferiscono al decennio degli anni '20 del XX secolo, caratterizzato da un periodo di prosperit\u00e0 economica, avanzamenti tecnologici e cambiamenti sociali significativi negli Stati Uniti e in Europa. Questo periodo \u00e8 noto per il boom economico, l'emergere del cinema sonoro, il jazz, l'Art D\u00e9co e un'atmosfera generale di ottimismo e indulgenza prima della Grande Depressione.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "eve",
+      "isAI": 1
     },
     {
       "id": "95d0fd9687c5574d173ce58e08887b54ded60379ddfa40ae4b7f5e7bc0eaf2c1",
       "subject": "ITA",
       "title": "Decadentismo",
-      "content": "",
+      "content": "Il Decadentismo \u00e8 un movimento letterario e artistico emerso alla fine del XIX secolo, caratterizzato da un profondo senso di crisi e sfiducia nei valori tradizionali. Gli artisti decadenti esplorano temi come la malinconia, la sensualit\u00e0, l'esotismo e la morbosit\u00e0, spesso intrecciati con una ricerca estetica raffinata e un'attenzione maniacale per il dettaglio. Figure chiave del movimento includono Charles Baudelaire, Oscar Wilde e Gabriele D'Annunzio, i cui lavori riflettono una fascinazione per il lato oscuro della natura umana e una critica alla societ\u00e0 borghese.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "mov",
+      "isAI": 1
     },
     {
       "id": "78d26cb8aa99a94e8feab0a14d2e882093d3812ee7e3142490fdda9f59711d0e",
       "subject": "ING",
       "title": "Suffragettes",
-      "content": "",
+      "content": "Le Suffragettes erano un movimento di donne che, alla fine del XIX e all'inizio del XX secolo, lottarono per ottenere il diritto al voto, principalmente nel Regno Unito e negli Stati Uniti. Note per le loro tattiche militanti, che includevano marce, scioperi della fame e atti di disobbedienza civile, le Suffragettes sfidarono le norme sociali e politiche dell'epoca. Il loro impegno e sacrificio contribuirono significativamente all'adozione di leggi che riconobbero il diritto di voto alle donne, segnando un passo fondamentale verso l'uguaglianza di genere.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "mov",
+      "isAI": 1
     },
     {
       "id": "4f101cf6b464db013e673ee53375aebd0f2ec40d55c69d67855d77de69814093",
       "subject": "ING",
       "title": "James Joyce",
-      "content": "",
+      "content": "James Joyce \u00e8 stato uno dei pi\u00f9 influenti scrittori del XX secolo, noto per le sue opere sperimentali e innovative. Nato a Dublino, Irlanda, nel 1882, Joyce \u00e8 celebre per romanzi come \"Ulisse\" e \"Finnegans Wake\", che hanno rivoluzionato la letteratura moderna con il loro uso del flusso di coscienza e la complessit\u00e0 strutturale. Il suo lavoro esplora temi di identit\u00e0, esilio e la condizione umana, spesso ambientati nella sua citt\u00e0 natale. Joyce ha avuto un impatto duraturo sulla letteratura e la critica letteraria, influenzando generazioni di scrittori con il suo approccio unico e sperimentale alla narrativa.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "b39b08d47462d7f6336782488bc4ea5ca8a3f87238d03a09dfffa09ec03a6341",
       "subject": "FIL",
       "title": "Bergson",
-      "content": "",
+      "content": "Henri Bergson (1859-1941) \u00e8 stato un filosofo francese noto per il suo approccio intuitivo e vitale alla filosofia. Le sue opere principali, come \"Materia e memoria\" e \"L'evoluzione creatrice\", esplorano concetti quali la durata, l'intuizione e l'\u00e9lan vital, mettendo in risalto la natura dinamica e fluida della realt\u00e0. Bergson ha influenzato significativamente il pensiero del XX secolo, spaziando dalla filosofia alla letteratura e alla psicologia, con il suo rifiuto del determinismo meccanicistico e la sua enfasi sulla libert\u00e0 e la creativit\u00e0 umana.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "f8f97d20b665fd5bd159abf20428c748d38287d8471b5db27f7181758bc13145",
       "subject": "FIL",
       "title": "Freud",
-      "content": "",
+      "content": "Sigmund Freud, noto come il padre della psicoanalisi, \u00e8 stato un neurologo e psichiatra austriaco. Ha sviluppato teorie rivoluzionarie sul funzionamento della mente umana, introducendo concetti come l'inconscio, il complesso di Edipo e i meccanismi di difesa. Freud ha esplorato l'importanza dei sogni come via d'accesso all'inconscio e ha proposto un modello della psiche suddivisa in Es, Io e Super-Io. Le sue idee hanno avuto un impatto profondo sulla psicologia, la psichiatria e la cultura in generale.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "2aa51d0c8fd5a6171bab47e490719f6b4f2f30988ceba3c03a6f1b1a07fc32b6",
       "subject": "ING",
       "title": "Dr. Jekyll & Mr. Hyde",
-      "content": "",
+      "content": "\"Dr. Jekyll & Mr. Hyde\" \u00e8 un celebre romanzo scritto da Robert Louis Stevenson, pubblicato nel 1886. La storia esplora la doppia personalit\u00e0 del dottor Henry Jekyll, un rispettato medico londinese, che crea una pozione per separare il bene dal male dentro di s\u00e9. Questo esperimento d\u00e0 vita a Edward Hyde, una manifestazione malvagia e incontrollabile del suo io. Il romanzo \u00e8 una riflessione profonda sulla natura umana e sulla lotta interna tra il bene e il male.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "wor",
+      "isAI": 1
     },
     {
       "id": "7ae8c157b78e1c3c29ebe9036a97f3feaf8c804c379b55c1c3e26071cad491ca",
       "subject": "ITA",
       "title": "Eugenio Montale",
-      "content": "",
+      "content": "Eugenio Montale (1896-1981) \u00e8 stato uno dei pi\u00f9 importanti poeti italiani del XX secolo. Vincitore del Premio Nobel per la Letteratura nel 1975, Montale \u00e8 noto per la sua poesia ermetica e introspettiva, che esplora temi come la solitudine, la natura e la condizione umana. Le sue opere principali includono \"Ossi di seppia\" (1925) e \"La bufera e altro\" (1956), che hanno avuto un impatto duraturo sulla letteratura italiana. Montale \u00e8 apprezzato per la sua capacit\u00e0 di combinare una profonda sensibilit\u00e0 lirica con una riflessione filosofica sulla vita e l'esistenza.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "873fb4b5664e382495bad406baabe27c99cdc69bb20497b8f17fee4debead790",
       "subject": "FIS",
       "title": "Onde",
-      "content": "",
+      "content": "Le onde sono perturbazioni che trasportano energia da un punto a un altro senza che ci sia un trasferimento netto di materia. Possono manifestarsi in vari mezzi, come l'acqua, l'aria o il vuoto, e includono fenomeni come le onde sonore, le onde elettromagnetiche e le onde sismiche. Le onde sono caratterizzate da propriet\u00e0 come lunghezza d'onda, frequenza e ampiezza, che determinano il loro comportamento e le loro interazioni con l'ambiente circostante.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "65673fe84153679a1af6c3054f08f10e4ce1199d943f8d20dcda6e19a00b49b3",
       "subject": "SCI",
       "title": "Onde sismiche",
-      "content": "",
+      "content": "Le onde sismiche sono vibrazioni che si propagano attraverso la Terra a seguito di un terremoto o di un'esplosione. Esistono diversi tipi di onde sismiche, tra cui le onde P (primarie), che si muovono attraverso solido, liquido e gas, e le onde S (secondarie), che possono propagarsi solo attraverso i solidi. Le onde superficiali, come le onde Love e Rayleigh, viaggiano lungo la superficie terrestre e sono responsabili della maggior parte dei danni causati dai terremoti. L'analisi delle onde sismiche \u00e8 fondamentale per comprendere la struttura interna della Terra e per sviluppare sistemi di prevenzione e mitigazione dei rischi sismici.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "8cf75a85402eff3d02979ecddf1c2c988c96e5823968bd0012afd042d2833905",
       "subject": "SCI",
       "title": "Fondali oceanici",
-      "content": "",
+      "content": "I fondali oceanici rappresentano una delle parti meno esplorate del nostro pianeta, coprendo circa il 70% della superficie terrestre. Questi ambienti estremi, caratterizzati da pressioni elevate, temperature basse e assenza di luce solare, ospitano una biodiversit\u00e0 unica e sconosciuta. Le spedizioni scientifiche utilizzano tecnologie avanzate come sottomarini e robot per studiare questi ecosistemi, scoprendo nuove specie e comprendendo meglio il funzionamento degli oceani. La conservazione dei fondali oceanici \u00e8 cruciale per la salute del pianeta, poich\u00e9 giocano un ruolo fondamentale nei cicli biogeochimici e nella regolazione del clima.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "30e01c4431d700cbb06c6e61ba99098d04e2fc809cecc9029fdac9b0a95fec58",
       "subject": "SCI",
       "title": "Iprite",
-      "content": "",
+      "content": "Le iprite sono una famiglia di composti chimici utilizzati come agenti vescicanti nelle armi chimiche. La pi\u00f9 nota \u00e8 l'iprite solforosa, conosciuta anche come \"gas mostarda\". Questi agenti causano gravi ustioni chimiche e danni ai tessuti, compromettendo principalmente la pelle, gli occhi e le vie respiratorie. L'uso delle iprite \u00e8 vietato dalle convenzioni internazionali a causa dei loro effetti devastanti e del loro impatto duraturo sulle vittime.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "953d9b9d5c7c5f5bfc1308b6171bbdbe305616c32e748d9aeddc6915f50fd03b",
       "subject": "SCI",
       "title": "Biodiesel",
-      "content": "",
+      "content": "Il biodiesel \u00e8 un combustibile rinnovabile derivato da oli vegetali, grassi animali o grassi riciclati, come l'olio da cucina usato. \u00c8 prodotto attraverso un processo chimico chiamato transesterificazione, che converte gli oli e i grassi in esteri metilici e glicerina. Il biodiesel pu\u00f2 essere utilizzato in motori diesel senza necessit\u00e0 di modifiche significative e offre vantaggi ambientali, come la riduzione delle emissioni di gas serra e di altri inquinanti rispetto al diesel tradizionale.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "c23027f661dd7b52b5a6b8bed7f0bdaaa2da5cea3fad341c148c515a23576468",
       "subject": "ITA",
       "title": "Pascoli",
-      "content": "",
+      "content": "Giovanni Pascoli (1855-1912) \u00e8 stato uno dei pi\u00f9 importanti poeti italiani del tardo XIX e inizio XX secolo. Noto per il suo stile lirico e intimista, Pascoli ha contribuito significativamente alla letteratura italiana con opere come \"Myricae\" e \"Canti di Castelvecchio\", che riflettono temi di natura, vita rurale e sentimenti personali. La sua poesia \u00e8 caratterizzata da una profonda sensibilit\u00e0 e da un uso raffinato del linguaggio, che lo hanno reso una figura centrale del decadentismo italiano.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "5082d5a69800d2fb8d1620946d9b297e536f71144233c39fb89fd3497163c374",
       "subject": "STO",
       "title": "Conquista della Libia",
-      "content": "",
+      "content": "La Conquista della Libia \u00e8 un evento storico che si riferisce principalmente alle campagne militari italiane nel XX secolo, iniziate nel 1911 durante la Guerra italo-turca e culminate con l'occupazione completa del territorio libico nel 1931. Questo periodo \u00e8 caratterizzato da conflitti e repressioni, con l'Italia che cercava di stabilire un controllo coloniale sulla regione, incontrando resistenza da parte delle popolazioni locali. La conquista ha avuto un impatto duraturo sulla storia e la societ\u00e0 libica.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "eve",
+      "isAI": 1
     },
     {
       "id": "b9a57830c21f79843eebb2e926fd2b0ddf94d62987c4678d660260f2aaba30a2",
       "subject": "STO",
       "title": "Migrazioni italiane",
-      "content": "",
+      "content": "Le migrazioni italiane rappresentano un fenomeno storico significativo che ha avuto luogo principalmente tra la fine del XIX secolo e l'inizio del XX secolo. Milioni di italiani, spinti da fattori economici, sociali e politici, lasciarono il loro paese alla ricerca di migliori opportunit\u00e0 di vita e lavoro. Le destinazioni principali furono le Americhe, l'Australia e l'Europa occidentale. Queste migrazioni hanno avuto un impatto duraturo sia sulla demografia italiana che sui paesi di destinazione, influenzando le culture, le economie e le societ\u00e0 di entrambe le parti.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "eve",
+      "isAI": 1
     },
     {
       "id": "3320498c295bf76fa68c3b999526edc4c61ad282e3048e05a320874abfd7fe3d",
       "subject": "ITA",
       "title": "Gabriele d\u2019Annunzio",
-      "content": "",
+      "content": "Gabriele d'Annunzio (1863-1938) \u00e8 stato uno dei pi\u00f9 importanti scrittori, poeti e drammaturghi italiani del XIX e XX secolo. Conosciuto per il suo stile decadente e la sua vita avventurosa, d'Annunzio ha influenzato profondamente la letteratura e la politica italiana. Le sue opere, tra cui \"Il piacere\" e \"Il trionfo della morte\", esplorano temi di sensualit\u00e0, bellezza e decadenza. Oltre alla sua carriera letteraria, d'Annunzio \u00e8 noto per il suo ruolo politico e militare, culminato nell'impresa di Fiume nel 1919.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "43338cfcd8a5aed516eba9861669ac10d06749e8fa0e09c3715e27bff127c18a",
       "subject": "STO",
       "title": "Nuove tecnologie",
-      "content": "",
+      "content": "Le nuove tecnologie rappresentano un campo in continua evoluzione che include innovazioni come l'intelligenza artificiale, la realt\u00e0 aumentata, l'Internet delle Cose (IoT) e la blockchain. Queste tecnologie stanno trasformando vari settori, migliorando l'efficienza, la sicurezza e la qualit\u00e0 della vita. Dall'automazione industriale alla medicina personalizzata, le nuove tecnologie offrono soluzioni innovative per affrontare le sfide globali e creare nuove opportunit\u00e0 economiche e sociali.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "53db39d1fa32e35496ef55289e50f7471ebf4d1b3e4758ad444fdc6a2c733a07",
       "subject": "ITA",
       "title": "Rapporto del letterato con la politica",
-      "content": "",
+      "content": "Il rapporto del letterato con la politica \u00e8 un tema complesso e multisfaccettato che esplora come gli scrittori e gli intellettuali interagiscono con le dinamiche del potere, le ideologie e le questioni sociali. Storicamente, molti letterati hanno utilizzato le loro opere per criticare, sostenere o riflettere sulle realt\u00e0 politiche del loro tempo, influenzando l'opinione pubblica e contribuendo al dibattito civile. La loro voce pu\u00f2 essere potente, ma spesso si trova in bilico tra la libert\u00e0 di espressione e le pressioni esterne, che possono variare dalla censura alla cooptazione da parte dei regimi politici.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "bf8fe2067d1c177dac8175a4e38c3589ebbb790fb089dbbf12baeee837d1a9e2",
       "subject": "CIV",
       "title": "Sostenibilit\u00e0 ambientale",
-      "content": "",
+      "content": "La sostenibilit\u00e0 ambientale si riferisce alla pratica di utilizzare le risorse naturali in modo da garantire che siano disponibili per le generazioni future. Questo concetto implica la protezione degli ecosistemi, la riduzione dell'inquinamento e il promuovere pratiche di consumo e produzione sostenibili. La sostenibilit\u00e0 ambientale mira a creare un equilibrio tra le esigenze economiche, sociali e ambientali, promuovendo uno sviluppo che non comprometta la capacit\u00e0 degli ecosistemi di rigenerarsi.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "05e4e9692ace1ef69b5c2451d80e32b6d9194c7b9fde0bcaf82358627376f783",
       "subject": "ITA",
       "title": "Ruolo della letteratura",
-      "content": "",
+      "content": "La letteratura svolge un ruolo fondamentale nella societ\u00e0, agendo come uno specchio che riflette le esperienze umane, le emozioni e le culture. Attraverso racconti, poesie, drammi e altri generi, la letteratura offre un mezzo per esplorare e comprendere la condizione umana, promuovendo l'empatia, la riflessione critica e l'immaginazione. Essa contribuisce alla conservazione della memoria storica e alla diffusione di idee e valori, influenzando profondamente l'identit\u00e0 individuale e collettiva. Inoltre, la letteratura \u00e8 un potente strumento di educazione e di cambiamento sociale, capace di ispirare e trasformare le persone e le comunit\u00e0.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "d651921ef11215ba1e29cde33bfc377fafaea6616ac9d9fd57dd433978e5caae",
       "subject": "ITA",
       "title": "Verga",
-      "content": "",
+      "content": "Giovanni Verga (1840-1922) \u00e8 uno dei pi\u00f9 importanti scrittori italiani del XIX secolo, noto per la sua opera di rinnovamento del romanzo e del teatro. \u00c8 celebre soprattutto per il ciclo narrativo \"I Vinti\" e per il romanzo \"I Malavoglia\", che rappresentano la vita delle classi umili in Sicilia con un realismo crudo e una profonda comprensione umana. Verga \u00e8 considerato uno dei padri del verismo, un movimento letterario che mirava a rappresentare la realt\u00e0 senza abbellimenti, spesso focalizzandosi sulle condizioni di vita delle classi pi\u00f9 disagiate.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "16ea2a8a91f691461c2293334d29a8e846d8b3925ff5c7785383ad2932ef8d72",
       "subject": "STO",
       "title": "Fascismo",
-      "content": "",
+      "content": "Il fascismo \u00e8 un'ideologia politica e un movimento che emerse in Europa all'inizio del XX secolo, con l'Italia come epicentro sotto la guida di Benito Mussolini. Caratterizzato da un forte nazionalismo, autoritarismo, e la soppressione delle libert\u00e0 individuali, il fascismo proponeva un sistema di governo centralizzato e totalitario. Esso si basava su una retorica di rinascita nazionale, unit\u00e0 sociale e militarismo, spesso accompagnata da politiche repressive contro oppositori politici e minoranze. Il fascismo ha avuto un impatto duraturo sulla storia mondiale, influenzando vari regimi e movimenti anche al di fuori dell'Italia.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "isAI": 1
     },
     {
       "id": "a445f1b81ca6670e106f66c697980dbaaffecaf44dc1abb477e2ad36ba12d4b0",
       "subject": "STO",
       "title": "Totalitarismi",
-      "content": "",
+      "content": "Il totalitarismo \u00e8 un sistema politico in cui il governo esercita un controllo totale su tutti gli aspetti della vita pubblica e privata dei cittadini. Questo sistema \u00e8 caratterizzato da una leadership autoritaria, la soppressione delle libert\u00e0 individuali, la censura e la manipolazione dell'informazione, e l'uso della forza per mantenere il controllo. Esempi storici di regimi totalitari includono la Germania nazista, l'Unione Sovietica sotto Stalin e la Cina sotto Mao Zedong. Il totalitarismo si distingue da altre forme di autoritarismo per la sua penetrazione completa nella societ\u00e0 e la sua ideologia onnicomprensiva.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "isAI": 1
     },
     {
       "id": "b0af587203c5322381ab7276152ccaf3bde68f132f6006614905d3ec9cbf3e45",
       "subject": "SCI",
       "title": "Pitture ariliche",
-      "content": "",
+      "content": "Le pitture acriliche sono un tipo di vernice a base d'acqua che utilizza resine acriliche come legante. Queste pitture sono apprezzate per la loro versatilit\u00e0, resistenza e rapidit\u00e0 di asciugatura. Possono essere utilizzate su una variet\u00e0 di superfici, inclusi tela, legno, carta e metallo, rendendole una scelta popolare sia per artisti che per artigiani. Le pitture acriliche sono disponibili in una vasta gamma di colori e possono essere facilmente miscelate per ottenere tonalit\u00e0 uniche, offrendo agli artisti una grande libert\u00e0 creativa.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "08472f6d7bab0e003a246eff16f23eb42aeb5899f79abf44948c5432945b5f0d",
       "subject": "ART",
       "title": "Teoria dei colori",
-      "content": "",
+      "content": "La teoria dei colori \u00e8 lo studio scientifico e artistico dell'uso del colore. Essa esplora come i colori si mescolano, si combinano e si contrastano, influenzando le percezioni visive e le emozioni umane. La teoria dei colori \u00e8 fondamentale in vari campi, tra cui l'arte, il design, la moda e la pubblicit\u00e0, dove la scelta dei colori pu\u00f2 trasmettere significati e creare armonia o dissonanza visiva. Inoltre, essa considera gli aspetti psicologici e culturali del colore, come le associazioni emotive e simboliche che variano tra le diverse culture.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "f9d6b0d8a1b3db5795e4fdd0de2d896fd069ada2c7ad20550f447fd04b0f0664",
       "subject": "ITA",
       "title": "Alla stazione in una mattina d\u2019autunno",
-      "content": "",
+      "content": "Alla stazione in una mattina d\u2019autunno, l'aria \u00e8 frizzante e le foglie cadute formano un tappeto colorato sul marciapiede. I viaggiatori si affrettano verso i binari, avvolti in cappotti e sciarpe, mentre il vapore del caff\u00e8 si alza dalle tazze. Il treno in arrivo annuncia il suo ingresso con un fischio lontano, e il trambusto della routine quotidiana si mescola con la malinconia della stagione.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "wor",
+      "isAI": 1
     },
     {
       "id": "3410e627c5f91cb7a0382b3b490d677954ffc6f337fa6c38dc12314da5043f6c",
       "subject": "ITA",
       "title": "Carducci",
-      "content": "",
+      "content": "Giosu\u00e8 Carducci (1835-1907) \u00e8 stato uno dei pi\u00f9 importanti poeti e letterati italiani del XIX secolo. Noto per il suo fervente patriottismo e il suo impegno nella causa risorgimentale, Carducci \u00e8 celebre per le sue opere poetiche che spaziano dalla celebrazione della natura alla riflessione storica e politica. La sua poesia \u00e8 caratterizzata da una forte componente classica e da un linguaggio ricco e solenne. Nel 1906, Carducci ricevette il Premio Nobel per la Letteratura, diventando il primo italiano a ottenere tale riconoscimento.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "aa9cecc0fad31c0e202c8495f6a7223df1b0ad8aba2fc8ffef3718fb9f989f04",
       "subject": "ITA",
       "title": "Forse che s\u00ec forse che no",
-      "content": "",
+      "content": "\"Forse che s\u00ec forse che no\" \u00e8 un film muto italiano del 1920, diretto da Mario Bonnard. La pellicola \u00e8 nota per essere il debutto cinematografico di Pietro Mascagni, celebre compositore italiano, che interpret\u00f2 il ruolo di protagonista. La trama ruota attorno a un triangolo amoroso e alle vicende drammatiche che ne derivano, con una particolare attenzione alla musica e alla sua capacit\u00e0 di esprimere emozioni profonde.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "wor",
+      "isAI": 1
     },
     {
       "id": "c2dc98682bb064afb6766c7a4eb1b02a6d06f164b56b145b672987860180699f",
       "subject": "ART",
       "title": "Impressionismo",
-      "content": "",
+      "content": "L'Impressionismo \u00e8 un movimento artistico nato in Francia alla fine del XIX secolo, caratterizzato da pennellate visibili, uso vibrante del colore e rappresentazione della luce naturale. Gli impressionisti, come Claude Monet e Pierre-Auguste Renoir, cercavano di catturare l'impressione fugace di un momento, spesso dipingendo en plein air (all'aperto). Questo movimento ha rivoluzionato l'arte tradizionale, introducendo una nuova libert\u00e0 espressiva e tecnica.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "mov",
+      "isAI": 1
     },
     {
       "id": "e5d34e749d5c0af18cbae93eda7bfb876119ff02b5da19ef44ad383715d0ad0c",
       "subject": "ART",
       "title": "Salvador Dal\u00ec",
-      "content": "",
+      "content": "Salvador Dal\u00ed (1904-1989) \u00e8 stato un celebre pittore, scultore e cineasta surrealista spagnolo, noto per le sue opere bizzarre e oniriche. Le sue creazioni, come \"La persistenza della memoria\" con gli orologi molli, esplorano i sogni e l'inconscio, influenzate dalle teorie psicoanalitiche di Sigmund Freud. Dal\u00ed ha collaborato anche con registi come Luis Bu\u00f1uel e ha lasciato un'impronta indelebile nell'arte del XX secolo con il suo stile unico e provocatorio.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "75dfecb8645e9a0cbeae4d57acbee68e96c2094e6b893fcb26ea23a4c72a0dbf",
       "subject": "ING",
       "title": "Aestheticism",
-      "content": "",
+      "content": "L'Aestheticism \u00e8 un movimento artistico e letterario sorto nella seconda met\u00e0 del XIX secolo, principalmente in Inghilterra e Francia. Esso enfatizza l'importanza dell'estetica e della bellezza come valori supremi, spesso a discapito di considerazioni morali, politiche o sociali. Gli aderenti a questo movimento, come Oscar Wilde e Walter Pater, sostenevano che l'arte deve essere apprezzata per se stessa e non per il suo messaggio o utilit\u00e0. La filosofia dell'Aestheticism promuove l'idea che la vita dovrebbe essere vissuta con un forte senso di stile e bellezza, influenzando vari campi come la letteratura, la pittura e il design.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "mov",
+      "isAI": 1
     },
     {
       "id": "6973c65fba777f40b5bbfd62280879ca748a1e005c061e09df34a01108e24aeb",
       "subject": "ING",
       "title": "Oscar Wilde",
-      "content": "",
+      "content": "Oscar Wilde (1854-1900) \u00e8 stato uno scrittore, poeta e drammaturgo irlandese, noto per il suo spirito arguto e il suo stile di vita eccentrico. Le sue opere pi\u00f9 celebri includono \"Il ritratto di Dorian Gray\" e \"L'importanza di chiamarsi Ernesto\", che esplorano temi di moralit\u00e0, estetica e identit\u00e0. Wilde \u00e8 anche ricordato per il suo processo e la successiva condanna per omosessualit\u00e0, che rovin\u00f2 la sua carriera e la sua reputazione. Nonostante ci\u00f2, il suo contributo alla letteratura e alla cultura rimane significativo.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "3588d5dddf249aed8511f2908cfbb12e06d0ab960a9380ff75cfdaf9646b5822",
       "subject": "ITA",
       "title": "Vento di barbarie sulla speculazione edilizia",
-      "content": "",
+      "content": "\"Vento di barbarie sulla speculazione edilizia\" \u00e8 un'espressione che evoca una critica severa verso le pratiche speculative nel settore immobiliare. Queste pratiche spesso portano a sviluppi urbani irrazionali e non sostenibili, privilegiando il profitto a scapito della qualit\u00e0 della vita, dell'ambiente e delle comunit\u00e0 locali. La speculazione edilizia pu\u00f2 alimentare fenomeni come l'aumento dei prezzi degli immobili, la gentrificazione e la distruzione di spazi pubblici, creando tensioni sociali ed economiche.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "field": "wor",
+      "isAI": 1
     },
     {
       "id": "c065a3b9694d832510037ed5ae9fd0acf04e40cfafe41b3cb0bcaf9573bbf69e",
       "subject": "STO",
       "title": "Seconda Guerra Mondiale",
-      "content": "",
+      "content": "La Seconda Guerra Mondiale, combattuta dal 1939 al 1945, \u00e8 stato il pi\u00f9 grande e devastante conflitto della storia, coinvolgendo oltre 30 paesi e causando milioni di vittime. Iniziata con l'invasione tedesca della Polonia nel 1939, la guerra vide l'alleanza delle Potenze dell'Asse (Germania, Italia e Giappone) contro gli Alleati (principalmente Stati Uniti, Unione Sovietica, Regno Unito e Francia). Il conflitto si concluse con la resa incondizionata della Germania nel maggio 1945 e del Giappone nell'agosto dello stesso anno, dopo i bombardamenti atomici di Hiroshima e Nagasaki.",
       "image": "",
-      "weight": 1
+      "weight": "3",
+      "field": "eve",
+      "isAI": 1
     },
     {
       "id": "3fbcb6a9b5d70dcb357ddc52f30baceb70638e5e72cbd290c2fccaf099434633",
       "subject": "STO",
       "title": "Nazismo",
-      "content": "",
+      "content": "Il Nazismo, o Nazionalsocialismo, \u00e8 un'ideologia politica totalitaria sviluppata in Germania negli anni '20 e '30 sotto la guida di Adolf Hitler. Questo movimento si basa su principi di estremo nazionalismo, razzismo e antisemitismo, promuovendo la supremazia della razza ariana e la necessit\u00e0 di spazio vitale (Lebensraum) per il popolo tedesco. Il Nazismo port\u00f2 alla dittatura in Germania, alla persecuzione di gruppi etnici e politici, e culmin\u00f2 nella Seconda Guerra Mondiale e nell'Olocausto.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "29e22290f12188b10e493ad9938eb9053f1f4914b11b4d4c0ee073012bc098c7",
       "subject": "MAT",
       "title": "Derivate",
-      "content": "",
+      "content": "Le derivate sono uno strumento fondamentale dell'analisi matematica e rappresentano il tasso di variazione di una funzione in un punto specifico. La derivata di una funzione \\( f(x) \\) in un punto \\( x_0 \\) misura quanto rapidamente la funzione cambia quando \\( x \\) varia intorno a \\( x_0 \\). Le derivate sono utilizzate in vari campi, come la fisica per descrivere velocit\u00e0 e accelerazione, l'economia per analizzare tassi di crescita e la statistica per modellare l'andamento di dati. La nozione di derivata \u00e8 strettamente legata al concetto di limite e pu\u00f2 essere estesa a funzioni di pi\u00f9 variabili attraverso le derivate parziali.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "3e1b37b3c1621bfd83299604a30f4c79fe1bf27f8349ff6c71396acb771b5485",
       "subject": "MAT",
       "title": "Integrali",
-      "content": "",
+      "content": "Gli integrali sono uno strumento fondamentale del calcolo infinitesimale che permettono di calcolare aree, volumi e altre quantit\u00e0 cumulative. Essi rappresentano la somma di infinite quantit\u00e0 infinitesimali e sono essenziali per risolvere problemi in fisica, ingegneria, economia e altre discipline scientifiche. Gli integrali possono essere definiti o indefiniti, a seconda che si considerino su un intervallo specifico o meno. La tecnica di integrazione richiede la conoscenza delle primitive delle funzioni e delle loro propriet\u00e0.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "25dc3eee0e082683f20e3c4f94fdb17aa936bf2b399a4515802e138d1d686ea1",
       "subject": "MAT",
       "title": "Limiti",
-      "content": "",
+      "content": "I limiti sono un concetto fondamentale in matematica, specialmente nel calcolo infinitesimale, che permettono di descrivere il comportamento di una funzione quando una variabile si avvicina a un certo valore. Essi possono essere utilizzati per definire derivate e integrali, che sono strumenti essenziali per studiare tassi di cambiamento e aree sotto curve. Un limite esiste se il valore della funzione si avvicina a un numero specifico mentre la variabile si avvicina a un punto dato, e pu\u00f2 essere calcolato attraverso vari metodi algebrici e analitici.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "50040ccfd5c86ce7b2655f0aecb5172d5d6b12a76deaf0838d6ad02738408b20",
       "subject": "MAT",
       "title": "Analisi",
-      "content": "",
+      "content": "L'analisi \u00e8 una disciplina matematica che studia i concetti di limite, continuit\u00e0, derivata e integrale. Essa si occupa di funzioni reali e complesse, serie infinite e problemi di approssimazione. L'analisi ha applicazioni fondamentali in fisica, ingegneria, economia e altre scienze, fornendo strumenti per modellare e comprendere fenomeni continui e variabili. \u00c8 suddivisa in vari rami, tra cui l'analisi reale, l'analisi complessa e l'analisi funzionale.",
       "image": "",
-      "weight": 1
+      "weight": "3",
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "b044c292c08b658e6938e088cdaf79eb0d03903acdcd137db53ae21c135d403e",
       "subject": "INF",
       "title": "Crittografia",
-      "content": "",
+      "content": "La crittografia \u00e8 una tecnica utilizzata per proteggere le informazioni rendendole incomprensibili a chi non ha accesso alla chiave di decodifica. Essa trasforma i dati in un formato cifrato che pu\u00f2 essere decifrato solo da chi possiede la chiave corretta. Esistono vari tipi di crittografia, tra cui la crittografia simmetrica, che utilizza la stessa chiave per cifrare e decifrare, e la crittografia asimmetrica, che utilizza una coppia di chiavi pubblica e privata. La crittografia \u00e8 fondamentale per la sicurezza delle comunicazioni digitali, come email, transazioni finanziarie e dati personali.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "885e99c5103985fa98550a05de43fc14a31bf5f2b2e58a3d8c8255678870bb82",
       "subject": "INF",
       "title": "Reti di calcolatori",
-      "content": "",
+      "content": "Le reti di calcolatori sono sistemi interconnessi di dispositivi informatici che permettono la comunicazione e la condivisione di risorse tra computer. Queste reti possono variare in scala, dai piccoli network domestici alle vaste reti aziendali e globali come Internet. Le reti di calcolatori consentono la trasmissione di dati, l'accesso a servizi remoti e la collaborazione in tempo reale, fondamentali per molte attivit\u00e0 moderne, sia personali che professionali.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "isAI": 1
     },
     {
       "id": "a4e08a257e7e1a237c3a2f0cb7db5cbb1230b564cfc2fd3967c00c1163bddbf0",
       "subject": "INF",
       "title": "Sicurezza informatica",
-      "content": "",
+      "content": "La sicurezza informatica si occupa della protezione dei sistemi informatici, delle reti e dei dati da accessi non autorizzati, attacchi malevoli e altre minacce digitali. Comprende una serie di pratiche, tecnologie e regolamenti volti a garantire la riservatezza, l'integrit\u00e0 e la disponibilit\u00e0 delle informazioni. Con l'aumento delle minacce informatiche, come virus, malware e attacchi di phishing, la sicurezza informatica \u00e8 diventata una priorit\u00e0 cruciale per individui, aziende e governi.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "60a38cdfdacbddff60439916262a2028ff0d84a1c87ae151fbb357855b70f308",
       "subject": "INF",
       "title": "Modello ISO/OSI",
-      "content": "",
+      "content": "Il modello ISO/OSI (Open Systems Interconnection) \u00e8 un framework concettuale che standardizza le funzioni di una rete di comunicazione in sette livelli distinti: Fisico, Datalink, Rete, Trasporto, Sessione, Presentazione e Applicazione. Ogni livello ha compiti specifici e interagisce con i livelli adiacenti per garantire una comunicazione efficace e strutturata tra sistemi diversi. Questo modello facilita l'interoperabilit\u00e0 e la comprensione delle reti di comunicazione, fornendo una base comune per lo sviluppo di protocolli e tecnologie.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "85a3704245566ede791ae6d35dc238f860eea039d54509aa4f1f3647b4a1f967",
       "subject": "INF",
       "title": "Protocollo TCP/IP",
-      "content": "",
+      "content": "Il protocollo TCP/IP \u00e8 un insieme di regole che governa la comunicazione su Internet e molte reti private. \u00c8 composto da due protocolli principali: il TCP (Transmission Control Protocol), che garantisce la trasmissione affidabile dei dati, e l'IP (Internet Protocol), che si occupa dell'indirizzamento e del routing dei pacchetti di dati. TCP/IP \u00e8 fondamentale per il funzionamento di Internet, permettendo la connessione e la comunicazione tra diversi dispositivi e reti in tutto il mondo.",
       "image": "",
-      "weight": 1
+      "weight": "0.5",
+      "isAI": 1
     },
     {
       "id": "00f45d48d757d7456f28a6847229ec21c19f1e92e2cfae6d4ebfc864d296b60b",
       "subject": "FIL",
       "title": "Schopenhauer",
-      "content": "",
+      "content": "Arthur Schopenhauer (1788-1860) \u00e8 stato un filosofo tedesco noto per il suo pessimismo metafisico e la sua critica alla volont\u00e0 di vivere. Secondo Schopenhauer, la realt\u00e0 ultima \u00e8 una cieca e insaziabile volont\u00e0 che causa sofferenza e dolore. Egli sostiene che l'arte e l'ascesi possono offrire una temporanea fuga da questa condizione, ma solo la negazione completa della volont\u00e0 pu\u00f2 portare alla liberazione definitiva. La sua opera principale, \"Il mondo come volont\u00e0 e rappresentazione\", ha avuto un'influenza significativa su vari campi della filosofia e delle arti.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "e258299457474adbc12bc22ea7e0a811ce4322d0ac8e842ff289051687a32b78",
       "subject": "FIL",
       "title": "Nietzsche",
-      "content": "",
+      "content": "Friedrich Nietzsche (1844-1900) \u00e8 stato un filosofo, poeta e critico culturale tedesco, noto per le sue opere che esplorano temi come la morale, la religione e la condizione umana. \u00c8 celebre per concetti come il \"superuomo\" (\u00dcbermensch) e la \"volont\u00e0 di potenza\" (Wille zur Macht), che riflettono la sua critica alla morale tradizionale e la sua ricerca di un nuovo sistema di valori. Nietzsche \u00e8 spesso associato alla frase \"Dio \u00e8 morto\", che simboleggia la perdita di fede nelle istituzioni religiose e morali tradizionali. Le sue opere, tra cui \"Cos\u00ec parl\u00f2 Zarathustra\" e \"Al di l\u00e0 del bene e del male\", continuano a influenzare la filosofia, la letteratura e la cultura contemporanea.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "cf619bccec17abac1e52311943159d0cc0a548026c10bda5cee84132a009da4c",
       "subject": "CIV",
       "title": "Politica",
-      "content": "",
+      "content": "La politica \u00e8 l'arte di governare e gestire la vita pubblica di una comunit\u00e0, che sia una nazione, una citt\u00e0 o un'organizzazione. Essa riguarda la distribuzione del potere, la creazione di leggi e la gestione delle risorse pubbliche. La politica coinvolge vari attori, tra cui partiti, leader, cittadini e gruppi di interesse, e si manifesta attraverso processi elettorali, dibattiti pubblici e decisioni legislative. Inoltre, la politica si occupa di temi cruciali come la giustizia sociale, l'economia, la sicurezza e i diritti umani.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "abaa419f69b62c1bc76c85717f20af2db3c294272dc15bafb3ce2dc0d3e9ebc4",
       "subject": "FIS",
       "title": "Relativit\u00e0 ristretta",
-      "content": "",
+      "content": "La relativit\u00e0 ristretta, sviluppata da Albert Einstein nel 1905, \u00e8 una teoria che descrive il comportamento della materia e della radiazione elettromagnetica in sistemi di riferimento inerziali. Essa introduce concetti rivoluzionari come la relativit\u00e0 del tempo e dello spazio, la costanza della velocit\u00e0 della luce nel vuoto e l'equivalenza tra massa ed energia, espressa dalla famosa equazione \\( E = mc^2 \\). Questa teoria ha profonde implicazioni per la fisica moderna, influenzando campi come l'elettromagnetismo, la meccanica quantistica e la cosmologia.",
       "image": "",
-      "weight": 1
+      "weight": "3",
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "0ab6a866a9446511924ae67ebae579351fa3eea2ab87ac53a0b3933cf025e82a",
       "subject": "FIS",
       "title": "Elettromagnetismo",
-      "content": "",
+      "content": "L'elettromagnetismo \u00e8 una branca della fisica che studia le interazioni tra cariche elettriche e le correnti elettriche, nonch\u00e9 i campi elettrici e magnetici che queste generano. \u00c8 fondamentale per comprendere fenomeni come la luce, le onde radio e i fenomeni elettrici e magnetici. Le equazioni di Maxwell sono centrali in questa teoria, unificando elettricit\u00e0 e magnetismo in un'unica forza: l'elettromagnetismo. Questa disciplina ha applicazioni pratiche in tecnologie come le telecomunicazioni, l'elettronica e l'ingegneria elettrica.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "78e61b5bc26ac084bdc716cfc503a78a8481cc644b3a820210dad34e7bd33f8d",
       "subject": "FIS",
       "title": "Maxwell",
-      "content": "",
+      "content": "James Clerk Maxwell (1831-1879) \u00e8 stato un fisico e matematico scozzese noto soprattutto per i suoi contributi fondamentali alla teoria dell'elettromagnetismo. Le sue equazioni, note come le equazioni di Maxwell, descrivono come i campi elettrici e magnetici interagiscono e si propagano. Queste equazioni predissero l'esistenza delle onde elettromagnetiche, che includono la luce, e hanno gettato le basi per la moderna teoria dell'elettromagnetismo e la tecnologia delle comunicazioni.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "735c7cebb1dd67a1d604671ef61f5232bfcafbd6f0799a23aaa184f370d02312",
       "subject": "FIS",
       "title": "Albert Einstein",
-      "content": "",
+      "content": "Albert Einstein \u00e8 stato uno dei pi\u00f9 grandi fisici teorici della storia. Nato nel 1879, \u00e8 noto soprattutto per la teoria della relativit\u00e0, che ha rivoluzionato la comprensione dello spazio, del tempo e della gravit\u00e0. Ha ricevuto il Premio Nobel per la Fisica nel 1921 per la sua spiegazione dell'effetto fotoelettrico. Oltre ai suoi contributi scientifici, Einstein \u00e8 ricordato anche per il suo impegno pacifista e umanitario.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "d9cf864f601b6479f08ef935dbbfca10dfe93ab980dff1f3ed92cedb04274db7",
       "subject": "FIS",
       "title": "Fisica nucleare",
-      "content": "",
+      "content": "La fisica nucleare \u00e8 una branca della fisica che studia i costituenti e le interazioni del nucleo atomico. Si concentra su fenomeni come la fissione e la fusione nucleare, la radioattivit\u00e0 e le propriet\u00e0 delle particelle subatomiche. Questo campo ha applicazioni pratiche significative, tra cui l'energia nucleare, la medicina nucleare e la ricerca sui materiali. La fisica nucleare ha anche contribuito alla comprensione dell'origine e della struttura dell'universo.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "de76783e38ede7e84221906d93b0e6dacc40e8e49f2264d5e4b0679b04405a85",
       "subject": "FIS",
       "title": "Bomba atomica",
-      "content": "",
+      "content": "La bomba atomica \u00e8 un'arma di distruzione di massa che sfrutta l'energia nucleare rilasciata dalla fissione di atomi di uranio o plutonio. Le prime bombe atomiche furono sviluppate durante la Seconda Guerra Mondiale attraverso il Progetto Manhattan e furono utilizzate dagli Stati Uniti contro le citt\u00e0 giapponesi di Hiroshima e Nagasaki nel 1945. Queste esplosioni causarono devastazione senza precedenti, portando alla resa del Giappone e ponendo fine alla guerra. Da allora, la bomba atomica ha avuto un impatto profondo sulla geopolitica globale, innescando la corsa agli armamenti nucleari durante la Guerra Fredda e sollevando questioni etiche e di sicurezza internazionale.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "isAI": 1
     },
     {
       "id": "5e7b6e0a7f744513c11545b2f6f57ad97d8d2c4b7c0cdf97916aec08f2a81a6c",
       "subject": "FIS",
       "title": "J.R. Oppenheimer",
-      "content": "",
+      "content": "J.R. Oppenheimer, noto come \"il padre della bomba atomica\", fu un fisico teorico americano. Durante la Seconda Guerra Mondiale, guid\u00f2 il Progetto Manhattan, che port\u00f2 alla creazione delle prime bombe atomiche. Dopo la guerra, divenne una figura controversa a causa del suo coinvolgimento nello sviluppo delle armi nucleari e delle sue opinioni sui rischi di una corsa agli armamenti. Oppenheimer \u00e8 anche ricordato per il suo contributo alla teoria della relativit\u00e0 e alla meccanica quantistica.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "7164148d0c57a5fd4989d9205979c7dc9deafb2d9fd655e1e25aa4584eca39fe",
       "subject": "FIS",
       "title": "Meccanica quantistica",
-      "content": "",
+      "content": "La meccanica quantistica \u00e8 una teoria fondamentale della fisica che descrive il comportamento della materia e dell'energia a scale molto piccole, come quelle degli atomi e delle particelle subatomiche. A differenza della fisica classica, la meccanica quantistica introduce concetti non intuitivi come la sovrapposizione degli stati, l'entanglement e la dualit\u00e0 onda-particella. Questa teoria ha rivoluzionato la nostra comprensione del mondo microscopico e ha portato a sviluppi tecnologici significativi, come il laser e i transistor.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "0a635ede0da5cdebb91f7cc80628f648a310a49d962368b704d4be437a84007a",
       "subject": "ITA",
       "title": "Italo Svevo",
-      "content": "",
+      "content": "Italo Svevo, pseudonimo di Aron Hector Schmitz, \u00e8 stato uno dei pi\u00f9 importanti scrittori italiani del XX secolo. Nato a Trieste nel 1861, Svevo \u00e8 noto per il suo capolavoro \"La coscienza di Zeno\", un romanzo che esplora profondamente la psiche umana attraverso la psicoanalisi. La sua opera \u00e8 caratterizzata da uno stile narrativo introspettivo e da un'analisi acuta delle complessit\u00e0 dell'animo umano. Nonostante il riconoscimento tardivo, Svevo ha lasciato un'impronta indelebile nella letteratura italiana e internazionale.",
       "image": "",
-      "weight": 1
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
     },
     {
       "id": "d0cd7ef5b65d0c7d1997ecb6f787c23e5a9e8d8aefc3a9d9456a200552f44b23",
       "subject": "MAT",
       "title": "Aritmetica modulare",
-      "content": "",
+      "content": "L'aritmetica modulare \u00e8 un sistema di numeri che \"avvolge\" i numeri dopo aver raggiunto un certo valore. \u00c8 definita da un modulo \\( n \\), e due numeri sono considerati equivalenti se la loro differenza \u00e8 un multiplo di \\( n \\). Questo concetto \u00e8 fondamentale in molte aree della matematica e dell'informatica, come la criptografia, la teoria dei numeri e la programmazione. Ad esempio, in un orologio a 12 ore, l'aritmetica modulare con modulo 12 fa s\u00ec che 13 ore siano equivalenti a 1 ora.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "the",
+      "isAI": 1
     },
     {
       "id": "9a621471e703690ea42aa50befc88c184df1a0fea24a3bd7cabe99fd7ba9397f",
       "subject": "FIL",
       "title": "Positivismo",
-      "content": "",
+      "content": "Il positivismo \u00e8 una corrente filosofica e scientifica emersa nel XIX secolo, principalmente associata al pensiero di Auguste Comte. Questo movimento sostiene che l'unica conoscenza autentica \u00e8 quella scientifica, basata sull'osservazione empirica e sulla verifica sperimentale. Il positivismo si oppone al pensiero metafisico e speculativo, promuovendo l'idea che la scienza possa spiegare tutti i fenomeni naturali e sociali attraverso leggi universali. In ambito sociologico, il positivismo ha influenzato lo studio delle societ\u00e0 umane, proponendo metodi scientifici per analizzare e comprendere i comportamenti sociali.",
       "image": "",
-      "weight": 1
+      "weight": 1,
+      "field": "mov",
+      "isAI": 1
     },
     {
       "id": "607d0fca1dd059b523f5ad93fada78cd2a83814ddc9ed4ab5db7daac6d4ace03",
       "subject": "ITA",
       "title": "\u00c9mile Zola",
+      "content": "\u00c9mile Zola (1840-1902) \u00e8 stato uno dei pi\u00f9 importanti scrittori francesi del XIX secolo, noto per il suo stile realista e naturalista. \u00c8 celebre per la serie di romanzi \"Les Rougon-Macquart\", che esplora la storia di una famiglia durante il Secondo Impero francese. Zola \u00e8 anche ricordato per il suo impegno sociale e politico, in particolare per il suo ruolo nell'affare Dreyfus, dove scrisse il famoso articolo \"J'accuse\" per difendere il capitano Alfred Dreyfus, ingiustamente accusato di tradimento. La sua opera ha avuto un impatto duraturo sulla letteratura e sulla societ\u00e0 francese.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "967a8de3d1709e7e69c6eb8f588e8e6730c30813b4093df364d5dc3802ddddc0",
+      "subject": "MAT",
+      "title": "Equazioni differenziali",
+      "content": "Le equazioni differenziali sono equazioni che legano una funzione incognita alle sue derivate. Esse descrivono l'evoluzione di un sistema dinamico nel tempo e sono fondamentali in molte discipline scientifiche come la fisica, l'ingegneria e la biologia. Risolvere un'equazione differenziale significa trovare la funzione che soddisfa l'equazione e le eventuali condizioni iniziali o al contorno. Esistono metodi analitici e numerici per risolvere queste equazioni, a seconda della loro complessit\u00e0.",
+      "image": "",
+      "weight": "2",
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "69bc6a077e45e1d8bcce8eff7a70db9bb0afb8ccbc1608829a1b86688fb76dec",
+      "subject": "MAT",
+      "title": "Probabilit\u00e0 e statistica",
+      "content": "La probabilit\u00e0 e la statistica sono due discipline fondamentali della matematica che si occupano dell'analisi dei dati e della modellazione dell'incertezza. La probabilit\u00e0 studia le regole che governano il verificarsi di eventi casuali e fornisce strumenti per quantificare la probabilit\u00e0 di diversi esiti. La statistica, invece, si concentra sulla raccolta, l'analisi e l'interpretazione dei dati, utilizzando metodi per inferire propriet\u00e0 di popolazioni pi\u00f9 ampie a partire da campioni di dati osservati. Insieme, queste discipline sono essenziali per la presa di decisioni informate in vari campi, tra cui economia, medicina, ingegneria e scienze sociali.",
+      "image": "",
+      "weight": 1,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "5a2b2034c5fda499ec0db8be2e0908f77e9ace6d9e4d47d25cea551f6f94681e",
+      "subject": "ITA",
+      "title": "Il fu Mattia Pascal",
+      "content": "\"Il fu Mattia Pascal\" \u00e8 un romanzo scritto da Luigi Pirandello, pubblicato per la prima volta nel 1904. La storia segue le vicende di Mattia Pascal, un uomo che, dopo aver perso la madre e la moglie, decide di fuggire dalla sua vita monotona e soffocante. Approfittando di un caso di scambio di identit\u00e0, Mattia si reinventa come Adriano Meis, vivendo una nuova esistenza libera dai vincoli del passato. Tuttavia, il protagonista scopre che la libert\u00e0 assoluta pu\u00f2 essere altrettanto opprimente, esplorando temi come l'identit\u00e0, la solitudine e la condizione umana.",
+      "image": "",
+      "weight": 1,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "6b3171b43c7839b351addc8936f09e5be0478df5ef8252fca4e12e978e842332",
+      "subject": "FIS",
+      "title": "Spaziotempo di Minkowski",
+      "content": "Lo spaziotempo di Minkowski \u00e8 una struttura matematica fondamentale nella teoria della relativit\u00e0 ristretta di Albert Einstein. Esso combina le tre dimensioni spaziali con una dimensione temporale in un continuo quadridimensionale. La metrica di Minkowski, che descrive la geometria di questo spaziotempo, differisce dalla metrica euclidea perch\u00e9 include una segnatura che distingue tra spazio e tempo, permettendo di descrivere fenomeni come la dilatazione del tempo e la contrazione delle lunghezze. Questo modello \u00e8 essenziale per comprendere il comportamento della luce e delle particelle a velocit\u00e0 relativistiche.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "cd034b107badd22d23f211069c9247649fe3c3996ab850cc03679e0906151d54",
+      "subject": "MAT",
+      "title": "Geometria",
+      "content": "La geometria \u00e8 una branca della matematica che si occupa dello studio delle forme, delle dimensioni, delle posizioni relative e delle propriet\u00e0 spaziali degli oggetti. Essa include l'analisi di punti, linee, angoli, superfici e solidi, nonch\u00e9 le trasformazioni geometriche come traslazioni, rotazioni e riflessioni. La geometria \u00e8 fondamentale per diverse discipline, tra cui l'architettura, l'ingegneria, la fisica e la grafica computerizzata, e pu\u00f2 essere suddivisa in vari rami come la geometria euclidea, la geometria analitica e la geometria non euclidea.",
+      "image": "",
+      "weight": "2",
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "5aae22a2e1ad9714fa3c19e4a0f7684a6d81350d1bcf4be36efc6e013ba2e4da",
+      "subject": "STO",
+      "title": "Olocausto",
+      "content": "L'Olocausto, noto anche come Shoah, \u00e8 stato il genocidio sistematico e su larga scala di circa sei milioni di ebrei, perpetrato dalla Germania nazista e dai suoi collaboratori durante la Seconda Guerra Mondiale. Questo tragico evento ha comportato la persecuzione, la deportazione e l'uccisione di massa di ebrei, oltre a milioni di altre vittime, tra cui rom, disabili, prigionieri politici, omosessuali e altri gruppi considerati \"indesiderati\" dal regime nazista. L'Olocausto rappresenta uno dei capitoli pi\u00f9 oscuri della storia umana, simbolo dell'orrore e della brutalit\u00e0 del totalitarismo.",
+      "image": "",
+      "weight": 1,
+      "field": "eve",
+      "isAI": 1
+    },
+    {
+      "id": "4e9823584ec82643e0d529ac3c1f725ca5185ca06cc0cfc5543f5ec0a8499d56",
+      "subject": "ITA",
+      "title": "Ungaretti",
+      "content": "Giuseppe Ungaretti (1888-1970) \u00e8 stato uno dei pi\u00f9 importanti poeti italiani del XX secolo. La sua opera \u00e8 caratterizzata da una profonda introspezione e da un linguaggio essenziale e denso di significato. Ungaretti ha partecipato alla Prima Guerra Mondiale, esperienza che ha profondamente influenzato la sua poesia, come si evidenzia nella raccolta \"L'Allegria\" (1916). \u00c8 noto per la sua capacit\u00e0 di trasmettere emozioni intense attraverso versi brevi e incisivi, rendendolo un maestro della lirica moderna.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "fd65af0c06763312d0db11cf3c40d42e55c6bf5e4d52526b073bc017001ad908",
+      "subject": "FIL",
+      "title": "Rapporto tra materia e coscienza",
+      "content": "Il rapporto tra materia e coscienza \u00e8 un tema complesso e affascinante che coinvolge filosofia, neuroscienze e fisica. La questione centrale riguarda come la materia fisica del cervello possa dare origine a esperienze soggettive e consapevoli. Le teorie variano: alcuni sostengono che la coscienza emerga da processi fisici complessi, mentre altri propongono che la coscienza sia una propriet\u00e0 fondamentale dell'universo, indipendente dalla materia. Questo dibattito continua a stimolare ricerche e riflessioni su cosa significhi essere consapevoli e come la nostra percezione del mondo si relazioni con la realt\u00e0 fisica.",
+      "image": "",
+      "weight": "0.5",
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "a0b8a69f30606c824d0766c81fe554df5a28e3cf51e22ea6788efc1801db94ea",
+      "subject": "FIS",
+      "title": "Pendolo",
+      "content": "Il pendolo \u00e8 un dispositivo meccanico che oscilla attorno a un punto fisso sotto l'influenza della gravit\u00e0. \u00c8 composto da un peso sospeso da un filo o un'asta rigida. Il suo moto periodico \u00e8 utilizzato per misurare il tempo in orologi a pendolo e per studiare fenomeni fisici come l'oscillazione armonica e la forza gravitazionale. Inoltre, \u00e8 un esempio classico di sistema fisico semplice ma significativo per comprendere le leggi del moto.",
+      "image": "",
+      "weight": "0.5",
+      "isAI": 1
+    },
+    {
+      "id": "55277715925719bc12d220c986559499c147ce52e234421dc584f4e2f8ce5e6d",
+      "subject": "FIL",
+      "title": "Hegel",
+      "content": "Georg Wilhelm Friedrich Hegel (1770-1831) \u00e8 stato un filosofo tedesco noto per il suo sistema dialettico, che ha avuto un'influenza significativa sulla filosofia occidentale. La sua filosofia si concentra sullo sviluppo dello spirito attraverso un processo di tesi, antitesi e sintesi, che egli chiama dialettica. Hegel sostiene che la realt\u00e0 \u00e8 in continua evoluzione e che la storia \u00e8 un processo razionale verso la libert\u00e0. Le sue opere principali includono \"La Fenomenologia dello Spirito\" e \"La Scienza della Logica\".",
+      "image": "",
+      "weight": "2",
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "bb403e5b38eac7e0039759c6ba547008835de6b5f9f14d6ea1d7b68934f4f5d8",
+      "subject": "FIS",
+      "title": "Relativit\u00e0 galileiana",
+      "content": "La relativit\u00e0 galileiana \u00e8 un principio fondamentale della fisica classica che afferma l'equivalenza delle leggi della meccanica in tutti i sistemi di riferimento inerziali, ovvero quelli che si muovono con velocit\u00e0 costante l'uno rispetto all'altro. Secondo questo principio, le leggi del moto di Newton sono le stesse in tutti i sistemi inerziali, il che implica che non esiste un sistema di riferimento privilegiato per descrivere i fenomeni meccanici. Questo concetto \u00e8 stato cruciale per lo sviluppo della meccanica classica e ha gettato le basi per la successiva teoria della relativit\u00e0 di Einstein.",
+      "image": "",
+      "weight": "1.5",
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "7b7f47cc02bf8636223652654f50ec24fb1e3692c9b7b9f16c5ddff6a3b94c21",
+      "subject": "FIS",
+      "title": "Meccanica newtoniana",
+      "content": "La meccanica newtoniana, o meccanica classica, \u00e8 una branca della fisica che descrive il comportamento dei corpi macroscopici in movimento sotto l'influenza di forze esterne. Formulata da Sir Isaac Newton nel XVII secolo, si basa su tre leggi fondamentali: la legge di inerzia, la legge della dinamica e la legge di azione e reazione. Queste leggi permettono di prevedere il moto degli oggetti in vari contesti, come il movimento dei pianeti o il comportamento dei proiettili, e sono valide per situazioni in cui le velocit\u00e0 sono molto inferiori a quella della luce e le dimensioni sono significativamente pi\u00f9 grandi delle particelle subatomiche.",
+      "image": "",
+      "weight": "2",
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "9fa370bc8a6e9eba28b3a13c34911efa737c73fc1ed77eccd750537c5786c72b",
+      "subject": "SCI",
+      "title": "Chimica organica",
+      "content": "La chimica organica \u00e8 la branca della chimica che studia le propriet\u00e0 e il comportamento dei composti del carbonio, compresi gli idrocarburi e i loro derivati. Questi composti sono fondamentali per la vita e si trovano in una vasta gamma di sostanze naturali e sintetiche, come i polimeri, i farmaci e i materiali biologici. La chimica organica si occupa anche delle reazioni chimiche che coinvolgono questi composti, esplorando come possono essere sintetizzati, trasformati e utilizzati in varie applicazioni industriali e biologiche.",
+      "image": "",
+      "weight": 3.0,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "195d95a1d41ae19aecd83f0c83659d87f273688c207f100a050a03d149b3a20b",
+      "subject": "SCI",
+      "title": "Idrocarburi",
+      "content": "Gli idrocarburi sono composti organici costituiti esclusivamente da atomi di carbonio e idrogeno. Sono fondamentali per l'industria energetica, essendo i principali componenti del petrolio e del gas naturale. Gli idrocarburi possono essere classificati in vari tipi, tra cui alcani, alcheni, alchini e idrocarburi aromatici, ciascuno con propriet\u00e0 chimiche e fisiche distinte. Sono ampiamente utilizzati come combustibili, materie prime per la produzione di plastica e altri materiali sintetici, e come solventi in vari processi industriali.",
+      "image": "",
+      "weight": 1.5,
+      "isAI": 1
+    },
+    {
+      "id": "63a895bc087e4a696b097eb2149aa1ddd3fbb7f15550fbdf8a82342a6f2307de",
+      "subject": "STO",
+      "title": "Industria",
+      "content": "L'industria \u00e8 un settore economico che si occupa della produzione di beni materiali attraverso l'uso di macchinari e tecnologie avanzate. Comprende diverse categorie, come l'industria manifatturiera, mineraria e chimica. Le attivit\u00e0 industriali sono cruciali per lo sviluppo economico di un paese, creando posti di lavoro e contribuendo al progresso tecnologico. Tuttavia, l'industria deve anche affrontare sfide legate alla sostenibilit\u00e0 ambientale e alla gestione delle risorse.",
+      "image": "",
+      "weight": 2.0,
+      "isAI": 1
+    },
+    {
+      "id": "28cc649da3ea2bebf02cba37594eeaf581c952fc8c5fb28fecdc74d8696be4bd",
+      "subject": "SCI",
+      "title": "Agenti disaccoppianti",
+      "content": "Gli agenti disaccoppianti sono sostanze chimiche utilizzate principalmente in edilizia e ingegneria civile per evitare l'adesione tra diversi materiali. Essi vengono applicati su superfici come stampi, forme o casseforme per prevenire che il calcestruzzo o altri materiali aderiscano a queste superfici durante il processo di colata e indurimento. Questo facilita il distacco e il recupero delle forme, migliorando l'efficienza e la qualit\u00e0 del lavoro.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "869aff4fc820a25388335f9c80f8e6560aabf28d5d92e76c0b90f16164f8fdb5",
+      "subject": "SCI",
+      "title": "Veleno",
+      "content": "Il veleno \u00e8 una sostanza che, quando introdotta o assorbita dal corpo, pu\u00f2 causare danni fisici o morte. Esistono vari tipi di veleni, tra cui tossine di origine animale (come il veleno dei serpenti), vegetale (come la belladonna), e sintetici (come alcuni pesticidi). Gli effetti del veleno possono variare notevolmente a seconda della dose, del tipo di veleno e della via di esposizione (ingestione, inalazione, contatto cutaneo). La tossicit\u00e0 \u00e8 spesso misurata in termini di LD50, la dose letale per il 50% della popolazione testata.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "2d0c67d3072879db0608531024f1bac559f08bdb2be6912af013076bb38a6ff2",
+      "subject": "STO",
+      "title": "Nazionalismo",
+      "content": "Il nazionalismo \u00e8 un'ideologia politica che enfatizza la lealt\u00e0 e l'orgoglio verso la propria nazione, spesso promuovendo l'idea che gli interessi nazionali dovrebbero prevalere su quelli individuali o internazionali. Esso pu\u00f2 manifestarsi attraverso vari aspetti, come la difesa della cultura nazionale, la promozione della lingua e delle tradizioni locali, e il sostegno a politiche economiche e sociali che favoriscono il benessere della nazione. Tuttavia, il nazionalismo pu\u00f2 anche assumere forme estreme, portando a conflitti etnici e razziali, e a politiche isolazioniste o aggressive verso altri paesi.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "f9353f233d572796e2f69af7e1d2e317e42a7087887d8c4ca020ef89001f7059",
+      "subject": "STO",
+      "title": "URSS",
+      "content": "L'Unione delle Repubbliche Socialiste Sovietiche (URSS) fu una federazione di repubbliche socialiste che esistette dal 1922 al 1991. Fondata dopo la Rivoluzione Russa del 1917, l'URSS era governata dal Partito Comunista e si caratterizzava per un'economia centralizzata e pianificata. Durante la Guerra Fredda, l'URSS era la principale rivale degli Stati Uniti e delle nazioni occidentali. La sua dissoluzione nel 1991 port\u00f2 alla nascita di 15 nuovi stati indipendenti.",
+      "image": "",
+      "weight": 2.0,
+      "isAI": 1
+    },
+    {
+      "id": "84fb322380cb3843ca4c857ca7276cea9f89d1962c4e090e00d04924f43624bb",
+      "subject": "STO",
+      "title": "Adolf Hitler",
+      "content": "Adolf Hitler (1889-1945) fu il leader del Partito Nazionalsocialista Tedesco dei Lavoratori (NSDAP), noto come Partito Nazista, e cancelliere della Germania dal 1933 al 1945. Durante il suo regime, instaur\u00f2 una dittatura totalitaria caratterizzata da un'ideologia estremista che includeva il razzismo, l'antisemitismo e l'espansionismo. Le sue politiche portarono alla Seconda Guerra Mondiale e all'Olocausto, con conseguenze devastanti per l'Europa e il mondo intero. Hitler si suicid\u00f2 nel suo bunker a Berlino il 30 aprile 1945, mentre l'esercito sovietico avanzava sulla citt\u00e0.",
+      "image": "",
+      "weight": 2.0,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "a335e5c4d1b85d14970f06f5d299898bb25b167a3ea6a0ec65e1b01e05220c7f",
+      "subject": "STO",
+      "title": "Benito Mussolini",
+      "content": "Benito Mussolini (1883-1945) \u00e8 stato un politico, giornalista e dittatore italiano, fondatore del fascismo. Sal\u00ec al potere nel 1922 e guid\u00f2 l'Italia fino alla sua caduta nel 1943. Durante il suo regime, instaur\u00f2 un governo autoritario, soppresse le libert\u00e0 civili e persegu\u00ec politiche imperialiste e militariste. La sua alleanza con la Germania nazista port\u00f2 l'Italia nella Seconda Guerra Mondiale, con conseguenze disastrose per il paese. Fu catturato e giustiziato dai partigiani italiani alla fine della guerra.",
+      "image": "",
+      "weight": 2.0,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "673281b1db1c6ad530388fb9ff4bfef85b19f9c662f9e89b16f674276140c65f",
+      "subject": "STO",
+      "title": "Stalin",
+      "content": "Stalin, il cui vero nome era Iosif Vissarionovi\u010d D\u017euga\u0161vili, fu un politico e dittatore sovietico che govern\u00f2 l'Unione Sovietica dal 1927 fino alla sua morte nel 1953. Sotto la sua leadership, l'URSS sub\u00ec una profonda trasformazione economica e sociale, con la collettivizzazione dell'agricoltura e l'industrializzazione forzata. Stalin \u00e8 noto per il suo regime totalitario, caratterizzato da purghe, repressioni politiche e violazioni dei diritti umani, che culminarono nel Grande Terrore degli anni '30. La sua figura rimane controversa, con alcuni che lo vedono come un eroe nazionale e altri come un tiranno responsabile di milioni di morti.",
+      "image": "",
+      "weight": 2.0,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "96e18563bbc5016cfaf571cbb2fbe4f8be586cfca9be09432ad7730f4f3bff8c",
+      "subject": "STO",
+      "title": "Ford",
+      "content": "Ford Motor Company, comunemente nota come Ford, \u00e8 una delle pi\u00f9 grandi aziende automobilistiche al mondo, fondata da Henry Ford nel 1903. Con sede a Dearborn, Michigan, Ford \u00e8 famosa per aver introdotto metodi di produzione di massa come la catena di montaggio, che ha rivoluzionato l'industria automobilistica. L'azienda produce una vasta gamma di veicoli, tra cui automobili, camion e SUV, ed \u00e8 nota per modelli iconici come la Ford Mustang e il Ford F-150. Ford \u00e8 anche impegnata nello sviluppo di tecnologie avanzate, inclusi veicoli elettrici e sistemi di guida autonoma.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "b7c686fcd0e6bc0de50f1b4d596034cf4fabb0c745fcd7398a825a953eafc0de",
+      "subject": "STO",
+      "title": "Comunismo",
+      "content": "Il comunismo \u00e8 un sistema politico ed economico che promuove l'abolizione della propriet\u00e0 privata e la gestione collettiva dei mezzi di produzione. Nato dalle idee di Karl Marx e Friedrich Engels, il comunismo mira a creare una societ\u00e0 senza classi, dove i beni e le risorse sono distribuiti equamente tra tutti i membri della comunit\u00e0. Storicamente, vari paesi hanno adottato forme di governo comunista, con risultati e interpretazioni diverse, influenzando profondamente la politica e l'economia globale.",
+      "image": "",
+      "weight": 2.0,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "ec56516f4b871ec68fdd0434002bd6d19a90069b38b479517d34d6fd5c58faaf",
+      "subject": "CIV",
+      "title": "Economia",
+      "content": "L'economia \u00e8 la scienza sociale che studia come individui, imprese, governi e nazioni allocano le risorse limitate per soddisfare i bisogni e i desideri della societ\u00e0. Essa si occupa di analizzare la produzione, la distribuzione e il consumo di beni e servizi, nonch\u00e9 le dinamiche di mercato, i cicli economici e le politiche economiche. L'economia si divide in due principali branche: la microeconomia, che si concentra sul comportamento individuale e delle imprese, e la macroeconomia, che esamina l'economia nel suo complesso, includendo aspetti come l'inflazione, la disoccupazione e il PIL.",
+      "image": "",
+      "weight": 2.0,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "8c8ecc573e5aca7e8d34c0bcf554206bb0bca71ed0153f29a9392c6c16dfbc9e",
+      "subject": "MAT",
+      "title": "Processo stocastico",
+      "content": "Un processo stocastico \u00e8 una collezione di variabili aleatorie che rappresentano l'evoluzione di un sistema nel tempo. Ogni variabile aleatoria nel processo descrive lo stato del sistema in un particolare momento, e l'insieme delle variabili aleatorie forma una sequenza temporale. Questi processi sono utilizzati per modellare fenomeni che variano in modo casuale, come il movimento delle particelle, i prezzi delle azioni, o il comportamento di sistemi complessi. Le propriet\u00e0 di un processo stocastico sono spesso descritte attraverso parametri come la media, la varianza e la correlazione tra i vari stadi temporali.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "82459311e6a8d86c1b90c3369a27de12ed7465f028fab52a520e8d80e4a577bb",
+      "subject": "STO",
+      "title": "Crollo della Borsa di Wall Street",
+      "content": "Il crollo della Borsa di Wall Street, spesso associato al celebre evento del 1929, fu un collasso finanziario che segn\u00f2 l'inizio della Grande Depressione. Il 24 ottobre 1929, noto come \"Gioved\u00ec Nero\", vide un'ondata di vendite che caus\u00f2 un crollo dei prezzi delle azioni. Nei giorni successivi, il panico si intensific\u00f2, culminando nel \"Marted\u00ec Nero\" del 29 ottobre, quando i mercati persero miliardi di dollari. Questo evento ebbe conseguenze devastanti sull'economia globale, portando a una crisi economica che dur\u00f2 per anni.",
+      "image": "",
+      "weight": 2.0,
+      "field": "eve",
+      "isAI": 1
+    },
+    {
+      "id": "040cc1e49ed4acf3eccb48b8a028e62da179a7cf4eb56ba07bbb2dd542c8b41a",
+      "subject": "CIV",
+      "title": "Inflazione",
       "content": "",
       "image": "",
       "weight": 1

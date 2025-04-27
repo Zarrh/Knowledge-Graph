@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Node from './Node'
 import Connector from './Connector'
+import Title from './Title'
 
-import { subjectsColors } from '../data'
-import { radius, dispersionRadius, connectorWidth } from '../data/config'
+import { subjectsColors, subjectNames, fieldContents } from '../data'
+import { radius, dispersionRadius, connectorWidth, zoomIntensity, nodesColor, border } from '../data/config'
+import { σ, getRandomInt, getRandomSign } from '../functions'
 
 
 const WIDTH = window.innerWidth*10
@@ -23,22 +25,21 @@ const centers = subjectKeys.map((subj, index) => ({
 }));
 
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-
-const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
+const Graph = ({ nodes, edges, path=[], isEditor=null, setIsEditor=()=>{} }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
     nodes.map((node) => ({
       id: node.id,
-      x: centers.find(center => center.subj === node.subject).x + getRandomInt(-dispersionRadius, dispersionRadius),
-      y: centers.find(center => center.subj === node.subject).y + getRandomInt(-dispersionRadius, dispersionRadius),
+      x: centers.find(center => center.subj === node.subject).x + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
+      y: centers.find(center => center.subj === node.subject).y + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
       subj: node.subject,
       title: node.title,
-      content: node.description,
+      content: node.content,
       image: null,
+      weight: parseFloat(node.weight),
+      radius: radius*parseFloat(node.weight),
+      field: node.field ?? null,
+      isAI: node.isAI ?? false,
     }))
   );
 
@@ -51,8 +52,6 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
   const handleWheel = (e) => {
     e.preventDefault()
     
-    // Zoom sensitivity
-    const zoomIntensity = 0.05
     const delta = e.deltaY < 0 ? 1 + zoomIntensity : 1 - zoomIntensity
 
     const mouseX = e.clientX
@@ -173,20 +172,47 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
         cursor: isPanning.current ? 'grabbing' : 'grab',
       }}
     >
+      {/* Titles */}
+      {centers.map((center) => (
+        <Title
+          key={center.subj}
+          x={center.x}
+          y={center.y}
+        >
+          {subjectNames[center.subj]}
+        </Title>
+      ))}
       {/* Connectors */}
-      {localEdges.map((edge, i) => {
-        const from = nodesPositions.find(n => n.id === edge.from)
-        const to = nodesPositions.find(n => n.id === edge.to)
+      <svg
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          pointerEvents: 'none',
+        }}
+      >
+        {localEdges.map((edge, i) => {
+          const from = nodesPositions.find(n => n.id === edge.from)
+          const to = nodesPositions.find(n => n.id === edge.to)
 
-        return (
-          <Connector
-            key={i}
-            from={{ x: from.x + radius / 2, y: from.y + radius / 2, subj: from.subj }}
-            to={{ x: to.x + radius / 2, y: to.y + radius / 2, subj: to.subj }}
-            width={connectorWidth}
-          />
-        )
-      })}
+          return (
+            <Connector
+              key={i}
+              from={{ x: from.x + from.radius / 2, y: from.y + from.radius / 2, subj: from.subj }}
+              to={{ x: to.x + to.radius / 2, y: to.y + to.radius / 2, subj: to.subj }}
+              highlight={
+                path.length > 1 &&
+                path.some(node => node.id === edge.from) &&
+                path.some(node => node.id === edge.to) &&
+                edge.from !== edge.to
+              }
+              width={connectorWidth}
+            />
+          )
+        })}
+      </svg>
 
       {/* Nodes */}
       {nodesPositions.map((node) => (
@@ -194,13 +220,15 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
           key={node.id}
           x={node.x}
           y={node.y}
-          radius={radius}
-          color="#787487"
+          radius={node.radius}
+          color={nodesColor}
           borderColor={subjectsColors[node.subj]}
-          borderWidth={5}
+          borderWidth={border}
           title={node.title}
           content={node.content}
+          field={node.field}
           image={node.image}
+          isAI={node.isAI ?? false}
           scale={scale}
           offset={offset}
           onMove={(x, y) => updateNodePosition(node.id, x, y)}
@@ -220,7 +248,7 @@ const Graph = ({ nodes, edges, isEditor=null, setIsEditor=()=>{} }) => {
             }
           }}
         >
-          {node.id}
+          <div style={{fontWeight: "bold", fontSize: 24*node.weight, fontFamily: 'sans'}}>{node.field ? fieldContents[node.field] : "ς"}</div>
         </Node>
       ))}
     </div>
