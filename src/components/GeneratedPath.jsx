@@ -18,7 +18,6 @@ const GeneratedPath = ({ nodes }) => {
           <div key={index} style={{padding: '2px'}}>
             <div style={{display: 'flex', justifyContent: 'space-between', gap: '20px'}}>
               <h2 style={{width: '50%', opacity: 0.9, fontSize: 28, fontWeight: 'bold'}}>{node.title}</h2>
-              {/* <h2 style={{color: subjectsColors[node.subject] ?? 'white', fontSize: 28}}>{node.subject}</h2> */}
               <div style={{
                 color: subjectsColors[node.subject] ?? 'white', 
                 fontSize: 28, display: 'flex', 

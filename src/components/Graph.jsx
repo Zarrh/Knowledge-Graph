@@ -25,23 +25,6 @@ const centers = subjectKeys.map((subj, index) => ({
 }))
 
 
-// Random distribution
-// const getNodesPositions = (nodes) => {
-//   return (nodes.map((node) => ({
-//     id: node.id,
-//     x: node.subject ? centers.find(center => center.subj === node.subject).x + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign() : CENTER[0] + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
-//     y: node.subject ? centers.find(center => center.subj === node.subject).y + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign() : CENTER[1] + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
-//     subj: node.subject ?? null,
-//     title: node.title,
-//     content: node.content,
-//     image: null,
-//     weight: parseFloat(node.weight),
-//     radius: radius*parseFloat(node.weight),
-//     field: node.field ?? null,
-//     isAI: node.isAI ?? false,
-//   })))
-// }
-
 
 const getNodesPositions = (nodes) => {
 
@@ -97,7 +80,7 @@ const getNodesPositions = (nodes) => {
 }
 
 
-const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, isEditor=null, setIsEditor=()=>{} }) => {
+const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
     getNodesPositions(nodes)
@@ -262,7 +245,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
           pointerEvents: 'none',
         }}
       >
-        {linksActive && localEdges.map((edge, i) => {
+        {linksActive && edges.map((edge, i) => {
           const from = nodesPositions.find(n => n.id === edge.from)
           const to = nodesPositions.find(n => n.id === edge.to)
 
@@ -301,7 +284,6 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
           scale={scale}
           offset={offset}
           onMove={(x, y) => updateNodePosition(node.id, x, y)}
-          isEditing={false}
           onClick={() => {}}
         >
           <div style={{fontWeight: "bold", fontSize: 24*node.weight, fontFamily: 'sans'}}>{node.field ? fieldContents[node.field] : "ς"}</div>

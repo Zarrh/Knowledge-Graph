@@ -29,9 +29,6 @@ const ActiveSubjects = ({ hoveredSubject=null, setHoveredSubject=() => {}, activ
         return (
           <div key={index} onClick={() => handleClick(subj)} onMouseEnter={() => setHoveredSubject(subj)} onMouseLeave={() => setHoveredSubject(null)} style={{zIndex: 200, cursor: 'grab'}}>
             {Icon && <Icon style={{color: subjectsColors[subj] && activeSubjects.includes(subj) ? subjectsColors[subj] : 'white', fontSize: 32, opacity: hoveredSubject === subj ? 1.0 : 0.7}} />}
-            {/* <span style={{fontWeight: 'bold', fontSize: 26, color: subjectsColors[subj] ?? 'white', opacity: 0.7}}>
-              {subj}
-            </span> */}
           </div>
         )
       })}

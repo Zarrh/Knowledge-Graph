@@ -12,7 +12,6 @@ const GlassBall = ({ x, y, rev=false, radius, from, to }) => {
         width: radius,
         height: radius,
         borderRadius: '50%',
-        // backgroundColor: 'white',
         background: `radial-gradient(circle at 30% 50%, ${from}, ${to})`,
         boxShadow: `10px 10px 30px ${to}`,
         overflow: 'hidden',

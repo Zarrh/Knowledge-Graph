@@ -7,14 +7,6 @@ import { adjacency, getRandomInt, shuffle } from '../functions'
 
 const Home = () => {
 
-  const [isEditor, setIsEditor] = useState(false)
-
-  const toggleEditor = () => {
-    const newValue = !isEditor
-    setIsEditor(newValue)
-    return
-  }
-
   const [hoveredSubject, setHoveredSubject] = useState(null)
 
   const [linksActive, setLinksActive] = useState(true)
@@ -233,17 +225,6 @@ const Home = () => {
         // display: 'table',
       }}
     >
-      <div
-        className='Editor-Switch'
-        style={{
-          position: 'fixed',
-          top: '2.5%',
-          left: '1.0%',
-          zIndex: 200,
-        }}
-      >
-        <input type="checkbox" className="theme-checkbox" onChange={toggleEditor} checked={isEditor} />
-      </div>
 
       <div
         className='Active-subjects'
@@ -324,7 +305,7 @@ const Home = () => {
       >
         <GeneratedPath nodes={path}/>
       </div>
-      <Graph nodes={nodes} edges={edges} path={path} hoveredSubject={hoveredSubject} linksActive={linksActive} isEditor={isEditor} setIsEditor={setIsEditor} />
+      <Graph nodes={nodes} edges={edges} path={path} hoveredSubject={hoveredSubject} linksActive={linksActive} />
     </div>
   )
 }

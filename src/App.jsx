@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
 import { AnimatePresence, motion } from 'framer-motion'
-// import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './global/Home'
 import Introduction from './global/Introduction'
@@ -12,14 +11,6 @@ function App() {
   const [currentPage, setCurrentPage] = useState("introduction")
 
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     {/* <Route path="/about" element={<About />} /> */}
-    //     {/* Catch-all for 404s */}
-    //     {/* <Route path="*" element={<NotFound />} /> */}
-    //   </Routes>
-    // </Router>
     <AnimatePresence mode="wait">
       {currentPage === "introduction" && (
         <motion.div
