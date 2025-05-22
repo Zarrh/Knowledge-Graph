@@ -3,7 +3,7 @@ import Node from './Node'
 import Connector from './Connector'
 import Title from './Title'
 
-import { subjectsColors, subjectNames, fieldContents } from '../data'
+import { subjectsColors, subjectNames, fieldContents, subjectIcons } from '../data'
 import { radius, dispersionRadius, connectorWidth, zoomIntensity, nodesColor, border } from '../data/config'
 import { σ, getRandomInt, getRandomSign } from '../functions'
 
@@ -22,26 +22,86 @@ const centers = subjectKeys.map((subj, index) => ({
   subj: subj,
   x: r * Math.cos((2 * π * index) / N) + CENTER[0],
   y: -r * Math.sin((2 * π * index) / N) + CENTER[1],
-}));
+}))
 
 
-const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
+// Random distribution
+// const getNodesPositions = (nodes) => {
+//   return (nodes.map((node) => ({
+//     id: node.id,
+//     x: node.subject ? centers.find(center => center.subj === node.subject).x + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign() : CENTER[0] + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
+//     y: node.subject ? centers.find(center => center.subj === node.subject).y + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign() : CENTER[1] + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
+//     subj: node.subject ?? null,
+//     title: node.title,
+//     content: node.content,
+//     image: null,
+//     weight: parseFloat(node.weight),
+//     radius: radius*parseFloat(node.weight),
+//     field: node.field ?? null,
+//     isAI: node.isAI ?? false,
+//   })))
+// }
+
+
+const getNodesPositions = (nodes) => {
+
+  const nodesPositions = [];
+
+  [...Object.keys(subjectNames), "NIL"].forEach((subj) => {
+
+    let subjNodes = new Array()
+
+    if (subj === "NIL") {
+      subjNodes = nodes.filter(node => !node.subject || node.subject === "")
+    }
+    else {
+      subjNodes = nodes.filter(node => node.subject === subj)
+    }
+
+    let rings = new Object()
+    
+    for (const node of subjNodes) {
+      if (Object.keys(rings).includes(node.weight.toString())) {
+        rings[node.weight.toString()].push(node)
+        continue
+      }
+      rings[node.weight.toString()] = [node]
+    }
+
+    const sortedRings = Object.keys(rings)
+      .sort((a, b) => parseFloat(a) - parseFloat(b))
+      .reduce((obj, key) => {
+        obj[key] = rings[key]
+        return obj
+      }, {})
+
+    Object.values(sortedRings).forEach((ring, i) => {
+      nodesPositions.push(
+        ...ring.map((node, j) => ({
+          id: node.id,
+          x: subj === "NIL" ? CENTER[0] + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).x + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length),
+          y: subj === "NIL" ? CENTER[1] + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).y + (i+1)*dispersionRadius/3*Math.sin((2 * π * j) / ring.length),
+          subj: node.subject ?? null,
+          title: node.title,
+          content: node.content,
+          image: null,
+          weight: parseFloat(node.weight),
+          radius: radius*parseFloat(node.weight),
+          field: node.field ?? null,
+          isAI: node.isAI ?? false,
+        }))
+      )
+    })
+  })
+  return nodesPositions
+}
+
+
+const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, isEditor=null, setIsEditor=()=>{} }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
-    nodes.map((node) => ({
-      id: node.id,
-      x: centers.find(center => center.subj === node.subject).x + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
-      y: centers.find(center => center.subj === node.subject).y + getRandomInt(dispersionRadius/3, dispersionRadius)*getRandomSign(),
-      subj: node.subject,
-      title: node.title,
-      content: node.content,
-      image: null,
-      weight: parseFloat(node.weight),
-      radius: radius*parseFloat(node.weight),
-      field: node.field ?? null,
-      isAI: node.isAI ?? false,
-    }))
-  );
+    getNodesPositions(nodes)
+  )
 
   const [scale, setScale] = useState(0.1)
   const [offset, setOffset] = useState({ x: 0, y: 0 })
@@ -90,10 +150,37 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
   }
 
   const handleMouseUp = () => {
-    isPanning.current = false;
-    document.removeEventListener('mousemove', handleMouseMove);
-    document.removeEventListener('mouseup', handleMouseUp);
-  };
+    isPanning.current = false
+    document.removeEventListener('mousemove', handleMouseMove)
+    document.removeEventListener('mouseup', handleMouseUp)
+  }
+
+  const handleTouchStart = (e) => {
+    if (e.target === e.currentTarget && e.touches.length === 1) {
+      isPanning.current = true
+      const touch = e.touches[0]
+      panStart.current = { x: touch.clientX - offset.x, y: touch.clientY - offset.y }
+      document.addEventListener('touchmove', handleTouchMove, { passive: false })
+      document.addEventListener('touchend', handleTouchEnd)
+    }
+  }
+  
+  const handleTouchMove = (e) => {
+    if (!isPanning.current || e.touches.length !== 1) return
+    e.preventDefault()
+    const touch = e.touches[0]
+    const newOffset = {
+      x: touch.clientX - panStart.current.x,
+      y: touch.clientY - panStart.current.y,
+    }
+    setOffset(newOffset)
+  }
+  
+  const handleTouchEnd = () => {
+    isPanning.current = false
+    document.removeEventListener('touchmove', handleTouchMove)
+    document.removeEventListener('touchend', handleTouchEnd)
+  }
 
   const updateNodePosition = (id, newX, newY) => {
     setNodesPositions(prev =>
@@ -119,6 +206,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
     <div
       ref={containerRef}
       onMouseDown={handleMouseDown}
+      onTouchStart={handleTouchStart}
       style={{
         transform: `translate(${offset.x}px, ${offset.y}px) scale(${scale})`,
         transformOrigin: '0 0',
@@ -128,20 +216,41 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
         position: 'relative',
         backgroundColor: '#18171c',
         cursor: isPanning.current ? 'move' : 'grab',
+        touchAction: 'none',
       }}
     >
       {/* Titles */}
-      {centers.map((center) => (
-        <Title
-          key={center.subj}
-          x={center.x}
-          y={center.y}
-          color={hoveredSubject === center.subj ? subjectsColors[center.subj] : 'white'}
-          opacity={hoveredSubject === center.subj ? 0.75 : 0.25}
-        >
-          {subjectNames[center.subj]}
-        </Title>
-      ))}
+      {centers.map((center) => {
+        const Icon = subjectIcons[center.subj]
+        return (
+          <div key={center.subj}>
+            <Title
+              x={center.x}
+              y={center.y}
+              color={hoveredSubject === center.subj ? subjectsColors[center.subj] : 'white'}
+              opacity={hoveredSubject === center.subj ? 0.75 : 0.25}
+            >
+              {subjectNames[center.subj]}
+            </Title>
+            <div 
+              style={{
+                position: 'absolute',
+                left: center.x,
+                top: center.y,
+                color: `${hoveredSubject === center.subj ? subjectsColors[center.subj] : '#9c9c9c'}`,
+                opacity: `${hoveredSubject === center.subj ? 0.35 : 0.05}`,
+                transform: 'translate(-50%, -50%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 0,
+                fontSize: 792,
+              }}
+            >
+              {Icon && <Icon />}
+            </div>
+          </div>
+      )})}
       {/* Connectors */}
       <svg
         style={{
@@ -153,7 +262,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
           pointerEvents: 'none',
         }}
       >
-        {edges.map((edge, i) => {
+        {linksActive && localEdges.map((edge, i) => {
           const from = nodesPositions.find(n => n.id === edge.from)
           const to = nodesPositions.find(n => n.id === edge.to)
 
@@ -182,7 +291,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null }) => {
           y={node.y}
           radius={node.radius}
           color={nodesColor}
-          borderColor={subjectsColors[node.subj]}
+          borderColor={subjectsColors[node.subj] ?? "white"}
           borderWidth={border}
           title={node.title}
           content={node.content}

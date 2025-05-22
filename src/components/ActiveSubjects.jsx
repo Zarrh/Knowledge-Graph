@@ -1,7 +1,18 @@
 import React from 'react'
-import { activeSubjects, subjectsColors, subjectIcons } from '../data'
+import { subjectsColors, subjectIcons } from '../data'
 
-const ActiveSubjects = ({ hoveredSubject=null, setHoveredSubject=() => {} }) => {
+const ActiveSubjects = ({ hoveredSubject=null, setHoveredSubject=() => {}, activeSubjects, setActiveSubjects }) => {
+
+  const subjectKeys = Object.keys(subjectsColors)
+
+  const handleClick = (subject) => {
+    if (activeSubjects.includes(subject)) {
+      setActiveSubjects(activeSubjects.filter(subj => subj !== subject))
+      return
+    }
+    setActiveSubjects(content => [...content, subject])
+  }
+
   return (
     <div
       style={{
@@ -13,11 +24,11 @@ const ActiveSubjects = ({ hoveredSubject=null, setHoveredSubject=() => {} }) => 
       }}
     >
       {/* <h2>Subjects:</h2> */}
-      {activeSubjects.map((subj, index) => {
+      {subjectKeys.map((subj, index) => {
         const Icon = subjectIcons[subj]
         return (
-          <div key={index} onMouseEnter={() => setHoveredSubject(subj)} onMouseLeave={() => setHoveredSubject(null)} style={{zIndex: 200, cursor: 'grab'}}>
-            {Icon && <Icon style={{color: subjectsColors[subj] ?? 'white', fontSize: 32, opacity: hoveredSubject === subj ? 1.0 : 0.7}} />}
+          <div key={index} onClick={() => handleClick(subj)} onMouseEnter={() => setHoveredSubject(subj)} onMouseLeave={() => setHoveredSubject(null)} style={{zIndex: 200, cursor: 'grab'}}>
+            {Icon && <Icon style={{color: subjectsColors[subj] && activeSubjects.includes(subj) ? subjectsColors[subj] : 'white', fontSize: 32, opacity: hoveredSubject === subj ? 1.0 : 0.7}} />}
             {/* <span style={{fontWeight: 'bold', fontSize: 26, color: subjectsColors[subj] ?? 'white', opacity: 0.7}}>
               {subj}
             </span> */}

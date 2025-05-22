@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
+    "framer-motion": "^12.11.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.0",
     "react-spring": "^9.7.5"
   },
   "devDependencies": {
