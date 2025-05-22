@@ -9,4 +9,4 @@ export const dispersionRadius = 800
 
 
 // Zoom sensitivity
-export const zoomIntensity = 0.075
+export const zoomIntensity = 0.300

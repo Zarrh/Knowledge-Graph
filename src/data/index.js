@@ -59,7 +59,7 @@ export const subjectNames = {
 }
 
 
-export const activeSubjects = [
+export const defaultActiveSubjects = [
   "ITA",
   "STO",
   "FIL",

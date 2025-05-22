@@ -5,6 +5,7 @@ import Title from "./Title"
 import GeneratedPath from "./GeneratedPath"
 import Legend from "./Legend"
 import ActiveSubjects from "./ActiveSubjects"
+import GlassBall from "./GlassBall"
 
 export {
   Node,
@@ -14,4 +15,5 @@ export {
   GeneratedPath,
   Legend,
   ActiveSubjects,
+  GlassBall,
 }
