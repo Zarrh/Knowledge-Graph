@@ -46,8 +46,18 @@ const Introduction = ({ setPage }) => {
           Skip introduction
         </button>
       </div>
-      <GlassBall x={-100} y={-100} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
-      <GlassBall x={-100} y={-100} rev={true} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
+      <div style={{
+        width: '10%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        position: 'absolute',
+        textAlign: 'center',
+        fontSize: 24,
+        bottom: '5%',
+        opacity: 0.5,
+      }}>
+        Luca Fagaraz
+      </div>
     </div>
   )
 }

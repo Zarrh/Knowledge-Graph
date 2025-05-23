@@ -2,8 +2,6 @@
 import React from 'react'
 import { nodes, edges, subjectNames } from '../data'
 
-import { GlassBall } from '../components'
-
 const Statistics = ({ setPage }) => {
   return (
     <div style={{
@@ -63,7 +61,7 @@ const Statistics = ({ setPage }) => {
         textAlign: 'center',
         gap: '2rem',
       }}>
-        <button className='start-btn'>
+        <button className='start-btn' onClick={() => setPage('explanation')}>
           <span></span>
           <span></span>
           <span></span>
@@ -73,8 +71,8 @@ const Statistics = ({ setPage }) => {
           Skip introduction
         </button>
       </div>
-      <GlassBall x={-100} y={-100} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
-      <GlassBall x={-100} y={-100} rev={true} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
+      {/* <GlassBall x={-100} y={-100} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
+      <GlassBall x={-100} y={-100} rev={true} radius={300} from={'#ff7ecb'} to={'#6a00f4'} /> */}
     </div>
   )
 }
