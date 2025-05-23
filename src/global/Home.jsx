@@ -147,7 +147,7 @@ const Home = () => {
     }
 
     let success = false
-    const maxRetries = 3
+    const maxRetries = 5
     let counter = 0
     const startingIndex = getRandomInt(0, activeNodes.length-1)
     let newIndex = startingIndex

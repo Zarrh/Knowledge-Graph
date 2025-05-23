@@ -6,7 +6,7 @@ const Connector = ({ from, to, width=12, highlight=false }) => {
   const [hovered, setHovered] = useState(false)
 
   const springStyle = useSpring({
-    opacity: hovered ? 1 : 0.4,
+    opacity: hovered ? 1 : 0.3,
     config: { tension: 170, friction: 26 },
   })
 

@@ -289,6 +289,24 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true })
           <div style={{fontWeight: "bold", fontSize: 24*node.weight, fontFamily: 'sans'}}>{node.field ? fieldContents[node.field] : "ς"}</div>
         </Node>
       ))}
+      <div
+        onMouseDown={handleMouseDown}
+        onTouchStart={handleTouchStart}
+        style={{
+          position: 'absolute',
+          zIndex: -1,
+          width: '800rem',
+          height: '800rem',
+          background: 'radial-gradient(circle,rgb(42, 40, 47) 0%, #18171c 40%)',
+          left: CENTER[0],
+          top: CENTER[1],
+          transform: 'translate(-50%, -50%)',
+          borderRadius: '50%',
+          cursor: isPanning.current ? 'move' : 'grab',
+          touchAction: 'none',
+        }}
+      >
+      </div>
     </div>
   )
 }
