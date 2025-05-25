@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react'
 import { useSpring, animated } from 'react-spring'
-import { invertColor } from '../functions'
+import { darkenColor, invertColor } from '../functions'
 
 import { fieldNames, fieldContents } from '../data'
 
 const Node = ({ 
-  x, y, radius, color, borderColor, borderWidth, title, content, image, onMove, onClick, isEditing, scale, offset, children, field, isAI=false 
+  x, y, radius, color="#ffffff", textColor, title, content, image, onMove, onClick, isEditing, scale, offset, children, field, isAI=false 
 }) => {
   const [pos, setPos] = useState({ x: x, y: y })
   const [isExpanded, setIsExpanded] = useState(false)
@@ -14,6 +14,8 @@ const Node = ({
   const nodeRef = useRef(null)
   const dragging = useRef(false)
   const mouseOffset = useRef({ x: 0, y: 0 })
+
+  const darkColor = darkenColor(color, 40)
 
   const handleMouseDown = (e) => {
     dragging.current = true
@@ -54,8 +56,10 @@ const Node = ({
       width: isExpanded ? 400 : radius,
       borderRadius: isExpanded ? '12px': '50%',
       transform: isExpanded ? 'scale(1.2)' : 'scale(1)',
-      backgroundColor: (hovered & !isExpanded) ? invertColor(color) : color,
-      color: hovered ? "#18171c" : "white",
+      // backgroundColor: (hovered & !isExpanded) ? invertColor(color) : color,
+      // color: hovered ? invertColor(textColor) : textColor,
+      background: `radial-gradient(circle, ${hovered ? color : darkColor} 30%, ${hovered ? darkColor : color} 70%)`,
+      color: !isExpanded ? textColor : 'white',
     },
     config: { tension: 200, friction: 20 },
   })
@@ -96,18 +100,19 @@ const Node = ({
           width: props.width,
           height: !isExpanded ? radius : 'auto',
           borderRadius: props.borderRadius,
-          backgroundColor: props.backgroundColor,
           cursor: 'grab',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           color: props.color,
           userSelect: 'none',
-          border: 'solid',
-          borderColor: borderColor ?? color,
-          borderWidth: borderWidth ?? 0,
+          // border: 'solid',
+          // borderColor: borderColor ?? color,
+          // borderWidth: borderWidth ?? 0,
           transform: props.transform,
-          zIndex: 100,
+          zIndex: isExpanded ? 200 : 100,
+          background: isExpanded ? 'black' : props.background,
+          boxShadow: `0px 0px 5px 5px ${color}`,
         }}
       >
         {/* Node Content */}
@@ -135,7 +140,7 @@ const Node = ({
             <div style={{
               width: '100%',
               height: '2px',
-              backgroundImage: `linear-gradient(to right, ${borderColor}, white)`,
+              backgroundImage: `linear-gradient(to right, ${color}, white)`,
             }}>
             </div>
             <p>{isAI && "✤"} {content}</p>

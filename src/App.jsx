@@ -9,6 +9,7 @@ import Explanation from './global/Explanation'
 import SubjectsSlide from './global/SubjectsSlide'
 
 import { GlassBall } from './components'
+import { graphic1, graphic2 } from './assets/images'
 
 function App() {
 
@@ -75,6 +76,8 @@ function App() {
       <>
         <GlassBall x={-100} y={-100} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
         <GlassBall x={-100} y={-100} rev={true} radius={300} from={'#ff7ecb'} to={'#6a00f4'} />
+        <img src={graphic1} style={{width: '700px', position: 'absolute', right: '-250px', top: '-320px', transform: 'rotate(90deg)', zIndex: -1 }}/>
+        <img src={graphic2} style={{width: '700px', position: 'absolute', left: '-300px', bottom: '-450px', transform: 'rotate(180deg)', zIndex: -1 }}/>
       </>
     )}
     </>

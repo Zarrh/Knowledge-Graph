@@ -10,3 +10,6 @@ export const dispersionRadius = 800
 
 // Zoom sensitivity
 export const zoomIntensity = 0.300
+
+
+export const dynamicWeights = true

@@ -1209,6 +1209,283 @@
       "weight": 1.5,
       "field": "wor",
       "isAI": 1
+    },
+    {
+      "id": "872624ff2f7bba5081a6cceb04f17534c2564175e641766cb1a28084f3e71d79",
+      "subject": "CIV",
+      "title": "Restauro",
+      "content": "Il restauro \u00e8 il processo di ripristino e conservazione di opere d'arte, edifici storici, manufatti archeologici e altri beni culturali danneggiati dal tempo, dall'uso o da eventi naturali. L'obiettivo principale \u00e8 preservare l'integrit\u00e0 e l'autenticit\u00e0 dell'oggetto, rispettando il pi\u00f9 possibile la sua storia e il suo valore artistico. Questo lavoro richiede competenze specifiche e l'uso di tecniche e materiali appropriati, spesso con l'ausilio di tecnologie avanzate per garantire la longevit\u00e0 del bene restaurato.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "4eed5e89bcdaed60bac550e6c56ae0a71766bacbac0076deead9562b569e8d53",
+      "subject": "",
+      "title": "Il vago e l'indefinito",
+      "content": "Il vago e l'indefinito sono concetti filosofici e linguistici che si riferiscono a espressioni o idee che non hanno confini precisi o che possono avere molteplici interpretazioni. Mentre il vago implica una mancanza di chiarezza nei dettagli specifici, l'indefinito suggerisce un'assenza di limiti chiaramente definiti. Entrambi i termini sono spesso utilizzati in discussioni filosofiche, logiche e linguistiche per analizzare come il linguaggio e il pensiero umano possano gestire l'incertezza e l'ambiguit\u00e0.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "71b6117edbade0b9896723e9af6157837e68828f3bcddd8197b30ab590d83dff",
+      "subject": "ITA",
+      "title": "Zibaldone",
+      "content": "Lo \"Zibaldone\" \u00e8 un'opera monumentale di Giacomo Leopardi, composta tra il 1817 e il 1832. Si tratta di un diario intellettuale che raccoglie riflessioni filosofiche, appunti di lettura, osservazioni sulla natura umana e frammenti di poesia. Leopardi utilizza questo diario come laboratorio di pensiero, esplorando temi come la felicit\u00e0, la noia, la memoria e il rapporto tra uomo e natura. \u00c8 considerato uno dei testi pi\u00f9 significativi della letteratura italiana per la profondit\u00e0 e l'originalit\u00e0 del suo pensiero.",
+      "image": "",
+      "weight": 1,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "d008c39803e65024030568b7a23e06592c7cf7653053fa8dc80041c4b5f403f6",
+      "subject": "ITA",
+      "title": "L'infinito - Leopardi",
+      "content": "\"L'infinito\" \u00e8 una delle liriche pi\u00f9 celebri di Giacomo Leopardi, composta nel 1819. La poesia esplora il tema dell'infinito attraverso la contemplazione di un paesaggio naturale, dove il poeta immagina spazi e tempi senza confini. Leopardi utilizza elementi come la siepe, il vento e il mare per evocare una sensazione di smarrimento e meraviglia di fronte all'immensit\u00e0 del cosmo, riflettendo sul rapporto tra l'uomo e l'infinito. La lirica \u00e8 caratterizzata da un linguaggio semplice ma profondamente evocativo, che invita il lettore a meditare sulla vastit\u00e0 dell'esistenza.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "2a561fb01e806a04ef8919f0620acf971c83be2478ae2190064ba91742dc5511",
+      "subject": "ITA",
+      "title": "La Ginestra - Leopardi",
+      "content": "\"La Ginestra\" \u00e8 una delle ultime poesie di Giacomo Leopardi, scritta nel 1836. Il componimento prende il nome dalla pianta della ginestra, simbolo di resilienza e resistenza, che cresce sui pendii del Vesuvio. Leopardi utilizza la ginestra come metafora per l'umanit\u00e0, che, nonostante le avversit\u00e0 e la sofferenza, trova il modo di sopravvivere e fiorire. La poesia riflette sulle tematiche della natura, della sofferenza umana e della capacit\u00e0 di resistere alle difficolt\u00e0, offrendo una visione pessimista ma anche di speranza.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "40f393bf0a0cd01688c96e7d106f527a9468ddcaf7b2b99a049e628e46a713ff",
+      "subject": "ITA",
+      "title": "La scapigliatura",
+      "content": "La Scapigliatura \u00e8 un movimento letterario e artistico italiano nato nella seconda met\u00e0 del XIX secolo, principalmente a Milano. Caratterizzato da un atteggiamento ribelle e anticonformista, i suoi esponenti si opposero ai valori borghesi e alle convenzioni sociali dell'epoca. Gli scrittori scapigliati, come Emilio Praga e Arrigo Boito, esplorarono temi di decadenza, malinconia e boh\u00e8me, influenzati dal Romanticismo e anticipando alcuni aspetti del Decadentismo. La Scapigliatura si distinse per il suo stile eclettico e la ricerca di nuove forme espressive, riflettendo il fermento culturale e sociale del periodo.",
+      "image": "",
+      "weight": 1,
+      "field": "mov",
+      "isAI": 1
+    },
+    {
+      "id": "f48ac7a88c8586a961d1b88e9d70588476429918e5b2e888156be85f8b7e4f53",
+      "subject": "",
+      "title": "Eclissi dell'autore",
+      "content": "\"Eclissi\" \u00e8 un romanzo scritto dall'autore italiano Giorgio Faletti, pubblicato per la prima volta nel 2005. La storia si sviluppa attorno a un'eclissi solare che avviene in un piccolo paese del nord Italia, dove un gruppo di persone si ritrova a vivere eventi drammatici e misteriosi. Faletti intreccia elementi di suspense e thriller con una narrazione avvincente, esplorando temi di amore, tradimento e destino. Il romanzo \u00e8 noto per il suo stile vivido e coinvolgente, che tiene i lettori con il fiato sospeso fino alla fine.",
+      "image": "",
+      "weight": 0.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "80cc2c549351820ea530c1552afcb4711cd45d3341657ce3b0dc52acfef98142",
+      "subject": "",
+      "title": "Populismo",
+      "content": "Il populismo \u00e8 un fenomeno politico che si basa sull'appello diretto al \"popolo\" contro le \"\u00e9lite\" percepite come corrotte o distanti. Esso tende a semplificare problemi complessi, promuovendo soluzioni radicali e immediate. Spesso, i leader populisti utilizzano un linguaggio emotivo e polarizzante per mobilitare il supporto popolare e ottenere consenso elettorale. Questo approccio pu\u00f2 portare a tensioni sociali e politiche, mettendo in discussione le istituzioni democratiche e i processi di governance tradizionali.",
+      "image": "",
+      "weight": 0.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "8f5000203369105b3c9ba0a45087d0f266c79ab50c1bc74a8f74372a7b7798ba",
+      "subject": "ITA",
+      "title": "Rosso Malpelo - Verga",
+      "content": "\"Rosso Malpelo\" \u00e8 un racconto di Giovanni Verga, pubblicato nella raccolta \"Vita dei campi\" del 1880. La storia racconta la vita di Malpelo, un ragazzo dai capelli rossi, maltrattato e disprezzato da tutti, compreso il suo stesso padre. Malpelo lavora in una cava di rena, dove affronta condizioni difficili e pericolose. Il racconto esplora temi come la solitudine, la crudelt\u00e0 umana e la lotta per la sopravvivenza, offrendo un ritratto toccante della dura realt\u00e0 dei lavoratori siciliani dell'epoca.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "84b9b2d1c90e1b506282f202d59fbe70c924e8ff82345f96458d1b63776b9a41",
+      "subject": "",
+      "title": "Darwinismo sociale",
+      "content": "Il darwinismo sociale \u00e8 una teoria che estende i principi della selezione naturale di Charles Darwin alle societ\u00e0 umane. Sviluppata principalmente nel XIX secolo, questa teoria sostiene che gli individui e i gruppi sociali pi\u00f9 forti e adatti tendono a prevalere su quelli pi\u00f9 deboli, giustificando cos\u00ec le disuguaglianze sociali ed economiche. Criticata per le sue implicazioni etiche e sociali, il darwinismo sociale \u00e8 stato spesso associato a ideologie che promuovono la competizione spietata e la sopravvivenza del pi\u00f9 forte, contribuendo a giustificare pratiche discriminatorie e oppressive.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "3d5ee27f2cea71dab7eb6735fd927a4425af495f2a94d647cd90e415576184e2",
+      "subject": "ITA",
+      "title": "I Malavoglia - Verga",
+      "content": "\"I Malavoglia\" \u00e8 un romanzo scritto da Giovanni Verga, pubblicato nel 1881. Ambientato nel piccolo villaggio di Aci Trezza, in Sicilia, l'opera racconta la storia della famiglia Toscano, soprannominata Malavoglia, e le loro lotte quotidiane per sopravvivere in un contesto di povert\u00e0 e difficolt\u00e0 economiche. Il romanzo \u00e8 considerato un capolavoro del verismo italiano, caratterizzato da un realismo crudo e da una profonda analisi delle dinamiche sociali e umane. Attraverso la narrazione, Verga esplora temi come la famiglia, il lavoro, la tradizione e la tragedia, offrendo un ritratto vivido della vita contadina e marinara dell'epoca.",
+      "image": "",
+      "weight": 1.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "0d4b3582e33ac06bd85b88ca4e5218f61c935842a52f9a6145d72c232686ef01",
+      "subject": "",
+      "title": "Il superuomo",
+      "content": "Il concetto di \"superuomo\" \u00e8 strettamente associato alla filosofia di Friedrich Nietzsche, che lo introdusse in opere come \"Cos\u00ec parl\u00f2 Zarathustra\". Il superuomo rappresenta l'ideale di un essere umano che ha trascendendo i limiti morali e intellettuali della societ\u00e0 tradizionale, vivendo secondo i propri valori e creando il proprio destino. Questo concetto sfida le convenzioni morali e religiose, promuovendo l'autoaffermazione e la creativit\u00e0 individuale come massime espressioni dell'esistenza umana.",
+      "image": "",
+      "weight": 1.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "c8b85ff91fb0540d756d843c243af479a84cc562f6cf246c802e2bd0ab9fa616",
+      "subject": "ITA",
+      "title": "Il piacere - D'Annunzio",
+      "content": "\"Il piacere\" \u00e8 un romanzo di Gabriele D'Annunzio pubblicato nel 1889, considerato uno dei capolavori del decadentismo italiano. Narra la vita di Andrea Sperelli, un esteta e aristocratico romano, e le sue relazioni amorose, esplorando temi come la ricerca del piacere, l'estetismo e la decadenza morale. L'opera \u00e8 nota per il suo stile raffinato e sensuale, che riflette l'ossessione dell'autore per la bellezza e l'arte.",
+      "image": "",
+      "weight": 1.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "da8bc75119740097a552d6db75c9a5fcdb8a16fa4300a5f24a08af22358b52a2",
+      "subject": "ITA",
+      "title": "Myricae",
+      "content": "\"Myricae\" \u00e8 una raccolta di poesie pubblicata da Giovanni Pascoli nel 1891. Il titolo, che significa \"tamerici\" in latino, riflette la scelta di Pascoli di concentrarsi su temi semplici e quotidiani, spesso legati alla natura e alla vita rurale. Le poesie di \"Myricae\" sono caratterizzate da una delicatezza e una sensibilit\u00e0 particolari, esplorando emozioni profonde e momenti di introspezione con una lingua evocativa e musicale. La raccolta \u00e8 considerata un capolavoro della poesia italiana e ha avuto un'influenza duratura sulla letteratura successiva.",
+      "image": "",
+      "weight": 1,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "3f564eee865e0bedc389fe23b37f57bccc511368896081c409c8efe5822bb86d",
+      "subject": "",
+      "title": "L'inetto",
+      "content": "\"L'inetto\" \u00e8 un romanzo di Ippolito Nievo pubblicato nel 1857. Ambientato nel XIX secolo, il libro racconta la storia di Carlino Altoviti, un giovane nobile veneziano che, nonostante le sue buone intenzioni, si trova spesso in situazioni difficili a causa della sua inettitudine. Attraverso le vicende di Carlino, Nievo esplora temi come l'identit\u00e0, la maturazione personale e il conflitto tra ideali e realt\u00e0, offrendo un ritratto vivido della societ\u00e0 italiana dell'epoca.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "c6e4bc8088b77dc829150d0a375155d17de36f542fe10a5c3e0ff9ed27149704",
+      "subject": "",
+      "title": "Psicoanalisi",
+      "content": "La psicoanalisi \u00e8 una teoria e una pratica terapeutica sviluppata da Sigmund Freud alla fine del XIX secolo. Essa si concentra sull'inconscio e sui suoi effetti sul comportamento e sulla personalit\u00e0. Attraverso tecniche come l'associazione libera e l'interpretazione dei sogni, la psicoanalisi cerca di portare alla luce conflitti interiori repressi per promuovere la comprensione di s\u00e9 e il benessere psicologico. La teoria ha influenzato vari campi, tra cui la psicologia, la psichiatria e le arti.",
+      "image": "",
+      "weight": 2.0,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "1a66de827ea0aa59bda4c09777f54e216a2e2d3f9fd463b0a751dcb2da2f9481",
+      "subject": "ING",
+      "title": "Victorian Britain",
+      "content": "Victorian Britain, spanning the reign of Queen Victoria from 1837 to 1901, was a period of significant industrial, political, and cultural change. Marked by the Industrial Revolution, it witnessed rapid urbanization and technological advancements. Socially, it saw the emergence of the middle class, shifts in gender roles, and a growing awareness of social issues. Culturally, the era produced influential literature, art, and architecture, reflecting the values and challenges of the time.",
+      "image": "",
+      "weight": 1,
+      "field": "eve",
+      "isAI": 1
+    },
+    {
+      "id": "3e1ed1d0bce8fe0e64a6401b5c8a1373a6718c7155c3dc9a65184c461b1e6c8b",
+      "subject": "ING",
+      "title": "Charles Dickens",
+      "content": "Charles Dickens, a quintessential Victorian author, is renowned for his richly textured narratives that vividly capture the social and economic conditions of 19th-century England. His works, such as \"Oliver Twist\" and \"A Tale of Two Cities,\" are celebrated for their intricate plots, memorable characters, and poignant social commentary. Dickens's ability to blend humor, pathos, and social critique has left an indelible mark on English literature. His stories often highlight the struggles of the poor and marginalized, reflecting his personal experiences and advocating for social reform.",
+      "image": "",
+      "weight": 1.5,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "7171e79efd607e52882d20cbb12cf62e1d3c37576ff227c82ec67041216e44c8",
+      "subject": "ING",
+      "title": "Oliver Twist",
+      "content": "\"Oliver Twist,\" written by Charles Dickens, is a poignant tale set in the grimy streets of Victorian London. The novel follows the journey of its eponymous protagonist, Oliver, an orphan boy who navigates a world of poverty, crime, and exploitation. Through a series of misfortunes and encounters with both kind and malicious characters, Oliver's story illuminates the harsh realities of 19th-century England, while also offering a glimmer of hope and redemption.",
+      "image": "",
+      "weight": 1,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "6830b48eb21a13e7825f4e03037500bb55931662c214bee60ac2fbcef50b6676",
+      "subject": "ING",
+      "title": "Robert Louis Stevenson",
+      "content": "Robert Louis Stevenson, a Scottish novelist, poet, and travel writer, is best known for his works \"Treasure Island\" and \"Strange Case of Dr Jekyll and Mr Hyde.\" His writing often explores themes of duality, morality, and adventure, reflecting his own complex life and travels. Stevenson's vivid storytelling and compelling characters have made his works classics of literature, beloved by readers worldwide. Despite his struggles with health issues, he produced a remarkable body of work that continues to captivate audiences today.",
+      "image": "",
+      "weight": 1.5,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "31b08490a91eb46564d8385fc1555d31f724376ce9c8886a3d84240479420baf",
+      "subject": "ING",
+      "title": "T.S. Eliot",
+      "content": "T.S. Eliot, a seminal figure in 20th-century literature, is renowned for his contributions to modernist poetry. His works, such as \"The Waste Land\" and \"The Love Song of J. Alfred Prufrock,\" revolutionized poetic form and content, blending intellectual depth with emotional resonance. Eliot's exploration of themes like spirituality, tradition, and the fragmentation of modern life has had a lasting impact on literary criticism and the development of contemporary poetry.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "ed11a9808aebaaa5db32131d5ef8a871190b2e1b935d7a47a7c5593302d16040",
+      "subject": "",
+      "title": "Oggettivo correlativo",
+      "content": "L'oggettivo correlativo \u00e8 un concetto introdotto dal poeta T.S. Eliot per descrivere l'uso di oggetti, immagini o situazioni concrete per rappresentare emozioni o stati d'animo complessi. Invece di descrivere direttamente le emozioni, l'autore utilizza elementi tangibili per evocarle indirettamente, permettendo al lettore di sperimentare queste emozioni attraverso la propria interpretazione degli oggetti presentati. Questo metodo \u00e8 comune nella poesia modernista e consente una comunicazione pi\u00f9 sottile e sfumata delle esperienze interiori.",
+      "image": "",
+      "weight": 1.5,
+      "isAI": 1
+    },
+    {
+      "id": "d8d2ccc77a5288709c0e444739761b64c0a7ff8da962e7cebb627e57f7f7763f",
+      "subject": "STO",
+      "title": "Seconda rivoluzione industriale",
+      "content": "La Seconda Rivoluzione Industriale, che ebbe luogo tra la fine del XIX e l'inizio del XX secolo, fu caratterizzata da innovazioni tecnologiche significative come l'elettrificazione, l'uso diffuso del petrolio e dell'acciaio, e l'introduzione di nuove forme di trasporto come l'automobile. Questo periodo vide anche lo sviluppo di nuove industrie chimiche, farmaceutiche e meccaniche, portando a una crescita economica senza precedenti e a profondi cambiamenti sociali e lavorativi.",
+      "image": "",
+      "weight": 2.5,
+      "field": "eve",
+      "isAI": 1
+    },
+    {
+      "id": "c4506f22c660ed69f6e3ea41cb014bc4aaddd09cddf6eeda829d45bb71e3a5fb",
+      "subject": "FIL",
+      "title": "Hans Jonas",
+      "content": "Hans Jonas (1903-1993) \u00e8 stato un filosofo tedesco-americano noto per il suo lavoro nel campo dell'etica della responsabilit\u00e0 e della filosofia della biologia. La sua opera pi\u00f9 celebre, \"Il principio responsabilit\u00e0\" (1979), esplora l'imperativo etico di preservare la vita umana e naturale per le generazioni future, sottolineando la necessit\u00e0 di un'etica che tenga conto delle conseguenze a lungo termine delle azioni umane. Jonas ha anche contribuito significativamente alla filosofia della tecnologia, riflettendo sulle implicazioni morali del progresso tecnologico.",
+      "image": "",
+      "weight": 1.5,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "745c7ac37517f9e663ec0af5e59551ebef731e865b11c24906bd2f21bf57ccc0",
+      "subject": "CIV",
+      "title": "Bioetica",
+      "content": "La bioetica \u00e8 una disciplina interdisciplinare che esplora le questioni etiche e morali legate alla medicina, alla biologia e alla ricerca scientifica. Essa affronta temi complessi come l'eutanasia, l'aborto, la sperimentazione su esseri umani e animali, e le implicazioni etiche delle nuove tecnologie biomediche. La bioetica si propone di fornire linee guida per garantire che le scoperte scientifiche e le pratiche mediche rispettino i diritti e la dignit\u00e0 degli individui, promuovendo al contempo il benessere collettivo.",
+      "image": "",
+      "weight": 1.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "1dae04cb111419d9ca8cd7ed1e491bcd529a30f1f2630a8fcd244d706b984e2e",
+      "subject": "FIL",
+      "title": "Popper",
+      "content": "Karl Popper \u00e8 stato un filosofo austriaco-britannico noto principalmente per i suoi contributi alla filosofia della scienza. La sua teoria del falsofismo, o falsificazionismo, sostiene che una teoria scientifica deve essere formulata in modo tale da poter essere potenzialmente confutata da osservazioni empiriche. Popper \u00e8 anche conosciuto per il suo impegno nella difesa della societ\u00e0 aperta e della democrazia, come esposto nel suo libro \"La societ\u00e0 aperta e i suoi nemici\".",
+      "image": "",
+      "weight": 1.5,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "40c7f9152658f0ad5ce470bfca09c39664916a25d8ba48ffcfc2a014a8949648",
+      "subject": "FIL",
+      "title": "Filosofia scientifica",
+      "content": "La filosofia scientifica \u00e8 un campo interdisciplinare che esplora le basi concettuali, metodologiche e epistemologiche della scienza. Essa investiga questioni fondamentali come la natura della conoscenza scientifica, la validit\u00e0 delle teorie, i metodi di ricerca e l'interpretazione dei risultati. Inoltre, si occupa delle implicazioni etiche e sociali della scienza, cercando di comprendere come le scoperte scientifiche influenzano la societ\u00e0 e viceversa. Questo campo di studio mira a fornire una comprensione pi\u00f9 profonda del processo scientifico e delle sue ramificazioni filosofiche.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "e89f90e06e380c087ba4f33b5f6d1038809a63122b70905e82002269eefb8e5d",
+      "subject": "SCI",
+      "title": "Biotecnologie",
+      "content": "Le biotecnologie sono un campo interdisciplinare che combina biologia e tecnologia per sviluppare prodotti e processi innovativi. Queste tecnologie vengono utilizzate in vari settori, tra cui agricoltura, medicina, ambiente e industria, per migliorare la qualit\u00e0 della vita, affrontare problemi globali come la sicurezza alimentare e le malattie, e promuovere uno sviluppo sostenibile. Le biotecnologie includono tecniche come l'ingegneria genetica, la biologia sintetica e la biotecnologia ambientale, che permettono di manipolare organismi viventi per ottenere specifici risultati.",
+      "image": "",
+      "weight": 3.0,
+      "field": "the",
+      "isAI": 1
     }
   ]
 }

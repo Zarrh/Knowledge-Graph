@@ -47,7 +47,7 @@ const SubjectsSlide = ({ setPage }) => {
       </div>
       <div style={{
         marginTop: '5vh',
-        width: '60%',
+        width: '48%',
         marginLeft: 'auto',
         marginRight: 'auto',
         textAlign: 'center',
@@ -64,8 +64,9 @@ const SubjectsSlide = ({ setPage }) => {
           const Icon = subjectIcons[subj]
            return (
               <div key={index} style={{
-                display: 'flex',
-                flexDirection: 'column',
+                display: 'grid',
+                rowGap: '8px',
+                gridTemplateRows: '30% 20% 20%',
                 alignItems: 'center',
               }}>
                 <AnimatePresence mode="wait">
@@ -123,7 +124,7 @@ const SubjectsSlide = ({ setPage }) => {
           <span></span>
           <span></span>
           <span></span>
-          <span></span> Next
+          <span></span> {advance ? "Get started" : "Next"}
         </button>
         <button className='skip-btn' onClick={() => setPage('home')}> 
           Skip introduction
