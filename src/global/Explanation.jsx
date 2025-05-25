@@ -30,10 +30,10 @@ const Explanation = ({ setPage }) => {
         marginRight: 'auto',
         textAlign: 'center',
         display: 'grid',
-        gridTemplateColumns: 'auto auto auto',
+        gridTemplateColumns: '25% 25% 25%',
         alignItems: 'center',
         justifyContent: 'center',
-        columnGap: '16rem',
+        columnGap: '12rem',
         rowGap: '2rem',
         fontSize: 26,
         maxHeight: '60%',
@@ -64,9 +64,9 @@ const Explanation = ({ setPage }) => {
           <div style={{fontSize: 28}}>Idea</div>
         </div>
         <div>
-          <div style={{fontSize: 88, fontFamily: 'sans', color: '#ae00ff'}}>ς</div>
+          <div style={{fontSize: 88, fontFamily: 'sans', color: '#ae00ff'}}>ε</div>
           <div style={{height: '4px', width: 'auto', background: 'linear-gradient(0.25turn, #ae00ff, #ff7ecb)', marginBottom: '1rem', borderRadius: '20px'}}></div>
-          <div style={{fontSize: 28}}>Generic</div>
+          <div style={{fontSize: 28}}>Event</div>
         </div>
       </div>
       <div style={{

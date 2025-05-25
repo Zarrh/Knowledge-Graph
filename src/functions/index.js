@@ -11,6 +11,20 @@ export function invertColor(hex) {
 }
 
 
+export function darkenColor(hex, amount=20) {
+  hex = hex.replace('#', '')
+
+  let r = Math.max(0, parseInt(hex.substring(0, 2), 16) - amount)
+  let g = Math.max(0, parseInt(hex.substring(2, 4), 16) - amount)
+  let b = Math.max(0, parseInt(hex.substring(4, 6), 16) - amount)
+
+  return `#${[r, g, b]
+    .map((c) => c.toString(16).padStart(2, '0'))
+    .join('')}`
+}
+
+
+
 export function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }

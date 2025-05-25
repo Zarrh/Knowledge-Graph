@@ -16,8 +16,8 @@ const Connector = ({ from, to, width=12, highlight=false }) => {
     <>
       <defs>
         <linearGradient id={gradientId} x1={from.x > to.x ? "100%" : "0%"} y1="0%" x2={from.x > to.x ? "0%" : "100%"} y2="0%">
-          <stop offset="0%" stopColor={subjectsColors[from.subj]} />
-          <stop offset="100%" stopColor={subjectsColors[to.subj]} />
+          <stop offset="0%" stopColor={subjectsColors[from.subj] ?? "white"} />
+          <stop offset="100%" stopColor={subjectsColors[to.subj] ?? "white"} />
         </linearGradient>
       </defs>
 

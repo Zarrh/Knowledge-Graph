@@ -29,6 +29,21 @@ export const subjectsColors = {
 }
 
 
+export const subjectsTextColors = {
+  "ITA": "#dddfe0",
+  "FIL": "#000000",
+  "STO": "#000000",
+  "SCI": "#dddfe0",
+  "MAT": "#dddfe0",
+  "ING": "#dddfe0",
+  "FIS": "#000000",
+  "CIV": "#000000",
+  "INF": "#dddfe0",
+  "ART": "#dddfe0",
+  "MOT": "#dddfe0",
+}
+
+
 export const subjectIcons = {
   "ITA": FaGraduationCap,
   "FIL": GiClassicalKnowledge,

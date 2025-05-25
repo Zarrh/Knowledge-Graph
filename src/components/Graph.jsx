@@ -3,8 +3,8 @@ import Node from './Node'
 import Connector from './Connector'
 import Title from './Title'
 
-import { subjectsColors, subjectNames, fieldContents, subjectIcons } from '../data'
-import { radius, dispersionRadius, connectorWidth, zoomIntensity, nodesColor, border } from '../data/config'
+import { subjectsColors, subjectNames, fieldContents, subjectIcons, fieldNames, subjectsTextColors } from '../data'
+import { radius, dispersionRadius, connectorWidth, zoomIntensity, nodesColor, border, dynamicWeights } from '../data/config'
 import { σ, getRandomInt, getRandomSign } from '../functions'
 
 
@@ -24,6 +24,15 @@ const centers = subjectKeys.map((subj, index) => ({
   y: -r * Math.sin((2 * π * index) / N) + CENTER[1],
 }))
 
+const dynamicWeightsMap = dynamicWeights ? {
+  "aut": 2,
+  "eve": 2.5,
+  "ide": 1,
+  "mov": 1.5,
+  "wor": 0.5,
+  "the": 3,
+} : undefined
+
 
 // Random distribution
 // const getNodesPositions = (nodes) => {
@@ -42,7 +51,58 @@ const centers = subjectKeys.map((subj, index) => ({
 //   })))
 // }
 
+// Circular disposition based on the size
+// const getNodesPositions = (nodes) => {
 
+//   const nodesPositions = [];
+
+//   [...Object.keys(subjectNames), "NIL"].forEach((subj) => {
+
+//     let subjNodes = new Array()
+
+//     if (subj === "NIL") {
+//       subjNodes = nodes.filter(node => !node.subject || node.subject === "")
+//     }
+//     else {
+//       subjNodes = nodes.filter(node => node.subject === subj)
+//     }
+
+//     let rings = new Object()
+
+//     for (const node of subjNodes) {
+//       (rings[node.weight.toString()] ??= []).push(node)
+//     }
+
+//     const sortedRings = Object.keys(rings)
+//       .sort((a, b) => parseFloat(a) - parseFloat(b))
+//       .reduce((obj, key) => {
+//         obj[key] = rings[key]
+//         return obj
+//       }, {})
+
+//     Object.values(sortedRings).forEach((ring, i) => {
+//       nodesPositions.push(
+//         ...ring.map((node, j) => ({
+//           id: node.id,
+//           x: subj === "NIL" ? CENTER[0] + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).x + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length),
+//           y: subj === "NIL" ? CENTER[1] + (i+1)*dispersionRadius/3*Math.sin((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).y + (i+1)*dispersionRadius/3*Math.sin((2 * π * j) / ring.length),
+//           subj: node.subject ?? null,
+//           title: node.title,
+//           content: node.content,
+//           image: null,
+//           weight: parseFloat(node.weight),
+//           radius: radius*parseFloat(node.weight),
+//           field: node.field ?? null,
+//           isAI: node.isAI ?? false,
+//         }))
+//       )
+//     })
+//   })
+//   return nodesPositions
+// }
+
+
+// Field based circular disposition
 const getNodesPositions = (nodes) => {
 
   const nodesPositions = [];
@@ -61,15 +121,12 @@ const getNodesPositions = (nodes) => {
     let rings = new Object()
     
     for (const node of subjNodes) {
-      if (Object.keys(rings).includes(node.weight.toString())) {
-        rings[node.weight.toString()].push(node)
-        continue
-      }
-      rings[node.weight.toString()] = [node]
+      const field = node.field?.trim() || "gen";
+      (rings[field] ??= []).push(node)
     }
 
     const sortedRings = Object.keys(rings)
-      .sort((a, b) => parseFloat(a) - parseFloat(b))
+      .sort()
       .reduce((obj, key) => {
         obj[key] = rings[key]
         return obj
@@ -79,14 +136,14 @@ const getNodesPositions = (nodes) => {
       nodesPositions.push(
         ...ring.map((node, j) => ({
           id: node.id,
-          x: subj === "NIL" ? CENTER[0] + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).x + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length),
-          y: subj === "NIL" ? CENTER[1] + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).y + (i+1)*dispersionRadius/3*Math.sin((2 * π * j) / ring.length),
+          x: subj === "NIL" ? CENTER[0] + (i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).x + (0.75*i+1)*dispersionRadius/3*Math.cos((2 * π * j) / ring.length),
+          y: subj === "NIL" ? CENTER[1] + (i+1)*dispersionRadius/3*Math.sin((2 * π * j) / ring.length) : centers.find(center => center.subj === subj).y + (0.75*i+1)*dispersionRadius/3*Math.sin((2 * π * j) / ring.length),
           subj: node.subject ?? null,
           title: node.title,
           content: node.content,
           image: null,
           weight: parseFloat(node.weight),
-          radius: radius*parseFloat(node.weight),
+          radius: dynamicWeights ? radius*parseFloat(node.field ? dynamicWeightsMap[node.field] : 1) : radius*parseFloat(node.weight),
           field: node.field ?? null,
           isAI: node.isAI ?? false,
         }))
@@ -280,13 +337,14 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
                 left: center.x,
                 top: center.y,
                 color: `${hoveredSubject === center.subj ? subjectsColors[center.subj] : '#9c9c9c'}`,
-                opacity: `${hoveredSubject === center.subj ? 0.35 : 0.05}`,
+                opacity: `${hoveredSubject === center.subj ? 0.35 : 0.10}`,
                 transform: 'translate(-50%, -50%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 zIndex: 0,
                 fontSize: 792,
+                filter: 'drop-shadow(12px 12px 2px rgb(59, 59, 59))',
               }}
             >
               {Icon && <Icon />}
@@ -332,9 +390,8 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
           x={node.x}
           y={node.y}
           radius={node.radius}
-          color={nodesColor}
-          borderColor={subjectsColors[node.subj] ?? "white"}
-          borderWidth={border}
+          color={subjectsColors[node.subj] ?? "#ffffff"}
+          textColor={subjectsTextColors[node.subj] ?? "black"}
           title={node.title}
           content={node.content}
           field={node.field}
@@ -359,7 +416,15 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
             }
           }}
         >
-          <div style={{fontWeight: "bold", fontSize: 24*node.weight, fontFamily: 'sans'}}>{node.field ? fieldContents[node.field] : "ς"}</div>
+          <div 
+            style={{
+              fontWeight: "bold", 
+              fontSize: dynamicWeights ? 24*(node.field ? dynamicWeightsMap[node.field] : 1) : 24*node.weight, 
+              fontFamily: 'sans'
+            }}
+          >
+            {node.field ? fieldContents[node.field] : "ς"}
+          </div>
         </Node>
       ))}
       <div
