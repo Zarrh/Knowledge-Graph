@@ -1,6 +1,6 @@
 // import './Introduction.css'
 import React from 'react'
-import { nodes, edges, subjectNames } from '../data'
+import { _nodes, _edges, subjectNames } from '../data'
 
 const Statistics = ({ setPage }) => {
   return (
@@ -38,11 +38,11 @@ const Statistics = ({ setPage }) => {
       }}>
         <div>
           <div>Number of nodes:</div>
-          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{nodes.length}</div>
+          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{_nodes.length}</div>
         </div>
         <div>
           <div>Number of links:</div>
-          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{edges.length}</div>
+          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{_edges.length}</div>
         </div>
         <div>
           <div>Number of subjects:</div>

@@ -1,12 +1,12 @@
 // import './Introduction.css'
 import React, { useState } from 'react'
-import { nodes, edges, subjectNames, subjectIcons, subjectsColors } from '../data'
+import { _nodes, _edges, subjectNames, subjectIcons, subjectsColors } from '../data'
 import { AnimatePresence, motion } from 'framer-motion'
 
-const countNodes = (nodes) => {
+const countNodes = (_nodes) => {
   const nodesPerSubject = new Object()
 
-  for (const node of nodes) {
+  for (const node of _nodes) {
     if (!node.subject) {
       continue
     }
@@ -23,7 +23,7 @@ const countNodes = (nodes) => {
 const SubjectsSlide = ({ setPage }) => {
 
   const [advance, setAdvance] = useState(0)
-  const nodesPerSubject = countNodes(nodes)
+  const nodesPerSubject = countNodes(_nodes)
 
   return (
     <div style={{

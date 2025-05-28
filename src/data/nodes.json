@@ -1486,6 +1486,129 @@
       "weight": 3.0,
       "field": "the",
       "isAI": 1
+    },
+    {
+      "id": "0a5059a20217a5e2db57607be836facc3dd6e9046ab49cdfe1ffa2bda1b44678",
+      "subject": "MAT",
+      "title": "Calcolo Combinatorio",
+      "content": "Il calcolo combinatorio \u00e8 una branca della matematica che si occupa dello studio delle combinazioni, disposizioni e permutazioni di oggetti. Si tratta di contare il numero di modi in cui \u00e8 possibile disporre o selezionare elementi da un insieme finito, applicando principi come il principio di addizione e il principio di moltiplicazione. \u00c8 fondamentale in vari campi, tra cui la teoria delle probabilit\u00e0, l'informatica e la statistica, dove viene utilizzato per risolvere problemi di conteggio e analisi di strutture discrete.",
+      "image": "",
+      "weight": 1,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "675a8017df0a1954e6b841e4b1f963c534da4e29b0d38cf962517d2d4c6c6a67",
+      "subject": "INF",
+      "title": "Protocollo IP",
+      "content": "Il Protocollo IP (Internet Protocol) \u00e8 uno dei principali protocolli di rete utilizzati per trasmettere dati su Internet. \u00c8 responsabile dell'indirizzamento e del routing dei pacchetti di dati tra computer diversi. Esistono due versioni principali: IPv4, che utilizza indirizzi a 32 bit, e IPv6, che utilizza indirizzi a 128 bit per affrontare la crescente domanda di indirizzi IP. IP fornisce una consegna \"best effort\" senza garantire l'ordine o la ricezione dei pacchetti, ma \u00e8 spesso utilizzato in combinazione con altri protocolli come TCP per garantire affidabilit\u00e0.",
+      "image": "",
+      "weight": 0.5,
+      "isAI": 1
+    },
+    {
+      "id": "792237d1c4c343b1da845cc9746dec26092c5f7130ddd64b7b3c2eec76c01980",
+      "subject": "INF",
+      "title": "TLS",
+      "content": "TLS (Transport Layer Security) \u00e8 un protocollo di sicurezza progettato per garantire la privacy e l'integrit\u00e0 dei dati tra due applicazioni che comunicano su una rete. Sviluppato come successore del protocollo SSL (Secure Sockets Layer), TLS utilizza crittografia per proteggere le informazioni trasmesse, prevenendo intercettazioni e manomissioni. \u00c8 ampiamente utilizzato per proteggere le comunicazioni su Internet, come ad esempio durante le transazioni bancarie online e la navigazione su siti web sicuri.",
+      "image": "",
+      "weight": 0.5,
+      "isAI": 1
+    },
+    {
+      "id": "e4054fba425f58e9ba1c1b718f80a97135b6577408763d29a1979424b373ea41",
+      "subject": "INF",
+      "title": "VPN",
+      "content": "Una VPN (Virtual Private Network) \u00e8 una tecnologia che crea una connessione sicura e criptata tra il tuo dispositivo e un server remoto, proteggendo la tua privacy online. Utilizzando una VPN, il tuo indirizzo IP viene mascherato, rendendo difficile per terzi tracciare la tua attivit\u00e0 su Internet. Inoltre, le VPN permettono di accedere a contenuti geograficamente bloccati e migliorano la sicurezza quando si utilizzano reti Wi-Fi pubbliche.",
+      "image": "",
+      "weight": 0.5,
+      "isAI": 1
+    },
+    {
+      "id": "edc57e282f22a6ebdd3377e6a02a3fcd3abbe6eb27750a4e967859ae12c841b5",
+      "subject": "INF",
+      "title": "Bioinformatica",
+      "content": "La bioinformatica \u00e8 un campo interdisciplinare che combina biologia, informatica, matematica e statistica per analizzare e interpretare i dati biologici. Utilizza algoritmi e software avanzati per comprendere le informazioni genetiche, le interazioni molecolari e i processi biologici complessi. \u00c8 fondamentale per la ricerca genomica, la medicina personalizzata e lo sviluppo di nuovi farmaci, contribuendo significativamente alla comprensione delle malattie e all'innovazione nelle scienze della vita.",
+      "image": "",
+      "weight": 1.5,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "0df02ba6bbd50ad40aaf10e89b2c31a4a9d454b5fef1bcb545f862894744c9c2",
+      "subject": "SCI",
+      "title": "Sequenziamento del DNA",
+      "content": "Il sequenziamento del DNA \u00e8 una tecnologia fondamentale nella biologia molecolare che consente di determinare l'ordine esatto dei nucleotidi (adenina, timina, citosina e guanina) in una molecola di DNA. Questo processo \u00e8 essenziale per comprendere la struttura e la funzione dei geni, identificare mutazioni genetiche e diagnosticare malattie ereditarie. Il sequenziamento del DNA ha rivoluzionato la ricerca medica, l'agricoltura e la conservazione della biodiversit\u00e0, permettendo di esplorare il genoma di vari organismi e di sviluppare nuove terapie genetiche.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "e0c795aacf8a8fe3c22e88a11821648797c3aa5617b3a1da5f8a377237a85ae8",
+      "subject": "MAT",
+      "title": "Serie di Taylor",
+      "content": "La serie di Taylor \u00e8 una rappresentazione di una funzione come somma infinita di termini, ciascuno dei quali \u00e8 una potenza crescente della variabile. \u00c8 utilizzata per approssimare funzioni complicate con polinomi, che sono pi\u00f9 facili da maneggiare. La serie \u00e8 centrata in un punto specifico e coinvolge le derivate della funzione in quel punto. \u00c8 uno strumento fondamentale in matematica, fisica e ingegneria per l'analisi e la risoluzione di problemi complessi.",
+      "image": "",
+      "weight": 2.0,
+      "isAI": 1
+    },
+    {
+      "id": "4bb7f85e3188a054bdc16060ba37ddb1c0911b53ac69372cfdd0b504d5050738",
+      "subject": "SCI",
+      "title": "Anatomia",
+      "content": "L'anatomia \u00e8 la branca della biologia che studia la struttura e l'organizzazione degli organismi viventi. Si suddivide in anatomia umana, che si concentra sul corpo umano, e anatomia comparata, che esamina le somiglianze e differenze tra vari organismi. L'anatomia include lo studio dei tessuti, organi e sistemi del corpo, fornendo una comprensione fondamentale delle funzioni fisiologiche e delle interazioni tra le diverse parti del corpo. \u00c8 essenziale per la formazione medica e per la ricerca biologica.",
+      "image": "",
+      "weight": 3.0,
+      "field": "the",
+      "isAI": 1
+    },
+    {
+      "id": "98ed2f227a73474b68c4fd8f67f5ca518d568abc1e014c33277b3a2a7dcba3be",
+      "subject": "SCI",
+      "title": "Isomeria",
+      "content": "L'isomeria \u00e8 un fenomeno chimico in cui molecole con la stessa formula chimica possono avere strutture diverse. Queste differenze strutturali possono influenzare significativamente le propriet\u00e0 fisiche e chimiche delle molecole. Esistono diversi tipi di isomeria, tra cui l'isomeria strutturale, l'isomeria stereochimica e l'isomeria conformazionale. Ogni tipo di isomeria ha implicazioni uniche in campi come la chimica organica, la biochimica e la farmacologia.",
+      "image": "",
+      "weight": 0.5,
+      "isAI": 1
+    },
+    {
+      "id": "0b9c91971cd9d9213745ff11eea7cb7b5c9b4ebb10b576603b2273ceb4daef16",
+      "subject": "FIL",
+      "title": "Kierkegaard",
+      "content": "S\u00f8ren Kierkegaard (1813-1855) \u00e8 stato un filosofo, teologo e scrittore danese, considerato uno dei padri dell'esistenzialismo. Le sue opere esplorano temi come la fede, l'angoscia, la scelta individuale e il significato dell'esistenza umana. Kierkegaard \u00e8 noto per il suo stile di scrittura complesso e spesso pseudonimo, che utilizza per esaminare diverse prospettive filosofiche e teologiche. Il suo pensiero ha avuto un'influenza duratura sulla filosofia moderna, la teologia e la psicologia.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "0dbc6929d3ccc1591fdb54d6c60c48dad87b0374583b905a45bce3fca780db07",
+      "subject": "FIL",
+      "title": "Feuerbach",
+      "content": "Ludwig Feuerbach (1804-1872) \u00e8 stato un filosofo e antropologo tedesco noto per la sua critica alla religione e alla filosofia idealista di Hegel. Feuerbach sosteneva che l'idea di Dio \u00e8 una proiezione delle qualit\u00e0 umane e che la religione \u00e8 una forma di alienazione che distoglie l'attenzione dalle reali condizioni umane. Il suo lavoro ha influenzato significativamente il pensiero di Karl Marx e Friedrich Engels, i quali hanno adottato e sviluppato alcune delle sue idee nel contesto del materialismo storico.",
+      "image": "",
+      "weight": 1,
+      "field": "aut",
+      "isAI": 1
+    },
+    {
+      "id": "5811203dca60da71aba5d68e46ed716670bf880ab658d1c95d74c3e0db6c63be",
+      "subject": "",
+      "title": "Materialismo",
+      "content": "Il materialismo \u00e8 una corrente filosofica che sostiene che l'unica realt\u00e0 esistente \u00e8 quella materiale, negando l'esistenza di entit\u00e0 immateriali come l'anima o lo spirito. Secondo questa visione, tutti i fenomeni, inclusi quelli mentali, possono essere spiegati attraverso processi fisici e chimici. Il materialismo ha avuto un'influenza significativa sulla scienza e sulla filosofia, promuovendo un approccio empirico e razionale alla comprensione del mondo. Tuttavia, \u00e8 anche oggetto di critiche, soprattutto da parte di chi ritiene che esso riduca la complessit\u00e0 dell'esperienza umana a mere interazioni fisiche.",
+      "image": "",
+      "weight": 2.0,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "e12728ebd5e886573bf3a02e27c232d45b8a61be1011e27ae0457809c0dfec12",
+      "subject": "MOT",
+      "title": "Pallavolo",
+      "content": "La pallavolo, nota anche come volleyball, \u00e8 uno sport di squadra che si gioca su un campo rettangolare diviso da una rete. Ogni squadra \u00e8 composta da sei giocatori e l'obiettivo del gioco \u00e8 far cadere la palla nel campo avversario, cercando di evitare che l'altra squadra riesca a ribatterla. La pallavolo richiede velocit\u00e0, coordinazione e strategia, con regole che permettono ai giocatori di toccare la palla solo tre volte prima di rimandarla oltre la rete. \u00c8 uno sport molto popolare a livello mondiale, sia a livello amatoriale che professionistico.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
     }
   ]
 }

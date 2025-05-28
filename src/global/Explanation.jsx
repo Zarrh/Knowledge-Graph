@@ -1,6 +1,6 @@
 // import './Introduction.css'
 import React from 'react'
-import { nodes, edges, subjectNames } from '../data'
+import { _nodes, _edges, subjectNames } from '../data'
 
 const Explanation = ({ setPage }) => {
   return (

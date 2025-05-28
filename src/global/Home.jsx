@@ -1,11 +1,14 @@
 import './Home.css'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Graph, GeneratedPath, Legend, ActiveSubjects } from '../components'
-import { nodes, edges, defaultActiveSubjects } from '../data'
+import { _nodes, _edges, defaultActiveSubjects } from '../data'
 
 import { adjacency, getRandomInt, shuffle } from '../functions'
 
 const Home = () => {
+
+  const [nodes, setNodes] = useState(_nodes)
+  const [edges, setEdges] = useState(_edges)
 
   const [hoveredSubject, setHoveredSubject] = useState(null)
 
@@ -213,6 +216,37 @@ const Home = () => {
     // console.log(mat)
   }
 
+  const handleFileUpload = (event) => {
+    const file = event.target.files[0]
+    if (!file) return
+
+    const reader = new FileReader()
+    reader.onload = (e) => {
+      try {
+        const parsed = JSON.parse(e.target.result)
+
+        const addedNodes = parsed["nodes"] ?? []
+        console.log("Added the following nodes: ", addedNodes)
+
+        const addedEdges = parsed["links"] ?? []
+        console.log("Added the following edges: ", addedEdges)
+
+
+        setNodes(prevNodes => [...prevNodes, ...addedNodes])
+        setEdges(prevEdges => [...prevEdges, ...addedEdges])
+
+        console.log(nodes)
+      } catch (err) {
+        alert("Invalid JSON file.")
+      }
+    }
+    reader.readAsText(file)
+  }
+
+  const triggerFileInput = () => {
+    document.getElementById('json-upload-input').click()
+  }
+
   return (
     <div
       className='Home'
@@ -293,6 +327,28 @@ const Home = () => {
       >
         Generate a Path
       </button>
+
+      <input
+        type="file"
+        id="json-upload-input"
+        accept=".json"
+        style={{ display: 'none' }}
+        onChange={handleFileUpload}
+      />
+
+      <button
+        className='btn'
+        onClick={triggerFileInput}
+        style={{
+          position: 'fixed',
+          bottom: '2.5%',
+          right: '1.5%',
+          zIndex: 200,
+        }}
+      >
+        Add plugin
+      </button>
+
       <div
         className='path-list'
         style={{

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useSpring, animated } from 'react-spring'
 import { darkenColor, invertColor } from '../functions'
 
@@ -8,6 +8,11 @@ const Node = ({
   x, y, radius, color="#ffffff", textColor, title, content, image, onMove, onClick, isEditing, scale, offset, children, field, isAI=false 
 }) => {
   const [pos, setPos] = useState({ x: x, y: y })
+
+  useEffect(() => {
+    setPos({ x, y })
+  }, [x, y])
+
   const [isExpanded, setIsExpanded] = useState(false)
   const [hovered, setHovered] = useState(false)
 

@@ -36,7 +36,7 @@ const Introduction = ({ setPage }) => {
         textAlign: 'center',
         gap: '2rem',
       }}>
-        <button className='start-btn' onClick={() => setPage('statistics')}>
+        <button className='start-btn' onClick={() => setPage('graph-page')}>
           <span></span>
           <span></span>
           <span></span>

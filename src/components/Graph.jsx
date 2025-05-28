@@ -92,6 +92,10 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true })
     getNodesPositions(nodes)
   )
 
+  useEffect(() => {
+    setNodesPositions(getNodesPositions(nodes))
+  }, [nodes])
+
   const [scale, setScale] = useState(0.1)
   const [offset, setOffset] = useState({ x: 0, y: 0 })
 
@@ -212,7 +216,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true })
       {centers.map((center) => {
         const Icon = subjectIcons[center.subj]
         return (
-          <div key={center.subj}>
+          <div key={center.subj} onMouseDown={handleMouseDown} onTouchStart={handleTouchStart}>
             <Title
               x={center.x}
               y={center.y}
