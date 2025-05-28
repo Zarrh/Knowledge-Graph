@@ -105,6 +105,6 @@ export const fieldContents = {
   "the": "τ",
 }
 
-export const nodes = raw_nodes["nodes"]
+export const _nodes = raw_nodes["nodes"] ?? []
 
-export const edges = raw_links["links"]
+export const _edges = raw_links["links"] ?? []
