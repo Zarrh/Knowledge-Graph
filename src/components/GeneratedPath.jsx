@@ -7,7 +7,7 @@ const GeneratedPath = ({ nodes }) => {
       style={{
         textAlign: 'justify',
         width: '100%',
-        maxHeight: '80vh',
+        maxHeight: '75vh',
         overflowY: 'auto',
         paddingRight: '12px',
       }}
@@ -21,7 +21,8 @@ const GeneratedPath = ({ nodes }) => {
               {/* <h2 style={{color: subjectsColors[node.subject] ?? 'white', fontSize: 28}}>{node.subject}</h2> */}
               <div style={{
                 color: subjectsColors[node.subject] ?? 'white', 
-                fontSize: 28, display: 'flex', 
+                fontSize: 28, 
+                display: 'flex', 
                 alignItems: 'center'
               }}>
                 {Icon ? <Icon /> : node.subject}

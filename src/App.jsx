@@ -6,7 +6,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Home from './global/Home'
 import Introduction from './global/Introduction'
 import GraphPage from './global/GraphPage'
+import ApplicationPage from './global/ApplicationsPage'
 import Statistics from './global/Statistics'
+import KDistribution from './global/KDistribution'
 import Explanation from './global/Explanation'
 import SubjectsSlide from './global/SubjectsSlide'
 
@@ -48,6 +50,17 @@ function App() {
             <GraphPage setPage={setCurrentPage} />
           </motion.div>
         )}
+        {currentPage === "application" && (
+          <motion.div
+            key="application"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1.5 }}
+          >
+            <ApplicationPage setPage={setCurrentPage} />
+          </motion.div>
+        )}
         {currentPage === "statistics" && (
           <motion.div
             key="stats"
@@ -57,6 +70,17 @@ function App() {
             transition={{ duration: 1.5 }}
           >
             <Statistics setPage={setCurrentPage} />
+          </motion.div>
+        )}
+        {currentPage === "distribution" && (
+          <motion.div
+            key="distribution"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1.5 }}
+          >
+            <KDistribution setPage={setCurrentPage} />
           </motion.div>
         )}
         {currentPage === "explanation" && (

@@ -5,7 +5,7 @@ import Title from './Title'
 
 import { subjectsColors, subjectNames, fieldContents, subjectIcons, fieldNames, subjectsTextColors } from '../data'
 import { radius, dispersionRadius, connectorWidth, zoomIntensity, nodesColor, border, dynamicWeights } from '../data/config'
-import { σ, getRandomInt, getRandomSign } from '../functions'
+import { σ, getRandomInt, getRandomSign, getNlinksPerNode, rgb2Hex, colormap } from '../functions'
 
 
 const WIDTH = window.innerWidth*10
@@ -154,21 +154,33 @@ const getNodesPositions = (nodes) => {
 }
 
 
-const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, isEditor=null, setIsEditor=()=>{} }) => {
+const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, centralityColoring=false, setSelectedNodeId=()=>{}, isEditor=null, setIsEditor=()=>{} }) => {
 
   const [nodesPositions, setNodesPositions] = useState(
     getNodesPositions(nodes)
   )
 
-  useEffect(() => {
-    setNodesPositions(getNodesPositions(nodes))
-  }, [nodes])
+  // useEffect(() => {
+  //   setNodesPositions(getNodesPositions(nodes))
+  // }, [nodes])
 
   const [scale, setScale] = useState(0.1)
   const [offset, setOffset] = useState({ x: 0, y: 0 })
 
   const isPanning = useRef(false)
   const panStart = useRef({ x: 0, y: 0 })
+
+
+  const degDist = getNlinksPerNode(nodes, edges)
+  const maxDeg = Math.max(...[...Object.values(degDist), 0])
+
+  const nodesColors = nodes.reduce((acc, node) => {
+    acc[node.id] = centralityColoring 
+      ? rgb2Hex(colormap(degDist[node.id] ?? 0, maxDeg)) 
+      : subjectsColors[node.subject] ?? "#ffffff"
+    return acc
+  }, {})
+
 
   const handleWheel = (e) => {
     e.preventDefault()
@@ -270,9 +282,9 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
   const [selectedForEdge, setSelectedForEdge] = useState([])
   const [localEdges, setLocalEdges] = useState(edges)
 
-  useEffect(() => {
-    setLocalEdges(edges)
-  }, [edges])
+  // useEffect(() => {
+  //   setLocalEdges(edges)
+  // }, [edges])
 
   useEffect(() => {
     const handleKeyUp = (e) => {
@@ -386,6 +398,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
                 edge.from !== edge.to
               }
               width={connectorWidth}
+              color={centralityColoring ? "grey" : null}
             />
           )
         })}
@@ -395,11 +408,12 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
       {nodesPositions.map((node) => (
         <Node
           key={node.id}
+          id={node.id}
           x={node.x}
           y={node.y}
           radius={node.radius}
-          color={subjectsColors[node.subj] ?? "#ffffff"}
-          textColor={subjectsTextColors[node.subj] ?? "black"}
+          color={nodesColors[node.id] ?? "#000000"}
+          textColor={subjectsTextColors[node.subj] ?? "#000000"}
           title={node.title}
           content={node.content}
           field={node.field}
@@ -409,6 +423,7 @@ const Graph = ({ nodes, edges, path=[], hoveredSubject=null, linksActive=true, i
           offset={offset}
           onMove={(x, y) => updateNodePosition(node.id, x, y)}
           isEditing={isEditor}
+          onCollide={(id) => setSelectedNodeId(id)}
           onClick={() => {
             if (!isEditor) return
         

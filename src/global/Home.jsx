@@ -1,9 +1,9 @@
 import './Home.css'
 import React, { useState, useEffect } from 'react'
-import { Graph, GeneratedPath, Legend, ActiveSubjects } from '../components'
-import { _nodes, _edges, defaultActiveSubjects } from '../data'
+import { Graph, GeneratedPath, Legend, ActiveSubjects, GeneratedRelevantNodes } from '../components'
+import { _nodes, _edges, defaultActiveSubjects, subjectsColors, fieldContents } from '../data'
 
-import { adjacency, getRandomInt, shuffle } from '../functions'
+import { adjacency, getRandomInt, shuffle, getNlinksPerNode } from '../functions'
 
 const Home = () => {
 
@@ -26,11 +26,171 @@ const Home = () => {
     setLinksActive(!linksActive)
   }
 
+  const [centralityColoring, setCentralityColoring] = useState(false)
+
+  const toggleCentralityColoring = () => {
+    setCentralityColoring(!centralityColoring)
+  }
+
   const [activeSubjects, setActiveSubjects] = useState(defaultActiveSubjects)
 
   const [path, setPath] = useState(new Array())
 
-  const αGeneratePath = () => {
+  const [linksPerNode, setLinksPerNode] = useState(new Object())
+
+  const [selectedNodeId, setSelectedNodeId] = useState(null)
+
+  // const αGeneratePath = () => {
+
+  //   const activeNodes = nodes.filter(node => activeSubjects.includes(node.subject) || !node.subject || node.subject === "")
+  //   const activeNodeIds = new Set(activeNodes.map(node => node.id))
+
+  //   const activeEdges = edges.filter(edge =>
+  //     activeNodeIds.has(edge.from) && activeNodeIds.has(edge.to)
+  //   )
+
+  //   /*
+  //           4 -- 5
+  //           |    
+  //      0 -- 1 -- 3
+  //      |
+  //      |
+  //      2 -- 6 -- 7 -- 8 -- 9
+
+
+  //     subjectsToVisit = {...}
+
+  //     visited = {}
+  //     _path = [0]
+
+  //     current = 0
+  //     neighbours = [1, 2]
+  //     _path.push(1) // neighbours[0] that is not in _path & not in visited
+  //     (1.subject in subjectsToVisit & subjectsToVisit.remove(1.subject))
+
+  //     current = 1
+  //     neighbours = [0, 3, 4]
+  //     _path.push(3)
+
+  //     current = 3
+  //     neighbours = [1]
+  //     len(neighbours == 1) & _path.pop()
+  //     subjectsToVisit.add(current.subject)
+  //     visited.add(current)
+
+  //     current = 1
+  //     (current.subject in subjectsToVisit & subjectsToVisit.remove(1.subject))
+
+  //     neighbours = [0, 3, 4]
+  //     _path.push(4)
+
+  //     current = 4
+  //     neighbours = [1, 5]
+  //     _path.push(5)
+
+  //     current = 5
+  //     neighbours = [4]
+  //     len(neighbours == 1) & _path.pop()
+  //     visited.add(current)
+
+  //     current = 4
+  //     neighbours = [1, 5]
+  //     all(neighbours in visited or _path) & _path.pop()
+  //     visited.add(current)
+
+  //     current = 1
+  //     neighbours = [0, 3, 4]
+  //     all(neighbours in visited or _path) & _path.pop()
+  //     visited.add(current)
+
+  //     current = 0
+  //     neighbours = [1, 2]
+  //   */
+
+  //   let _path = new Array()
+
+  //   function crawl(startingNode) {
+    
+  //     const visited = new Set()
+  //     const subjectsToVisit = new Set(activeSubjects)
+
+  //     _path.push(startingNode)
+
+  //     while (subjectsToVisit.size) {
+  //       if (_path.length === 0) {
+  //         return false
+  //       }
+  //       const current = _path.at(-1)
+
+  //       if (subjectsToVisit.has(current.subject)) {
+  //         subjectsToVisit.delete(current.subject)
+  //       }
+
+  //       if (subjectsToVisit.size === 0) {
+  //         return true
+  //       }
+
+  //       let neighbours = shuffle(activeEdges
+  //         .filter(edge => edge.from === current.id || edge.to === current.id)
+  //         .map(edge => {
+  //           const neighbourId = edge.from === current.id ? edge.to : edge.from
+  //           return activeNodes.find(node => node.id === neighbourId)
+  //         })
+  //         .filter(Boolean))
+
+  //       if (neighbours.length === 1 && (visited.has(neighbours[0]) || _path.includes(neighbours[0]))) {
+  //         _path.pop()
+  //         if (!subjectsToVisit.has(current.subject)) {
+  //           subjectsToVisit.add(current.subject)
+  //         }
+  //         visited.add(current)
+  //         continue
+  //       }
+
+  //       if (neighbours.every(node => visited.has(node)) || neighbours.every(node => _path.includes(node))) {
+  //         _path = []
+  //         return false
+  //       }
+
+  //       neighbours = neighbours.filter(node => !visited.has(node) && !_path.includes(node)) ?? []
+
+  //       if (neighbours.length === 0) {
+  //         _path.pop()
+  //         if (!subjectsToVisit.has(current.subject)) {
+  //           subjectsToVisit.add(current.subject)
+  //         }
+  //         visited.add(current)
+  //         continue
+  //       }
+
+  //       _path.push(neighbours[0])
+  //     }
+  //   }
+
+  //   let success = false
+  //   const maxRetries = 5
+  //   let counter = 0
+  //   const startingIndex = getRandomInt(0, activeNodes.length-1)
+  //   let newIndex = startingIndex
+    
+  //   while (!success) {
+  //     newIndex = (newIndex + 1) % activeNodes.length
+  //     if (newIndex === startingIndex) {
+  //       counter++
+  //       if (counter === maxRetries) {
+  //         _path = []
+  //         console.log("No path found")
+  //         break
+  //       }
+  //     }
+  //     const startingNode = activeNodes[newIndex]
+  //     success = crawl(startingNode)
+  //   }
+  //   console.log(success)
+  //   setPath(_path)
+  // }
+
+  const βGeneratePath = () => {
 
     const activeNodes = nodes.filter(node => activeSubjects.includes(node.subject) || !node.subject || node.subject === "")
     const activeNodeIds = new Set(activeNodes.map(node => node.id))
@@ -46,183 +206,122 @@ const Home = () => {
        |
        |
        2 -- 6 -- 7 -- 8 -- 9
-
-
-      subjectsToVisit = {...}
-
-      visited = {}
-      _path = [0]
-
-      current = 0
-      neighbours = [1, 2]
-      _path.push(1) // neighbours[0] that is not in _path & not in visited
-      (1.subject in subjectsToVisit & subjectsToVisit.remove(1.subject))
-
-      current = 1
-      neighbours = [0, 3, 4]
-      _path.push(3)
-
-      current = 3
-      neighbours = [1]
-      len(neighbours == 1) & _path.pop()
-      subjectsToVisit.add(current.subject)
-      visited.add(current)
-
-      current = 1
-      (current.subject in subjectsToVisit & subjectsToVisit.remove(1.subject))
-
-      neighbours = [0, 3, 4]
-      _path.push(4)
-
-      current = 4
-      neighbours = [1, 5]
-      _path.push(5)
-
-      current = 5
-      neighbours = [4]
-      len(neighbours == 1) & _path.pop()
-      visited.add(current)
-
-      current = 4
-      neighbours = [1, 5]
-      all(neighbours in visited or _path) & _path.pop()
-      visited.add(current)
-
-      current = 1
-      neighbours = [0, 3, 4]
-      all(neighbours in visited or _path) & _path.pop()
-      visited.add(current)
-
-      current = 0
-      neighbours = [1, 2]
     */
 
-    let _path = []
-
     function crawl(startingNode) {
-    
-      const visited = new Set()
       const subjectsToVisit = new Set(activeSubjects)
 
-      _path.push(startingNode)
+      const nodeById = new Map(activeNodes.map(n => [n.id, n]))
+      const edgesByNodeId = new Map()
 
-      while (subjectsToVisit.size) {
-        if (_path.length === 0) {
-          return false
+      activeEdges.forEach(edge => {
+        if (!edgesByNodeId.has(edge.from)) edgesByNodeId.set(edge.from, [])
+        if (!edgesByNodeId.has(edge.to)) edgesByNodeId.set(edge.to, [])
+        edgesByNodeId.get(edge.from).push(edge.to)
+        edgesByNodeId.get(edge.to).push(edge.from)
+      })
+
+      const startTime = Date.now()
+      const maxDuration = 1000
+
+      const stack = [
+        {
+          id: startingNode.id,
+          path: [],
+          remainingSubjects: new Set(subjectsToVisit),
+          visited: new Set(),
+        },
+      ]
+
+      while (stack.length > 0) {
+        if (Date.now() - startTime > maxDuration) {
+          console.log("DFS timed out — stopping")
+          return []
         }
-        const current = _path.at(-1)
 
-        if (subjectsToVisit.has(current.subject)) {
-          subjectsToVisit.delete(current.subject)
+        const { id, path, remainingSubjects, visited: localVisited } = stack.pop()
+        const currentNode = nodeById.get(id)
+        if (!currentNode) continue
+
+        const newPath = [...path, currentNode]
+        const newVisited = new Set(localVisited)
+        newVisited.add(id)
+
+        const newRemainingSubjects = new Set(remainingSubjects)
+        if (currentNode.subject && newRemainingSubjects.has(currentNode.subject)) {
+          newRemainingSubjects.delete(currentNode.subject)
         }
 
-        if (subjectsToVisit.size === 0) {
-          return true
+        if (newRemainingSubjects.size === 0) {
+          return newPath
         }
 
-        let neighbours = shuffle(activeEdges
-          .filter(edge => edge.from === current.id || edge.to === current.id)
-          .map(edge => {
-            const neighbourId = edge.from === current.id ? edge.to : edge.from;
-            return activeNodes.find(node => node.id === neighbourId)
+        const neighbors = shuffle(edgesByNodeId.get(id) || []).filter(
+          neighborId => !newVisited.has(neighborId)
+        )
+
+        for (const neighborId of neighbors) {
+          stack.push({
+            id: neighborId,
+            path: newPath,
+            remainingSubjects: newRemainingSubjects,
+            visited: newVisited,
           })
-          .filter(Boolean))
-
-        if (neighbours.length === 1) {
-          _path.pop()
-          if (!subjectsToVisit.has(current.subject)) {
-            subjectsToVisit.add(current.subject)
-          }
-          visited.add(current)
-          continue
         }
-
-        if (neighbours.every(node => visited.has(node)) || neighbours.every(node => _path.includes(node))) {
-          _path = []
-          return false
-        }
-
-        neighbours = neighbours.filter(node => !visited.has(node) && !_path.includes(node)) ?? []
-
-        if (neighbours.length === 0) {
-          _path.pop()
-          if (!subjectsToVisit.has(current.subject)) {
-            subjectsToVisit.add(current.subject)
-          }
-          visited.add(current)
-          continue
-        }
-
-        _path.push(neighbours[0])
       }
+
+      return []
     }
 
-    let success = false
-    const maxRetries = 5
-    let counter = 0
-    const startingIndex = getRandomInt(0, activeNodes.length-1)
-    let newIndex = startingIndex
-    
-    while (!success) {
-      newIndex = (newIndex + 1) % activeNodes.length
-      if (newIndex === startingIndex) {
-        counter++
-        if (counter === maxRetries) {
-          _path = []
-          console.log("No path found")
+
+    let success = []
+
+    if (!activeNodes || activeNodes.length === 0) {
+      console.log("No active nodes available.")
+      setPath([])
+    } else {
+      const initialStartingIndex = selectedNodeId !== null
+        ? activeNodes.map(node => node.id).indexOf(selectedNodeId)
+        : getRandomInt(0, activeNodes.length - 1)
+
+      const startingIndex = initialStartingIndex === -1 ? getRandomInt(0, activeNodes.length - 1) : (initialStartingIndex+activeNodes.length-1) % activeNodes.length
+
+      let newIndex = startingIndex
+      let attempts = 0
+      const maxAttempts = 2
+
+      while (!success.length && attempts < maxAttempts) {
+        newIndex = (newIndex + 1) % activeNodes.length
+
+        if (attempts > 0 && newIndex === startingIndex) {
+          console.log("No path found.")
+          setPath([])
           break
         }
+
+        const startingNode = activeNodes[newIndex]
+        success = crawl(startingNode)
+        attempts++
       }
-      const startingNode = activeNodes[newIndex]
-      success = crawl(startingNode)
+
+      if (!success.length && attempts >= maxAttempts) {
+        console.log("Maximum crawl attempts reached without finding a path.")
+        setPath([])
+      } else if (success.length) {
+        setPath(success)
+      }
     }
-    console.log(success)
-    setPath(_path)
-
-    // Tree:
-    // function dfs(currentId) {
-    //   if (visited.has(currentId)) return
-
-    //   visited.add(currentId)
-    //   const currentNode = nodes.find(node => node.id === currentId)
-    //   if (currentNode) {
-    //     _path.push(currentNode)
-    //   }
-
-    //   const neighbors = activeEdges
-    //     .filter(edge => edge.from === currentId || edge.to === currentId)
-    //     .map(edge => (edge.from === currentId ? edge.to : edge.from))
-
-    //   for (const neighborId of neighbors) {
-    //     dfs(neighborId)
-    //   }
-    // }
-
-    // dfs(startingNode.id)
-
-    // setPath(_path)
-
-    // const mat = adjacency(activeNodes, activeEdges)
-
-    // const n = activeNodes.length
-    // const startingIndex = getRandomInt(0, n-1)
-    // let subjToVisit = activeSubjects
-
-    // let i = startingIndex
-    // let j = getRandomInt(0, n-1)
-
-    // while (subjToVisit.length) {
-    //   for (let k = j; k < n-1; k++) {
-    //     if (mat[i][k] > 0) {
-
-    //     }
-    //   }
-    // }
-
-
-
-    // console.log(mat)
   }
+
+
+  const computeLinksPerNode = () => {
+    const newLinksPerNode = getNlinksPerNode(nodes, edges)
+
+    setLinksPerNode(newLinksPerNode)
+
+    console.log(linksPerNode)
+  }
+
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0]
@@ -308,6 +407,22 @@ const Home = () => {
           <span className="link-switch-slider"></span>
         </label>
       </div>
+
+      <div
+        style={{
+          position: 'fixed',
+          width: '5%',
+          height: '10%',
+          top: '86.5%',
+          left: 'calc(0.5% + 5em)',
+          zIndex: 200,
+        }}
+      >
+        <label className="link-switch link-switch-purple">
+          <input type="checkbox" onChange={toggleCentralityColoring} defaultChecked={true} />
+          <span className="link-switch-slider link-switch-slider-purple"></span>
+        </label>
+      </div>
       
       <div
         className='Legend'
@@ -323,7 +438,7 @@ const Home = () => {
 
       <button 
         className='btn'
-        onClick={() => setPath(new Array())}
+        onClick={() => {setPath(new Array()); setLinksPerNode(new Object())}}
         style={{
           position: 'fixed',
           top: 'calc(2.5% + 60px)',
@@ -331,12 +446,12 @@ const Home = () => {
           zIndex: 200,
         }}
       >
-        Delete Path
+        Clear
       </button>
       
       <button 
         className='btn'
-        onClick={αGeneratePath}
+        onClick={() => {setLinksPerNode(new Object()); βGeneratePath()}}
         style={{
           position: 'fixed',
           top: '2.5%',
@@ -345,6 +460,19 @@ const Home = () => {
         }}
       >
         Generate a Path
+      </button>
+
+      <button 
+        className='btn'
+        onClick={() => {setPath(new Array()); computeLinksPerNode()}}
+        style={{
+          position: 'fixed',
+          top: '2.5%',
+          right: 'calc(1.5% + 220px)',
+          zIndex: 200,
+        }}
+      >
+        Get most central nodes
       </button>
 
       <input
@@ -369,18 +497,62 @@ const Home = () => {
       </button>
 
       <div
-        className='path-list'
+        id='drop-zone'
+        onClick={() => setSelectedNodeId(null)}
         style={{
           position: 'fixed',
-          top: 'calc(2.5% + 120px)',
-          width: 'calc(25%)',
-          right: '1.5%',
-          zIndex: 200,
+          bottom: '-1.5%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '3rem',
+          height: '3rem',
+          borderRadius: '50%',
+          backgroundColor: '#000000',
+          border: `2px solid ${subjectsColors[nodes.find(node => node.id === selectedNodeId)?.subject] ?? "#ffffff"}`,
+          boxShadow: `0 0 20px ${subjectsColors[nodes.find(node => node.id === selectedNodeId)?.subject] ?? "#ffffff"}`,
+          zIndex: 20,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          fontWeight: 'bold',
+          fontFamily: 'sans',
+          fontSize: 32,
+          cursor: 'pointer'
         }}
       >
-        <GeneratedPath nodes={path}/>
+        {selectedNodeId !== null ? fieldContents[nodes.find(node => node.id === selectedNodeId)?.field] ?? "ς" : ""}
       </div>
-      <Graph nodes={nodes} edges={edges} path={path} hoveredSubject={hoveredSubject} linksActive={linksActive} isEditor={isEditor} setIsEditor={setIsEditor} />
+
+
+      {/* Fix the rendering*/}
+      {path.length ?
+        <div
+          className='path-list'
+          style={{
+            position: 'fixed',
+            top: 'calc(2.5% + 120px)',
+            width: 'calc(25%)',
+            right: '1.5%',
+            zIndex: 200,
+          }}
+        >
+          <GeneratedPath nodes={path}/>
+        </div> : <div></div>}
+      {Object.keys(linksPerNode).length ? 
+        <div
+          className='path-list'
+          style={{
+            position: 'fixed',
+            top: 'calc(2.5% + 120px)',
+            width: 'calc(15%)',
+            right: '1.5%',
+            zIndex: 200,
+          }}
+        >
+          <GeneratedRelevantNodes nodes={nodes} linksPerNode={linksPerNode} activeSubjects={activeSubjects}/>
+        </div> : <div></div>}
+      <Graph nodes={nodes} edges={edges} path={path} hoveredSubject={hoveredSubject} linksActive={linksActive} centralityColoring={centralityColoring} setSelectedNodeId={setSelectedNodeId} isEditor={isEditor} setIsEditor={setIsEditor} />
     </div>
   )
 }

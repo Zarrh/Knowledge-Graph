@@ -200,6 +200,11 @@
   border: 2px solid #0974f1;
 }
 
+.link-switch-purple input:checked + .link-switch-slider-purple {
+  box-shadow: 0 0 20px rgba(214, 11, 255, 0.8);
+  border: 2px solid #a62cf7;
+}
+
 .link-switch input:checked + .link-switch-slider::before {
   transform: translateX(1.5em);
 }

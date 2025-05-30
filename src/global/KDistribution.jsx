@@ -1,13 +1,15 @@
 // import './Introduction.css'
 import React, { useEffect } from 'react'
 import { _nodes, _edges, subjectNames } from '../data'
+import { getNlinksPerNode } from '../functions'
+import { DistributionChart } from '../components'
 
-const Statistics = ({ setPage }) => {
+const KDistribution = ({ setPage }) => {
 
   useEffect(() => {
     const handleKeyUp = (e) => {
       if (e.key.toLowerCase() === 'arrowleft') {
-        setPage('application')
+        setPage('statistics')
       }
     }
 
@@ -33,7 +35,7 @@ const Statistics = ({ setPage }) => {
         textAlign: 'center',
         fontSize: 84,
       }}>
-        Some stats:
+        Degree distribution:
       </div>
       <div style={{
         marginTop: '5vh',
@@ -41,25 +43,12 @@ const Statistics = ({ setPage }) => {
         marginLeft: 'auto',
         marginRight: 'auto',
         textAlign: 'center',
-        display: 'grid',
-        gridTemplateColumns: 'auto auto auto',
+        display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '8rem',
         fontSize: 26,
       }}>
-        <div>
-          <div>Number of nodes:</div>
-          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{_nodes.length}</div>
-        </div>
-        <div>
-          <div>Number of links:</div>
-          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{_edges.length}</div>
-        </div>
-        <div>
-          <div>Number of subjects:</div>
-          <div style={{fontSize: 62, color: '#ae00ff', fontWeight: 'bold'}}>{Object.keys(subjectNames).length}</div>
-        </div>
+        <DistributionChart data={getNlinksPerNode(_nodes, _edges)} />
       </div>
       <div style={{
         marginTop: '5vh',
@@ -73,7 +62,7 @@ const Statistics = ({ setPage }) => {
         textAlign: 'center',
         gap: '2rem',
       }}>
-        <button className='start-btn' onClick={() => setPage('distribution')}>
+        <button className='start-btn' onClick={() => setPage('explanation')}>
           <span></span>
           <span></span>
           <span></span>
@@ -89,4 +78,4 @@ const Statistics = ({ setPage }) => {
   )
 }
 
-export default Statistics
+export default KDistribution

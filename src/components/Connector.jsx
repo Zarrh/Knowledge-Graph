@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSpring, animated } from '@react-spring/web'
 import { subjectsColors } from '../data'
 
-const Connector = ({ from, to, width = 12, highlight = false }) => {
+const Connector = ({ from, to, width = 12, highlight = false, color = null }) => {
   const [hovered, setHovered] = useState(false)
 
   const springStyle = useSpring({
@@ -28,8 +28,8 @@ const Connector = ({ from, to, width = 12, highlight = false }) => {
           x2={from.x > to.x ? '0%' : '100%'}
           y2="0%"
         >
-          <stop offset="0%" stopColor={subjectsColors[from.subj] ?? 'white'} />
-          <stop offset="100%" stopColor={subjectsColors[to.subj] ?? 'white'} />
+          <stop offset="0%" stopColor={color ?? subjectsColors[from.subj] ?? 'white'} />
+          <stop offset="100%" stopColor={color ?? subjectsColors[to.subj] ?? 'white'} />
         </linearGradient>
       </defs>
 

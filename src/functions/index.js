@@ -24,6 +24,24 @@ export function darkenColor(hex, amount=20) {
 }
 
 
+export function colormap(value, nmax) {
+  const v = Math.min(Math.max(value, 0), nmax)
+
+  const t = v / nmax
+
+  const r = Math.round(255 * t)
+  const g = 0
+  const b = Math.round(255 * (1 - t))
+
+  return { r, g, b }
+}
+
+
+export function rgb2Hex({ r, g, b }) {
+  const toHex = (c) => c.toString(16).padStart(2, '0')
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`
+}
+
 
 export function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
@@ -75,4 +93,27 @@ export function adjacency(V, E) {
   }
 
   return matrix
+}
+
+
+export function getNlinksPerNode(V, E) {
+  const NlinksPerNode = new Object()
+
+  const labels = V.map((vertex) => (vertex.id))
+
+  for (const label of labels) {
+    NlinksPerNode[label] = E.filter((link) => link.to === label || link.from === label).length
+  }
+
+  return NlinksPerNode
+}
+
+
+export function isOverlapping(rect1, rect2) {
+  return !(
+    rect1.right < rect2.left ||
+    rect1.left > rect2.right ||
+    rect1.bottom < rect2.top ||
+    rect1.top > rect2.bottom
+  )
 }
