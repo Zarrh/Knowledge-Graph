@@ -3,7 +3,17 @@ import React, { useEffect } from 'react'
 import { _nodes, _edges, subjectNames } from '../data'
 import { cartesianProduct, graphDefinition, graphImage } from '../assets/images'
 
-const GraphPage = ({ setPage }) => {
+import { IoPerson } from "react-icons/io5"
+import { FaVirusCovid } from "react-icons/fa6"
+import { FaCity } from "react-icons/fa"
+import { IoGlobeOutline } from "react-icons/io5"
+import { FaNetworkWired } from "react-icons/fa6"
+import { IoIosJet } from "react-icons/io"
+
+const π = Math.PI
+
+const ApplicationPage = ({ setPage }) => {
+
   useEffect(() => {
     const handleKeyUp = (e) => {
       if (e.key.toLowerCase() === 'arrowleft') {
@@ -14,6 +24,15 @@ const GraphPage = ({ setPage }) => {
     window.addEventListener('keyup', handleKeyUp)
     return () => window.removeEventListener('keyup', handleKeyUp)
   }, [])
+
+  const icons = [
+    IoPerson,
+    FaVirusCovid,
+    FaCity,
+    IoGlobeOutline,
+    FaNetworkWired,
+    IoIosJet,
+  ]
 
   return (
     <div style={{
@@ -31,11 +50,11 @@ const GraphPage = ({ setPage }) => {
         display: 'flex',
         justifyContent: 'start',
         marginLeft: '15%',
-        marginTop: '12%',
+        marginTop: '8%',
         textAlign: 'left',
         fontSize: 84,
       }}>
-        Graph Theory
+        Applications of graphs
       </div>
       <div style={{
         position: 'absolute',
@@ -48,32 +67,48 @@ const GraphPage = ({ setPage }) => {
         fontWeight: 'normal',
         fontSize: 24,
       }}>
-        A graph can be defined as a couple of a set of vertices and a family of edges.
+        Graphs have applications ranging from social sciences to the military field. They can indeed be used 
+        to model social groups, epidemics, computer networks and infrastructures.
       </div>
       <div style={{
         position: 'absolute',
-        marginTop: '10.5%',
-        marginLeft: '15%',
+        marginTop: '6%',
+        marginLeft: '65%',
       }}>
-        <img src={graphDefinition} style={{width: '380%'}} />
+        {icons.map((Icon, i) => (
+          <div
+            style={{
+              position: 'absolute',
+              transform: 'translate(-50%, -50%)',
+              left: `${220 * Math.cos((2 * π * i) / 6) + 220}px`,
+              top: `${-220 * Math.sin((2 * π * i) / 6) + 220}px`,
+              fontSize: 64,
+              padding: '8px',
+              borderRadius: '50%',
+              background: 'linear-gradient(210deg, #ff7ecb, #6a00f4)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: '#18171c',
+                borderRadius: '50%',
+                padding: '24px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <Icon />
+            </div>
+          </div>
+        ))}
       </div>
       <div style={{
         position: 'absolute',
-        marginTop: '18%',
-        marginLeft: '15%',
-      }}>
-        <img src={cartesianProduct} style={{width: '380%'}} />
-      </div>
-      <div style={{
-        position: 'absolute',
-        marginTop: '12%',
-        marginLeft: '75%',
-      }}>
-        <img src={graphImage} style={{width: '50vw', transform: 'translate(-50%, -50%)'}} />
-      </div>
-      <div style={{
-        position: 'absolute',
-        marginTop: '55vh',
+        marginTop: '65vh',
         marginLeft: '50%',
         transform: 'translate(-50%, -50%)',
         width: '35%',
@@ -84,7 +119,7 @@ const GraphPage = ({ setPage }) => {
         textAlign: 'center',
         gap: '2rem',
       }}>
-        <button className='start-btn' onClick={() => setPage('application')}>
+        <button className='start-btn' onClick={() => setPage('statistics')}>
           <span></span>
           <span></span>
           <span></span>
@@ -98,4 +133,4 @@ const GraphPage = ({ setPage }) => {
   )
 }
 
-export default GraphPage
+export default ApplicationPage

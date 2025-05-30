@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useSpring, animated } from 'react-spring'
-import { darkenColor, invertColor } from '../functions'
+import { darkenColor, invertColor, isOverlapping } from '../functions'
 
 import { fieldNames, fieldContents } from '../data'
 
 const Node = ({ 
-  x, y, radius, color="#ffffff", textColor, title, content, image, onMove, onClick, isEditing, scale, offset, children, field, isAI=false 
+  id, x, y, radius, color="#ffffff", textColor, title, content, image, onMove, onClick, isEditing, scale, offset, children, field, isAI=false, onCollide 
 }) => {
   const [pos, setPos] = useState({ x: x, y: y })
 
@@ -38,6 +38,7 @@ const Node = ({
   }
 
   const handleMouseMove = (e) => {
+
     if (!dragging.current) return
 
     const graphX = (e.clientX - offset.x) / scale
@@ -48,6 +49,8 @@ const Node = ({
 
     setPos({ x: newX, y: newY })
     if (onMove) onMove(newX, newY)
+
+    checkCollision()
   }
 
   const handleMouseUp = () => {
@@ -55,6 +58,15 @@ const Node = ({
     document.removeEventListener('mousemove', handleMouseMove)
     document.removeEventListener('mouseup', handleMouseUp)
   }
+
+  const checkCollision = () => {
+    const nodeRect = nodeRef.current?.getBoundingClientRect()
+    const dropZone = document.getElementById('drop-zone')?.getBoundingClientRect()
+    if (nodeRect && dropZone && isOverlapping(nodeRect, dropZone)) {
+      if (onCollide) onCollide(id)
+    }
+  }
+
 
   const props = useSpring({
     to: {
@@ -134,9 +146,10 @@ const Node = ({
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
+                alignItems: 'center'
               }}
             >
-              <h3 style={{width: "60%"}}>{title}</h3>
+              <h3 style={{width: "60%", fontSize: 32}}>{title}</h3>
               <p>
                 <span style={{fontFamily: 'sans'}}>{field ? `${fieldContents[field]}: ` :  'ς: '}</span> 
                 <span>{field ? `${fieldNames[field]}` : "Generico"}</span>
@@ -148,7 +161,7 @@ const Node = ({
               backgroundImage: `linear-gradient(to right, ${color}, white)`,
             }}>
             </div>
-            <p>{isAI && "✤"} {content}</p>
+            <p>{isAI ? "✤" : ""} {content}</p>
           </div>
         ) : (
           <>{children}</>

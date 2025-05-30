@@ -1,8 +1,20 @@
 // import './Introduction.css'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { _nodes, _edges, subjectNames } from '../data'
 
 const Explanation = ({ setPage }) => {
+
+  useEffect(() => {
+    const handleKeyUp = (e) => {
+      if (e.key.toLowerCase() === 'arrowleft') {
+        setPage('distribution')
+      }
+    }
+
+    window.addEventListener('keyup', handleKeyUp)
+    return () => window.removeEventListener('keyup', handleKeyUp)
+  }, [])
+
   return (
     <div style={{
       height: '101vh',

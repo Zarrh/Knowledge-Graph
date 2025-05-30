@@ -64,10 +64,10 @@
       "id": "0d1553cccc2c1f539d5c7630f865aa2468aacc5d111d54423afd087f5d0468a3",
       "subject": "SCI",
       "title": "IPA",
-      "content": "L'alfabeto fonetico internazionale (AFI), noto anche come IPA (dall'inglese International Phonetic Alphabet), \u00e8 un sistema di scrittura fonetica, basato sull'alfabeto latino, usato per trascrivere in maniera standardizzata i suoni delle lingue parlate. \u00c8 stato concepito per rappresentare con precisione i suoni effettivi di qualsiasi lingua.",
+      "content": "Gli idrocarburi policiclici aromatici, noti anche con l'acronimo IPA (o PAH, dall'inglese, polycyclic aromatic hydrocarbons), sono una classe di idrocarburi costituiti da pi\u00f9 anelli aromatici, quali quello del benzene, fusi fra loro in un'unica struttura molecolare, generalmente planare; in quanto idrocarburi non contengono eteroatomi nel ciclo o nei sostituenti.",
       "image": "",
       "weight": "0.5",
-      "isAI": 1
+      "isAI": 0
     },
     {
       "id": "390c23a04c7cd42f4b77e637982d982d09466a8845a1042db78a85b57db441c9",
@@ -1608,6 +1608,154 @@
       "content": "La pallavolo, nota anche come volleyball, \u00e8 uno sport di squadra che si gioca su un campo rettangolare diviso da una rete. Ogni squadra \u00e8 composta da sei giocatori e l'obiettivo del gioco \u00e8 far cadere la palla nel campo avversario, cercando di evitare che l'altra squadra riesca a ribatterla. La pallavolo richiede velocit\u00e0, coordinazione e strategia, con regole che permettono ai giocatori di toccare la palla solo tre volte prima di rimandarla oltre la rete. \u00c8 uno sport molto popolare a livello mondiale, sia a livello amatoriale che professionistico.",
       "image": "",
       "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "19f50b91ce8413b67161126801e2647eda7aa346f681fe162cd9764906a4bc77",
+      "subject": "",
+      "title": "Umorismo",
+      "content": "L'umorismo \u00e8 una forma di espressione che provoca risate o divertimento, spesso attraverso l'uso di battute, giochi di parole, situazioni comiche e satira. Pu\u00f2 essere utilizzato per alleviare lo stress, creare legami sociali e affrontare situazioni difficili con leggerezza. L'umorismo varia tra culture e individui, ma \u00e8 universalmente riconosciuto come un elemento fondamentale della comunicazione umana. \u00c8 presente in diverse forme di arte e intrattenimento, come il cinema, la letteratura e la stand-up comedy.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1,
+      "field": "ide"
+    },
+    {
+      "id": "8e3d49d29e0c1aed1d460c0e8eaf1350c6128f55437ff7121b2ed79427994732",
+      "subject": "",
+      "title": "Metateatro",
+      "content": "Il metateatro \u00e8 una tecnica teatrale che coinvolge la messa in scena di un dramma all'interno di un altro dramma, creando un effetto di \"teatro nel teatro\". Questo dispositivo narrativo permette agli spettatori di riflettere sulla natura stessa del teatro, rompendo la quarta parete e facendo emergere temi come la finzione, la realt\u00e0 e la rappresentazione. \u00c8 spesso utilizzato per esplorare le dinamiche tra attori, personaggi e pubblico, offrendo una visione pi\u00f9 profonda e complessa dell'arte drammatica.",
+      "image": "",
+      "weight": 1,
+      "isAI": 1
+    },
+    {
+      "id": "f9bae578a1b8d90b515e56f750ba432fea8c986a6ae42a598670f2bfb6973b71",
+      "subject": "ITA",
+      "title": "Canti di Castelvecchio - Pascoli",
+      "content": "\"Canti di Castelvecchio\" \u00e8 una raccolta poetica di Giovanni Pascoli, pubblicata nel 1903. L'opera \u00e8 un omaggio alla vita rurale e alla semplicit\u00e0 della campagna, riflettendo il legame profondo del poeta con la terra e la natura. Le poesie sono caratterizzate da una forte intimit\u00e0 e da un linguaggio semplice ma evocativo, che esprime la malinconia e la serenit\u00e0 della vita contadina. Pascoli, attraverso questi canti, esplora temi come l'infanzia, la memoria e la bellezza delle piccole cose quotidiane.",
+      "image": "",
+      "weight": 1,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "9ed40cb80e87cee3e003cecaf8062b70f5a0039ac59443b9300374bd8ded3645",
+      "subject": "",
+      "title": "Pessimismo",
+      "content": "Il pessimismo \u00e8 un atteggiamento mentale caratterizzato dalla tendenza a vedere il lato negativo delle situazioni, a prevedere il peggio e a concentrarsi sui difetti piuttosto che sui pregi. Questo orientamento pu\u00f2 influenzare il modo in cui una persona percepisce la vita, le relazioni e il futuro, spesso portando a sentimenti di insoddisfazione, ansia e disperazione. Il pessimismo pu\u00f2 essere un tratto della personalit\u00e0 o una risposta temporanea a circostanze difficili, e pu\u00f2 avere impatti significativi sulla salute mentale e sul benessere generale.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "2400978ba79bdc4fddbf95447d265a314f477a91585c0518728d3229d6632142",
+      "subject": "",
+      "title": "Male di vivere",
+      "content": "Il \"male di vivere\" \u00e8 un'espressione che descrive uno stato di disagio esistenziale, caratterizzato da sentimenti di tristezza, angoscia e insoddisfazione profonda. Questo termine, spesso associato alla letteratura e alla psicologia, riflette una condizione di malessere interiore che pu\u00f2 derivare da vari fattori, come la mancanza di senso nella vita, la solitudine o problemi personali irrisolti. \u00c8 un concetto complesso che pu\u00f2 manifestarsi in modi diversi e colpire individui di tutte le et\u00e0.",
+      "image": "",
+      "weight": 0.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "48bb55ccad45af876b94a444f962e987a7f202aca963bd63dba5e8b84195bbf6",
+      "subject": "",
+      "title": "Teoria del piacere",
+      "content": "La teoria del piacere, spesso associata a filosofi come Epicuro e Jeremy Bentham, sostiene che il principio fondamentale che guida le azioni umane \u00e8 la ricerca del piacere e l'evitamento del dolore. Secondo questa teoria, il piacere \u00e8 visto come il bene supremo e la felicit\u00e0 \u00e8 raggiunta attraverso la massimizzazione del piacere. Tuttavia, la teoria del piacere pu\u00f2 variare nelle sue interpretazioni, con alcune versioni che enfatizzano il piacere immediato e altre che promuovono un piacere pi\u00f9 duraturo e sostenibile.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "69c245338d7154820f23336fb64ba65dd0f6bdc9a3607daf799b4133ef33a9a6",
+      "subject": "ITA",
+      "title": "La quiete dopo la tempesta - Leopardi",
+      "content": "\"La quiete dopo la tempesta\" \u00e8 una delle poesie pi\u00f9 celebri di Giacomo Leopardi, scritta nel 1829. Il componimento, parte dei \"Canti\", esplora il tema della serenit\u00e0 che segue un periodo di grande tumulto. Leopardi utilizza la natura come metafora per riflettere sulla condizione umana, evidenziando la transitoriet\u00e0 della felicit\u00e0 e la inevitabile ritorno alla calma dopo momenti di intensa emozione. La poesia \u00e8 caratterizzata da un linguaggio ricco e immagini evocative che colpiscono profondamente il lettore.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "a17129af5a3ed638669ad5208a96770fc3220cba879f8cac6dfc8dd45cd80968",
+      "subject": "",
+      "title": "Straniamento",
+      "content": "Lo straniamento \u00e8 un concetto utilizzato in vari campi, tra cui la psicologia, la letteratura e il teatro. In psicologia, si riferisce a una sensazione di distacco o alienazione dalla realt\u00e0 o da se stessi. In letteratura e teatro, \u00e8 una tecnica narrativa e drammaturgica che mira a creare una distanza critica tra il pubblico e l'opera, permettendo una riflessione pi\u00f9 profonda sui temi trattati. Bertolt Brecht, famoso drammaturgo tedesco, ha sviluppato il concetto di \"effetto di straniamento\" per stimolare il pensiero critico degli spettatori.",
+      "image": "",
+      "weight": 0.5,
+      "isAI": 1
+    },
+    {
+      "id": "b5d1ef5e8d8ba894bfc8fb275b581aa1d22651cf461f31c5e659ab00372282b1",
+      "subject": "",
+      "title": "Immobilitismo sociale",
+      "content": "L'immobilitismo sociale si riferisce a una situazione in cui una societ\u00e0 o un gruppo sociale rimane stagnante, resistendo ai cambiamenti e mantenendo le strutture e le dinamiche esistenti. Questo fenomeno pu\u00f2 essere causato da vari fattori, tra cui la paura del cambiamento, la mancanza di risorse o di leadership innovativa, e la resistenza culturale o politica. L'immobilitismo pu\u00f2 avere effetti negativi sulla crescita economica, l'innovazione e il benessere generale della comunit\u00e0, poich\u00e9 impedisce l'adozione di nuove idee e pratiche che potrebbero portare benefici significativi.",
+      "image": "",
+      "weight": 0.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "1705b2c0b002b72f4788310599b714151d3ce73710dcf2f6824fb7dbd6052267",
+      "subject": "ITA",
+      "title": "Metafora dell'ostrica di Verga",
+      "content": "La \"metafora dell'ostrica\" \u00e8 un concetto centrale nell'opera di Giovanni Verga, particolarmente rilevante nel romanzo \"Mastro-don Gesualdo\". Essa rappresenta la condizione umana attraverso l'immagine di un'ostrica che, pur desiderando una perla, deve rinunciare a ci\u00f2 che ha di pi\u00f9 prezioso per ottenerla. Questa metafora simboleggia il sacrificio e la rinuncia necessari per raggiungere obiettivi ambiziosi, riflettendo la lotta e le frustrazioni di chi cerca di elevarsi socialmente.",
+      "image": "",
+      "weight": 0.5,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "d5f35d404cb46b217d1a4cd75364e3fbaca2e16b3188953728602fa593a3bbc7",
+      "subject": "ITA",
+      "title": "Verismo",
+      "content": "Il Verismo \u00e8 un movimento letterario e artistico che si svilupp\u00f2 in Italia alla fine del XIX secolo, caratterizzato da una rappresentazione realistica e cruda della vita quotidiana, spesso focalizzata sulle classi sociali pi\u00f9 svantaggiate. Gli autori veristi, come Giovanni Verga e Luigi Capuana, cercavano di descrivere la realt\u00e0 senza abbellimenti, esplorando temi di povert\u00e0, ingiustizia sociale e lotte umane. Questo stile si distingue per l'uso del dialetto e per la narrazione impersonale, che mira a presentare i fatti in modo oggettivo e distaccato.",
+      "image": "",
+      "weight": 1,
+      "field": "mov",
+      "isAI": 1
+    },
+    {
+      "id": "6709ae65fe242855abf5916c193b5cadb05f67f482ef622763f8eeeb1a7029b2",
+      "subject": "",
+      "title": "Concezione del tempo",
+      "content": "La concezione del tempo \u00e8 un tema complesso che varia tra diverse culture, filosofie e discipline scientifiche. In filosofia, il tempo pu\u00f2 essere visto come una dimensione lineare e irreversibile (come nel pensiero occidentale) o come un ciclo continuo (come in alcune tradizioni orientali). In fisica, il tempo \u00e8 una dimensione fondamentale del nostro universo, strettamente legata allo spazio e all'energia. Nella psicologia, il tempo \u00e8 spesso percepito in modo soggettivo, influenzato da emozioni e esperienze personali.",
+      "image": "",
+      "weight": 1,
+      "field": "ide",
+      "isAI": 1
+    },
+    {
+      "id": "7befd4bdc07a5238649681c833d9b44edd70755600462f528ebd9dbd4d22526f",
+      "subject": "ITA",
+      "title": "Una vita - Svevo",
+      "content": "\"Una vita\" \u00e8 un romanzo scritto da Italo Svevo, pubblicato per la prima volta nel 1892. La storia segue le vicende di Alfonso Nitti, un giovane impiegato di banca che si trasferisce a Trieste per lavoro. Attraverso il suo percorso esistenziale, Svevo esplora temi come l'alienazione, la ricerca di identit\u00e0 e il conflitto tra aspirazioni personali e realt\u00e0 sociale. Il romanzo \u00e8 noto per il suo stile introspettivo e per l'analisi psicologica dei personaggi.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "fa5a27d28f8ecd3dd1e87b4c9673f9b5abd45d27bc51e6ea74267a79c812b571",
+      "subject": "ITA",
+      "title": "Senilit\u00e0 - Svevo",
+      "content": "\"Senilit\u00e0\" \u00e8 un romanzo di Italo Svevo pubblicato nel 1898. L'opera esplora temi come l'invecchiamento, la disillusione e la ricerca di significato nella vita attraverso la storia di Emilio Brentani, un uomo di mezza et\u00e0 che si innamora di una giovane donna, Angiolina. La narrazione, caratterizzata da un'analisi psicologica approfondita, riflette le tensioni tra desiderio e realt\u00e0, idealismo e pragmatismo, offrendo un ritratto intenso delle fragilit\u00e0 umane.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
+      "isAI": 1
+    },
+    {
+      "id": "abef64487c99dd3217e88b27b2a846d7d9b6373436ac8653bf8a5707331e53f3",
+      "subject": "ITA",
+      "title": "Les fleurs du mal - Baudelaire",
+      "content": "\"Les fleurs du mal\" \u00e8 una raccolta di poesie di Charles Baudelaire, pubblicata per la prima volta nel 1857. Considerata una delle opere fondamentali della letteratura francese, esplora temi come la bellezza, la decadenza, la malinconia e il male. Baudelaire, con il suo stile innovativo e la sua visione oscura e provocatoria, ha rivoluzionato la poesia moderna, influenzando generazioni di scrittori e artisti. L'opera, inizialmente condannata per oscenit\u00e0, \u00e8 oggi riconosciuta come un capolavoro per la sua profondit\u00e0 e complessit\u00e0 emotiva.",
+      "image": "",
+      "weight": 0.5,
+      "field": "wor",
       "isAI": 1
     }
   ]

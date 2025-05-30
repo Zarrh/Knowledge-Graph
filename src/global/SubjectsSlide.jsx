@@ -1,9 +1,10 @@
 // import './Introduction.css'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { _nodes, _edges, subjectNames, subjectIcons, subjectsColors } from '../data'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const countNodes = (_nodes) => {
+
   const nodesPerSubject = new Object()
 
   for (const node of _nodes) {
@@ -21,6 +22,17 @@ const countNodes = (_nodes) => {
 }
 
 const SubjectsSlide = ({ setPage }) => {
+
+  useEffect(() => {
+    const handleKeyUp = (e) => {
+      if (e.key.toLowerCase() === 'arrowleft') {
+        setPage('explanation')
+      }
+    }
+
+    window.addEventListener('keyup', handleKeyUp)
+    return () => window.removeEventListener('keyup', handleKeyUp)
+  }, [])
 
   const [advance, setAdvance] = useState(0)
   const nodesPerSubject = countNodes(_nodes)
